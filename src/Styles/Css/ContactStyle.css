@@ -1,0 +1,16 @@
+.contact-wrapper {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+.contact-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.contact-description {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}

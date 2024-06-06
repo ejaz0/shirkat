@@ -1,0 +1,15 @@
+.portfolio-wrapper {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #1a1a1a;
+    color: #fff;
+}
+
+.portfolio-title {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.portfolio-description {
+    font-size: 1.2rem;
+}
