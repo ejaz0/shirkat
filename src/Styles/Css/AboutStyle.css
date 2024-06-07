@@ -1,5 +1,5 @@
 .about-container {
-    background-color: #121212;
+    background-color: #0e1129;
     color: #ffffff;
     padding: 4rem 2rem;
     text-align: center;
@@ -21,23 +21,26 @@
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
 }
 
 .team-member {
-    background: rgba(255, 255, 255, 0.1);
-
-    padding: 3rem 2rem; /* Increased padding */
+    background: #0e1129;
+    padding: 2rem;
+    border: 1px solid rgba(0, 170, 255, 0.3);
     border-radius: 10px;
     min-height: 40rem; /* Set a minimum height */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, background 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 170, 255, 0.5);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
 }
 
 .team-member:hover {
     transform: translateY(-10px);
     background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 6px 15px rgba(0, 170, 255, 0.8);
 }
 
 .team-photo {

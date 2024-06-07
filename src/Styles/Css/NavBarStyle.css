@@ -2,7 +2,7 @@
 
 nav {
     font-weight: bold;
-  color: white;
+    color: white;
     padding: 1rem 2rem;
     position: fixed;
     width: 100%;
@@ -12,6 +12,12 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background 0.3s ease; /* Smooth transition */
+}
+
+nav.scrolled {
+    background: rgba(0, 0, 0, 0.2); /* Background when scrolled */
+    backdrop-filter: blur(10px); /* Blur effect */
 }
 
 ul {

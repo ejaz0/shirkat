@@ -109,7 +109,7 @@
 
 .hero-graphic img {
     max-width: 100%;
-    height: auto;
+    height: 55vh;
 }
 
 .services {
@@ -210,7 +210,7 @@
     transition: color 0.1s ease;
 }
 
-    
+
 
 .service-card:hover a {
     color: #f7f7f7 !important; /* Ensures the color change is prioritized */
