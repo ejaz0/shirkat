@@ -2,14 +2,11 @@
     display: flex;
     flex-direction: column;
     height: 100vh; /* Full viewport height */
-  
 }
 
 .home-page {
     width: 100%;
     height: 70vh; /* 50% of the viewport height */
-
-    padding-top: 4rem; /* Space for fixed header */
 }
 
 .hero {
@@ -17,25 +14,61 @@
     justify-content: space-between;
     align-items: center;
     padding: 4rem 2rem;
-    background: linear-gradient(135deg, #0f0505, #565656);
+    background: linear-gradient(135deg, #0e1d34, #1e3c72, #301860); /* Gradient color */
     color: #ffffff;
     height: 100%; /* Full height of the home-page section */
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 1%, transparent 40%); /* Glowy snow effect */
+    background-size: 3px 3px;
+    z-index: 0;
+    pointer-events: none; /* Make it non-interactive */
 }
 
 .hero-content {
     flex: 1;
     max-width: 50%;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
     color: #00aaff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow effect */
 }
 
 .hero-content p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
+}
+
+.hero-content h1 span {
+    display: inline-block;
+    position: relative;
+}
+
+.hero-content h1 span::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10"><path d="M0 0 Q 25 10 50 0 T 100 0" fill="none" stroke="aqua" stroke-width="2" /></svg>') repeat-x;
+    background-size: contain;
+    transform: scaleY(1.5);
+    z-index: -1;
 }
 
 .hero-button {
@@ -44,13 +77,25 @@
     color: #ffffff;
     background: #00aaff;
     border: none;
-    border-radius: 5px;
+    border-radius: 25px; /* Rounded corners */
     cursor: pointer;
-    transition: background 0.3s ease;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 10px rgba(0, 170, 255, 0.5);
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
 }
 
 .hero-button:hover {
     background: #0077cc;
+    box-shadow: 0 6px 15px rgba(0, 119, 204, 0.6);
+}
+
+.hero-button::after {
+    content: '\f144'; /* Unicode for play icon */
+    font-family: 'Font Awesome 5 Free'; /* Ensure you have Font Awesome included */
+    font-weight: 900;
+    margin-left: 0.5rem;
 }
 
 .hero-graphic {
@@ -58,6 +103,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
+    z-index: 1;
 }
 
 .hero-graphic img {
@@ -66,20 +113,27 @@
 }
 
 .services {
-    width: 100%;
-    height: 50vh; /* 50% of the viewport height */
     padding: 4rem 2rem;
-    background: #121212;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    background: #0e1129; /* Updated background color */
+    text-align: left; /* Align text to the left */
+    color: #ffffff;
 }
 
 .services h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #ffffff;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.services h2::before {
+    content: '•SERVICES•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1rem;
+    color: #00aaff;
 }
 
 .services p {
@@ -90,32 +144,76 @@
 
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr); /* Ensures three columns */
     gap: 2rem;
 }
 
 .service-card {
-    background: rgba(255, 255, 255, 0.1);
+    background: #0e1129; /* Same as the background color */
     padding: 2rem;
+    border: 1px solid rgba(0, 106, 255, 0.9); /* Light blue border */
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, background 0.3s ease;
+    transition: transform 0.3s ease, background 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
     color: #ffffff;
 }
 
 .service-card:hover {
     transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(0, 170, 255, 0.8); /* Glowy blue border */
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 168, 252, 0.9); /* Light blue color */
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+    z-index: 0;
+}
+
+.service-card:hover::before {
+    transform: scaleX(1);
+}
+
+.service-card h3,
+.service-card p,
+.service-card a {
+    position: relative;
+    z-index: 1;
 }
 
 .service-card h3 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
+    color: #ffffff;
 }
 
 .service-card p {
     font-size: 1rem;
     line-height: 1.5;
+    color: #cccccc;
+}
+
+.service-card a {
+    display: block;
+    margin-top: 1rem;
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.1s ease;
+}
+
+    
+
+.service-card:hover a {
+    color: #f7f7f7 !important; /* Ensures the color change is prioritized */
 }
 
 .services-button {

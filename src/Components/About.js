@@ -1,6 +1,9 @@
 import React from 'react';
 import '../Styles/Css/AboutStyle.css';
 
+import rashedRafa from '../Styles/Css/images/1712175677779.jpg';
+import aryaEisa from '../Styles/Css/images/644_e43222bd86412c55c14fe34e9ea1e4ac-2023-11-09 23_27_42.jpg';
+
 const About = () => {
     return (
         <div className="about-container">
@@ -8,36 +11,31 @@ const About = () => {
             <p className="about-description">We are a team of experienced software consultants dedicated to providing top-notch IT solutions and services.</p>
             <div className="team-grid">
                 <div className="team-member">
-                    <img src="/path/to/alex-smith.jpg" alt="Alex Smith" className="team-photo" />
+                    <img src="" alt="Elvis Hasanaj" className="team-photo" />
                     <h2 className="team-name">Elvis Hasanaj</h2>
                     <p className="team-role">Technical Manager</p>
-                    <p className="team-bio">Alex is a creative leader with a knack for innovative solutions and exceptional client service.</p>
+                    <p className="team-bio">Elvis is a creative leader with a knack for innovative solutions and exceptional client service.</p>
                     <div className="team-socials">
-                        <a href="#"><i className="fab fa-twitter"></i></a>
-                        <a href="#"><i className="fab fa-facebook"></i></a>
-                        <a href="#"><i className="fab fa-instagram"></i></a>
+                       <a href="linkedin.com"><i className="fab fa-twitter"></i></a>
                     </div>
                 </div>
                 <div className="team-member">
-                    <img src="/path/to/may-brown.jpg" alt="May Brown" className="team-photo" />
+                    <img src={rashedRafa} alt="Rashed Rafa" className="team-photo" />
                     <h2 className="team-name">Rashed Rafa</h2>
                     <p className="team-role">Treasury Manager</p>
-                    <p className="team-bio">May is our dynamic sales manager who excels at building strong client relationships and driving sales growth.</p>
+                    <p className="team-bio">Rashed is our dynamic sales manager who excels at building strong client relationships and driving sales growth.</p>
                     <div className="team-socials">
-                        <a href="#"><i className="fab fa-twitter"></i></a>
-                        <a href="#"><i className="fab fa-facebook"></i></a>
-                        <a href="#"><i className="fab fa-instagram"></i></a>
+                    <a href="linkedin.com"><i className="fab fa-twitter"></i></a>
                     </div>
                 </div>
                 <div className="team-member">
-                    <img src="/path/to/ann-richmond.jpg" alt="Ann Richmond" className="team-photo" />
+                    <img src={aryaEisa} alt="Arya Eisa" className="team-photo" />
                     <h2 className="team-name">Arya Eisa</h2>
                     <p className="team-role">Sales Manager</p>
-                    <p className="team-bio">Ann is a talented web developer with expertise in creating modern, responsive websites and applications.</p>
+                    <p className="team-bio">Arya is a talented web developer with expertise in creating modern, responsive websites and applications.</p>
                     <div className="team-socials">
-                        <a href="#"><i className="fab fa-twitter"></i></a>
-                        <a href="#"><i className="fab fa-facebook"></i></a>
-                        <a href="#"><i className="fab fa-instagram"></i></a>
+                        <a href="linkedin.com"><i className="fab fa-twitter"></i></a>
+               
                     </div>
                 </div>
             </div>
