@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import '../Styles/Css/NavBarStyle.css';
+import ThreeSoftLogo from '../Styles/Css/images/threesoftlogoneww.png'; // Import the logo
 
 const NavBar = () => {
     useEffect(() => {
@@ -23,6 +24,9 @@ const NavBar = () => {
 
     return (
         <nav>
+            <div className="logo-container">
+                <img src={ThreeSoftLogo} alt="ThreeSoft Logo" className="logo" />
+            </div>
             <ul>
                 <li><Link to="/">Home</Link></li>
                 <li><Link to="/about">About</Link></li>

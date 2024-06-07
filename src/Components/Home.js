@@ -8,6 +8,7 @@ const Home = () => {
             <div className="home-page">
                 <section className="hero" id="home">
                     <div className="hero-content">
+                    <h1>ThreeSoft</h1>
                         <h1>Providing The Best Services & IT Solutions</h1>
                         <p>Learn more about our expert, consumer-advising skills. Get solutions delivered by experts with adaptive strategies.</p>
                         <button className="hero-button">Learn More</button>

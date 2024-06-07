@@ -1,23 +1,33 @@
-/* src/Styles/Css/NavBarStyle.css */
-
 nav {
     font-weight: bold;
     color: white;
-    padding: 1rem 2rem;
     position: fixed;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 10;
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Adjusted for logo */
     align-items: center;
     transition: background 0.3s ease; /* Smooth transition */
+    padding: 3.5rem; /* Remove top and bottom padding, keep left and right padding */
+    margin: 0; /* Remove any margin */
+    height: 70px; /* Set a fixed height for the navbar */
 }
 
 nav.scrolled {
     background: rgba(0, 0, 0, 0.2); /* Background when scrolled */
     backdrop-filter: blur(10px); /* Blur effect */
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 6rem; /* Adjust the size as needed */
+    width: 6rem;
 }
 
 ul {
