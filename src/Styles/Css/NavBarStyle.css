@@ -1,7 +1,7 @@
 /* src/Styles/Css/NavBarStyle.css */
 
 nav {
- background-color: (0, 0,0,0);
+background-color: black;
   color: white;
     padding: 1rem 2rem;
     position: fixed;

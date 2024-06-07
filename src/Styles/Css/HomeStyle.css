@@ -1,38 +1,14 @@
-
-.header {
-    width: 100%;
-    padding: 1rem 2rem;
+.container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: rgba(0, 0, 0, 0.8);
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-}
-
-.logo {
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.nav a {
-    margin: 0 1rem;
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s;
-}
-
-.nav a:hover {
-    color: #00aaff;
+    flex-direction: column;
+    height: 100vh; /* Full viewport height */
+  
 }
 
 .home-page {
     width: 100%;
-    height: 100%;
-    overflow-x: hidden;
+    height: 70vh; /* 50% of the viewport height */
+
     padding-top: 4rem; /* Space for fixed header */
 }
 
@@ -41,9 +17,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 4rem 2rem;
-    background: linear-gradient(135deg, #0d0d0d, #1a1a1a);
+    background: linear-gradient(135deg, #0f0505, #565656);
     color: #ffffff;
-    min-height: 60vh;
+    height: 100%; /* Full height of the home-page section */
 }
 
 .hero-content {
@@ -82,23 +58,34 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Add any additional styles for your graphic or 3D object */
+}
+
+.hero-graphic img {
+    max-width: 100%;
+    height: auto;
 }
 
 .services {
+    width: 100%;
+    height: 50vh; /* 50% of the viewport height */
     padding: 4rem 2rem;
     background: #121212;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .services h2 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
+    color: #ffffff;
 }
 
 .services p {
     font-size: 1.2rem;
     margin-bottom: 3rem;
+    color: #cccccc;
 }
 
 .services-grid {
@@ -113,6 +100,7 @@
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, background 0.3s ease;
+    color: #ffffff;
 }
 
 .service-card:hover {

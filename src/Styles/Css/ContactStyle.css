@@ -1,16 +1,100 @@
-.contact-wrapper {
+.contact-container {
+    background-color: #121212;
+    color: #ffffff;
     padding: 4rem 2rem;
     text-align: center;
-    background: #333;
-    color: #fff;
+    height: 100vh;
 }
 
-.contact-title {
-    font-size: 3rem;
-    margin-bottom: 1rem;
+.contact-info {
+    margin-bottom: 2rem;
 }
 
-.contact-description {
+.contact-info p {
     font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    margin: 0.5rem 0;
+    color: #cccccc;
+}
+
+.contact-button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background: #00aaff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-button:hover {
+    background: #0077cc;
+}
+
+.contact-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+    text-align: left;
+    position: relative;
+}
+
+.contact-form h2 {
+    margin-bottom: 1rem;
+    color: #121212;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 150px;
+}
+
+.send-button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    color: #ffffff;
+    background: #00aaff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.send-button:hover {
+    background: #0077cc;
+}
+
+.close-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #121212;
 }
