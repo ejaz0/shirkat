@@ -10,27 +10,35 @@ const Contact = () => {
 
     return (
         <div className="contact-container">
-            <h1>Contact Us</h1>
-            <div className="contact-info">
-                <p>Email: contact@consultingfirm.com</p>
-                <p>Phone: (123) 456-7890</p>
-                <p>Address: 123 Main Street, City, Country</p>
-                <button className="contact-button" onClick={toggleForm}>Send Email</button>
+            <div className="contact-header-container">
+                <header className="contact-header">
+                    <h1>Contact Us</h1>
+                    <p>Home / Contact</p>
+                </header>
             </div>
-            {showForm && (
-                <div className="contact-form-overlay">
-                    <div className="contact-form">
-                        <span className="close-button" onClick={toggleForm}>&times;</span>
-                        <h2>Get in touch</h2>
-                        <form>
-                            <input type="text" placeholder="Name" required />
-                            <input type="email" placeholder="Email" required />
-                            <textarea placeholder="Message" required></textarea>
-                            <button type="submit" className="send-button">Send</button>
-                        </form>
-                    </div>
+            <div className="contact-section">
+                <div className="contact-info">
+                    <h1>Get in Touch</h1>
+                    <p>Email: contact@consultingfirm.com</p>
+                    <p>Phone: (123) 456-7890</p>
+                    <p>Address: 123 Main Street, City, Country</p>
+                    <button className="contact-button" onClick={toggleForm}>Send Email</button>
                 </div>
-            )}
+                {showForm && (
+                    <div className="contact-form-overlay">
+                        <div className="contact-form">
+                            <span className="close-button" onClick={toggleForm}>&times;</span>
+                            <h2>Get in touch</h2>
+                            <form>
+                                <input type="text" placeholder="Name" required />
+                                <input type="email" placeholder="Email" required />
+                                <textarea placeholder="Message" required></textarea>
+                                <button type="submit" className="send-button">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                )}
+            </div>
         </div>
     );
 };

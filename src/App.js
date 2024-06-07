@@ -8,6 +8,7 @@ import Portfolio from './Components/Portfolio';
 import Contact from './Components/Contact';
 import '../src/Styles/Css/AppStyle.css';
 
+
 const App = () => {
     return (
         <Router>
