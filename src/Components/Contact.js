@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../Styles/Css/ContactStyle.css';
+import ThreeDGlobe from './ThreeDGlobe'; // Assuming the ThreeDGlobe component is in the same directory
 
 const Contact = () => {
     const [showForm, setShowForm] = useState(false);
@@ -12,8 +13,13 @@ const Contact = () => {
         <div className="contact-container">
             <div className="contact-header-container">
                 <header className="contact-header">
-                    <h1>Contact Us</h1>
-                    <p>Home / Contact</p>
+                    <div className="header-content">
+                        <h1>Contact Us</h1>
+                        <p>Home / Contact</p>
+                    </div>
+                    <div className="globe-container">
+                        <ThreeDGlobe />
+                    </div>
                 </header>
             </div>
             <div className="contact-section">

@@ -19,6 +19,14 @@
 
 .about-header {
     margin: 0;
+    display: grid;
+    grid-template-columns: 1fr auto; /* Align text and logo in columns */
+    align-items: center;
+    gap: 1rem;
+}
+
+.about-text {
+    text-align: left;
 }
 
 .about-header h1 {
@@ -30,6 +38,11 @@
 .about-header p {
     font-size: 1.2rem;
     color: #cccccc;
+}
+
+.three-d-logo-container {
+    width: 200px;
+    height: 200px;
 }
 
 /* About section */

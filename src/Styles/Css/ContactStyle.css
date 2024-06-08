@@ -16,7 +16,16 @@
 }
 
 .contact-header {
-    margin: 0;
+    display: flex;
+    justify-content: center; /* Center the content */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px; /* Adjust the max-width as needed */
+}
+
+.header-content {
+    text-align: left;
+    margin-right: 1rem; /* Add margin to the right */
 }
 
 .contact-header h1 {
@@ -154,4 +163,12 @@
 
 .close-button:hover {
     color: #0077cc;
+}
+
+.globe-container {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

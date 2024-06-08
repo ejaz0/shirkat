@@ -3,14 +3,20 @@ import '../Styles/Css/AboutStyle.css';
 import elvisH from '../Styles/Css/images/prifle-removebg-preview.png';
 import rashedRafa from '../Styles/Css/images/1712175677779.jpg';
 import aryaEisa from '../Styles/Css/images/644_e43222bd86412c55c14fe34e9ea1e4ac-2023-11-09 23_27_42.jpg';
+import ThreeDLogo from './ThreeDObject'; // Import the ThreeDLogo component
 
 const About = () => {
     return (
         <div className="about-container">
             <div className="about-header-container">
                 <header className="about-header">
-                    <h1>About Us</h1>
-                    <p>Home / About</p>
+                    <div className="about-text">
+                        <h1>About Us</h1>
+                        <p>Home / About</p>
+                    </div>
+                    <div className="three-d-logo-container">
+                        <ThreeDLogo />
+                    </div>
                 </header>
             </div>
             <div className="about-section">

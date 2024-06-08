@@ -17,6 +17,17 @@
 
 .portfolio-header {
     margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the header content and logo */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-content {
+    text-align: left;
+    margin-right: 1rem; /* Space between header content and logo */
 }
 
 .portfolio-header h1 {
@@ -28,6 +39,7 @@
 .portfolio-header p {
     font-size: 1.2rem;
     color: #cccccc;
+    margin-top: 0.5rem;
 }
 
 /* Portfolio section */
@@ -110,4 +122,13 @@
 .see-more-button:hover {
     background: #0077cc;
     box-shadow: 0 6px 15px rgba(0, 119, 204, 0.6);
+}
+
+/* Additional styling for the Three.js logo */
+.logo-container {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    display: flex;
+    align-items: center;
+    margin-left: 1rem; /* Space between logo and header content */
 }

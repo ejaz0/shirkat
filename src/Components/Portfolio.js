@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Styles/Css/PortfolioStyle.css';
+import ThreeDLogo from './ThreeDSuitcase'; // Assuming you have the ThreeDLogo component
 import PortfolioImage1 from '../Styles/Css/images/portfolio/Screenshot 2024-06-08 001123.png';
 import PortfolioImage2 from '../Styles/Css/images/portfolio/Screenshot 2024-06-08 001130.png';
 import PortfolioImage3 from '../Styles/Css/images/portfolio/Screenshot 2024-06-08 001134.png';
@@ -12,8 +13,13 @@ const Portfolio = () => {
         <div className="portfolio-container">
             <div className="portfolio-header-container">
                 <header className="portfolio-header">
-                    <h1>Portfolio</h1>
-                    <p>Home / Portfolio</p>
+                    <div className="header-content">
+                        <h1>Portfolio</h1>
+                        <p>Home / Portfolio</p>
+                    </div>
+                    <div className="logo-container">
+                        <ThreeDLogo />
+                    </div>
                 </header>
             </div>
             <div className="portfolio-section">
