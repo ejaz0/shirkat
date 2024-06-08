@@ -166,8 +166,8 @@
 }
 
 .globe-container {
-    width: 100px;
-    height: 100px;
+    width: 250px;
+    height: 250px;
     display: flex;
     align-items: center;
     justify-content: center;

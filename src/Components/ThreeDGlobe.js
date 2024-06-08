@@ -15,7 +15,7 @@ const ThreeDGlobe = () => {
         currentMount.appendChild(renderer.domElement);
 
         // Create the globe
-        const geometry = new THREE.SphereGeometry(1.5, 32, 32); // Increased size of the globe
+        const geometry = new THREE.SphereGeometry(1.5, 25, 25); // Increased size of the globe
         const material = new THREE.MeshBasicMaterial({ color: 0xffffff, wireframe: true });
         const globe = new THREE.Mesh(geometry, material);
         scene.add(globe);
@@ -37,7 +37,7 @@ const ThreeDGlobe = () => {
         };
     }, []);
 
-    return <div ref={mountRef} style={{ width: '150px', height: '150px' }} />; // Increased size of the container
+    return <div ref={mountRef} style={{ width: '250px', height: '250px' }} />; // Increased size of the container
 };
 
 export default ThreeDGlobe;
