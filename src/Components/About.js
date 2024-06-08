@@ -44,7 +44,7 @@ const About = () => {
                             Rashed is our dynamic Project Manager who excels at building strong client relationships and driving project success. His expertise in project management ensures that our projects are delivered on time, within scope, and meet the highest standards of quality.
                         </p>
                         <div className="team-socials">
-                            <a href="https://www.linkhttps://www.linkedin.com/in/rashad-rafa-a7b665203/" rel="noreferrer" target="_blank"><i className="fab fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/rashad-rafa-a7b665203/" rel="noreferrer" target="_blank"><i className="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                     <div className="team-member">
