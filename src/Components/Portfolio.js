@@ -71,12 +71,12 @@ const Portfolio = () => {
                 <header className="portfolio-header">
                     <h1>Awesome Portfolio</h1>
                     <div className="portfolio-filter">
-                        <a href="" onClick={() => setSelectedCategory('all')}>All</a>
-                        <a href="" onClick={() => setSelectedCategory('mobile')}>Mobile Apps</a>
-                        <a href="" onClick={() => setSelectedCategory('cloud')}>Cloud</a>
-                        <a href="" onClick={() => setSelectedCategory('data')}>Data Analysis</a>
-                        <a href="" onClick={() => setSelectedCategory('hosting')}>Hosting</a>
-                        <a href="" onClick={() => setSelectedCategory('web')}>Web</a>
+                        <a onClick={() => setSelectedCategory('all')}>All</a>
+                        <a  onClick={() => setSelectedCategory('mobile')}>Mobile Apps</a>
+                        <a  onClick={() => setSelectedCategory('cloud')}>Cloud</a>
+                        <a  onClick={() => setSelectedCategory('data')}>Data Analysis</a>
+                        <a  onClick={() => setSelectedCategory('hosting')}>Hosting</a>
+                        <a  onClick={() => setSelectedCategory('web')}>Web</a>
                     </div>
                 </header>
                 <div className="portfolio-grid">
