@@ -33,7 +33,7 @@ const About = () => {
                             Elvis is a creative leader with a knack for innovative solutions and exceptional client service. As the Technical Manager, he oversees all technical aspects of our projects, ensuring that we deliver high-quality, efficient, and scalable solutions.
                         </p>
                         <div className="team-socials">
-                            <a href="https://www.linkedin.com/in/elvishasanaj/" target="_blank"><i className="fab fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/elvishasanaj/"rel="noreferrer" target="_blank"><i className="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                     <div className="team-member">
@@ -44,7 +44,7 @@ const About = () => {
                             Rashed is our dynamic Project Manager who excels at building strong client relationships and driving project success. His expertise in project management ensures that our projects are delivered on time, within scope, and meet the highest standards of quality.
                         </p>
                         <div className="team-socials">
-                            <a href="https://www.linkhttps://www.linkedin.com/in/rashad-rafa-a7b665203/" target="_blank"><i className="fab fa-linkedin"></i></a>
+                            <a href="https://www.linkhttps://www.linkedin.com/in/rashad-rafa-a7b665203/" rel="noreferrer" target="_blank"><i className="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                     <div className="team-member">
@@ -55,7 +55,7 @@ const About = () => {
                             Arya is a talented Sales Manager with a deep understanding of market trends and client needs. He is adept at creating modern, responsive solutions that not only meet but exceed client expectations, driving sales growth and client satisfaction.
                         </p>
                         <div className="team-socials">
-                            <a href="https://www.linkedin.com/in/arya-eisa-292710191/" target="_blank"><i className="fab fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/arya-eisa-292710191/" rel="noreferrer"target="_blank"><i className="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
