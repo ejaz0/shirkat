@@ -1,0 +1,15 @@
+[
+    {
+      "image": "path/to/image1.png",
+      "title": "Project One",
+      "description": "Description for project one.",
+      "category": "web"
+    },
+    {
+      "image": "path/to/image2.png",
+      "title": "Project Two",
+      "description": "Description for project two.",
+      "category": "mobile"
+    }
+ 
+  ]
