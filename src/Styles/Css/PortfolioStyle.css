@@ -1,3 +1,4 @@
+/* Existing Portfolio CSS */
 .portfolio-container {
     color: #ffffff;
     min-height: 100vh;
@@ -56,13 +57,35 @@
     color: #ffffff;
 }
 
+.portfolio-filter-container {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
 .portfolio-filter {
-    margin-bottom: 2rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
     font-size: 1rem;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 1rem;
+    border-radius: 10px;
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: 10;
+}
+
+.portfolio-filter.show {
+    display: flex;
 }
 
 .portfolio-filter a {
-    margin: 0 1rem;
+    margin: 0.5rem 0;
     color: #00aaff;
     text-decoration: none;
     transition: color 0.3s;
@@ -74,7 +97,7 @@
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Ensures three columns */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Auto responsive columns */
     gap: 0.5rem; /* Reduced gap to bring items closer */
     justify-content: center; /* Center the grid items */
     max-width: 800px; /* Set a maximum width for the grid */
@@ -131,4 +154,87 @@
     display: flex;
     align-items: center;
     margin-left: 1rem; /* Space between logo and header content */
+}
+
+/* Additions for Mobile Responsiveness */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .portfolio-header h1 {
+        font-size: 2rem;
+    }
+
+    .portfolio-header p {
+        font-size: 1rem;
+    }
+
+    .portfolio-section h1 {
+        font-size: 2rem;
+    }
+
+    .portfolio-filter-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .portfolio-filter {
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        width: 100%;
+        z-index: 9;
+    }
+
+    .portfolio-filter.show {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger.active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .portfolio-header p {
+        font-size: 0.9rem;
+    }
+
+    .portfolio-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .portfolio-item img {
+        max-width: 150px; /* Further reduce max width */
+        max-height: 150px; /* Further reduce max height */
+    }
 }

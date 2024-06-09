@@ -1,3 +1,5 @@
+/* Existing CSS */
+
 .container {
     display: flex;
     flex-direction: column;
@@ -210,8 +212,6 @@
     transition: color 0.1s ease;
 }
 
-
-
 .service-card:hover a {
     color: #f7f7f7 !important; /* Ensures the color change is prioritized */
 }
@@ -230,4 +230,89 @@
 
 .services-button:hover {
     background: #0077cc;
+}
+
+/* Responsive CSS */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 2rem 1rem;
+    }
+
+    .hero-content {
+        max-width: 100%;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .hero-button {
+        font-size: 0.9rem;
+    }
+
+    .hero-graphic {
+        max-width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .hero-graphic img {
+        height: auto;
+        width: 100%;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr; /* Single column layout */
+        gap: 1rem;
+    }
+
+    .service-card {
+        padding: 1.5rem;
+    }
+
+    .services h2 {
+        font-size: 2rem;
+    }
+
+    .services p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content h1 {
+        font-size: 1.5rem;
+    }
+
+    .hero-content p {
+        font-size: 0.9rem;
+    }
+
+    .hero-button {
+        font-size: 0.8rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    .services h2 {
+        font-size: 1.5rem;
+    }
+
+    .services p {
+        font-size: 0.9rem;
+    }
+
+    .service-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .service-card p {
+        font-size: 0.9rem;
+    }
 }

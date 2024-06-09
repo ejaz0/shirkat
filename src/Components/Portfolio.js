@@ -49,6 +49,11 @@ const portfolioData = [
 
 const Portfolio = () => {
     const [selectedCategory, setSelectedCategory] = useState('all');
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
 
     const filteredPortfolioData = selectedCategory === 'all'
         ? portfolioData
@@ -70,13 +75,20 @@ const Portfolio = () => {
             <div className="portfolio-section">
                 <header className="portfolio-header">
                     <h1>Awesome Portfolio</h1>
-                    <div className="portfolio-filter">
-                        <a onClick={() => setSelectedCategory('all')}>All</a>
-                        <a  onClick={() => setSelectedCategory('mobile')}>Mobile Apps</a>
-                        <a  onClick={() => setSelectedCategory('cloud')}>Cloud</a>
-                        <a  onClick={() => setSelectedCategory('data')}>Data Analysis</a>
-                        <a  onClick={() => setSelectedCategory('hosting')}>Hosting</a>
-                        <a  onClick={() => setSelectedCategory('web')}>Web</a>
+                    <div className="portfolio-filter-container">
+                        <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                        <div className={`portfolio-filter ${isMenuOpen ? 'show' : ''}`}>
+                            <a onClick={() => { setSelectedCategory('all'); toggleMenu(); }}>All</a>
+                            <a onClick={() => { setSelectedCategory('mobile'); toggleMenu(); }}>Mobile Apps</a>
+                            <a onClick={() => { setSelectedCategory('cloud'); toggleMenu(); }}>Cloud</a>
+                            <a onClick={() => { setSelectedCategory('data'); toggleMenu(); }}>Data Analysis</a>
+                            <a onClick={() => { setSelectedCategory('hosting'); toggleMenu(); }}>Hosting</a>
+                            <a onClick={() => { setSelectedCategory('web'); toggleMenu(); }}>Web</a>
+                        </div>
                     </div>
                 </header>
                 <div className="portfolio-grid">

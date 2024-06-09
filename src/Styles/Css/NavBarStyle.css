@@ -1,3 +1,4 @@
+/* Existing Navbar CSS */
 nav {
     font-weight: bold;
     color: white;
@@ -7,17 +8,19 @@ nav {
     left: 0;
     z-index: 10;
     display: flex;
-    justify-content: space-between; /* Adjusted for logo */
+    justify-content: space-between;
     align-items: center;
-    transition: background 0.3s ease; /* Smooth transition */
-    padding: 3.5rem; /* Remove top and bottom padding, keep left and right padding */
-    margin: 0; /* Remove any margin */
-    height: 70px; /* Set a fixed height for the navbar */
+    transition: background 0.3s ease;
+    padding: 1rem 2rem;
+    margin: 0;
+    height: 70px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    margin-bottom: 70px; /* Add bottom margin equal to the navbar height */
 }
 
 nav.scrolled {
-    background: rgba(0, 0, 0, 0.2); /* Background when scrolled */
-    backdrop-filter: blur(10px); /* Blur effect */
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
 }
 
 .logo-container {
@@ -26,8 +29,9 @@ nav.scrolled {
 }
 
 .logo {
-    height: 6rem; /* Adjust the size as needed */
-    width: 6rem;
+    height: 4rem;
+    width: auto; /* Maintain aspect ratio */
+    max-width: 100%;
 }
 
 ul {
@@ -71,4 +75,98 @@ a:hover:after {
     width: 100%;
     left: 0;
     background: #f06;
+}
+
+/* Additions for Mobile Responsiveness */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: all 0.3s ease;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    nav {
+        padding: 1rem;
+        margin-bottom: 70px; /* Add bottom margin equal to the navbar height */
+    }
+
+    .logo {
+        height: 3rem; /* Adjust logo size for tablets */
+    }
+
+    ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.9);
+        padding: 1rem;
+        margin: 0;
+        z-index: 9;
+    }
+
+    ul.show {
+        display: flex;
+    }
+
+    li {
+        margin: 1rem 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.active div:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .hamburger.active div:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active div:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+}
+
+/* Optional additional styles */
+@media (max-width: 480px) {
+    a {
+        font-size: 1rem;
+    }
+
+    .logo {
+        height: 2.5rem; /* Adjust logo size for smaller screens */
+    }
+
+    .hamburger {
+        margin-right: 0.5rem;
+    }
+
+    nav {
+        height: auto; /* Ensure the navbar adapts to content height */
+        padding: 1rem;
+        margin-bottom: 70px; /* Add bottom margin equal to the navbar height */
+    }
+
+    ul {
+        top: 70px;
+        width: 100%;
+        padding: 1rem;
+        margin: 0;
+    }
 }
