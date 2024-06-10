@@ -1,4 +1,3 @@
-/* Existing Portfolio CSS */
 .portfolio-container {
     color: #ffffff;
     min-height: 100vh;
@@ -64,28 +63,16 @@
 }
 
 .portfolio-filter {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1rem;
-    font-size: 1rem;
-    background: rgba(0, 0, 0, 0.9);
-    padding: 1rem;
-    border-radius: 10px;
-    width: 100%;
-    position: absolute;
-    top: 50px;
-    left: 0;
-    z-index: 10;
-}
-
-.portfolio-filter.show {
     display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    font-size: 1rem;
+    margin-bottom: 2rem;
 }
 
 .portfolio-filter a {
-    margin: 0.5rem 0;
+    margin: 0.5rem 1rem;
     color: #00aaff;
     text-decoration: none;
     transition: color 0.3s;
@@ -98,10 +85,12 @@
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Auto responsive columns */
-    gap: 0.5rem; /* Reduced gap to bring items closer */
+    gap: 1rem; /* Adjusted gap */
     justify-content: center; /* Center the grid items */
     max-width: 800px; /* Set a maximum width for the grid */
     margin: 0 auto; /* Center the grid container */
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .portfolio-item {
@@ -109,7 +98,20 @@
     padding: 0;
     border-radius: 10px;
     box-shadow: none; /* Remove box shadow */
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 .portfolio-item img {
@@ -157,21 +159,6 @@
 }
 
 /* Additions for Mobile Responsiveness */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    margin-left: 1rem;
-}
-
-.hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 4px 0;
-    transition: all 0.3s ease;
-}
-
 @media (max-width: 768px) {
     .portfolio-header h1 {
         font-size: 2rem;
@@ -185,38 +172,13 @@
         font-size: 2rem;
     }
 
-    .portfolio-filter-container {
-        flex-direction: column;
-        align-items: flex-start;
+    .portfolio-grid {
+        gap: 0.5rem; /* Adjusted gap */
     }
 
-    .portfolio-filter {
-        display: none;
-        position: absolute;
-        top: 50px;
-        right: 0;
-        width: 100%;
-        z-index: 9;
-    }
-
-    .portfolio-filter.show {
-        display: flex;
-    }
-
-    .hamburger {
-        display: flex;
-    }
-
-    .hamburger.active div:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
-    }
-
-    .hamburger.active div:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active div:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
+    .portfolio-item img {
+        max-width: 150px; /* Further reduce max width */
+        max-height: 150px; /* Further reduce max height */
     }
 }
 

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../Styles/Css/PortfolioStyle.css';
 import ThreeDLogo from './ThreeDSuitcase'; // Assuming you have the ThreeDLogo component
 import PortfolioImage1 from '../Styles/Css/images/portfolio/Screenshot 2024-06-08 001123.png';
@@ -49,15 +49,22 @@ const portfolioData = [
 
 const Portfolio = () => {
     const [selectedCategory, setSelectedCategory] = useState('all');
-    const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [displayedItems, setDisplayedItems] = useState(portfolioData);
 
-    const toggleMenu = () => {
-        setIsMenuOpen(!isMenuOpen);
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            const filteredData = selectedCategory === 'all'
+                ? portfolioData
+                : portfolioData.filter(item => item.category === selectedCategory);
+            setDisplayedItems(filteredData);
+        }, 300); // Wait for the fade-out animation to complete
+
+        return () => clearTimeout(timer);
+    }, [selectedCategory]);
+
+    const handleCategoryChange = (category) => {
+        setSelectedCategory(category);
     };
-
-    const filteredPortfolioData = selectedCategory === 'all'
-        ? portfolioData
-        : portfolioData.filter(item => item.category === selectedCategory);
 
     return (
         <div className="portfolio-container">
@@ -65,7 +72,7 @@ const Portfolio = () => {
                 <header className="portfolio-header">
                     <div className="header-content">
                         <h1>Portfolio</h1>
-                        <p>Home / Portfolio</p>
+                        <p><i className="fas fa-home"></i> Home / Portfolio</p>
                     </div>
                     <div className="logo-container">
                         <ThreeDLogo />
@@ -76,23 +83,18 @@ const Portfolio = () => {
                 <header className="portfolio-header">
                     <h1>Awesome Portfolio</h1>
                     <div className="portfolio-filter-container">
-                        <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        <div className={`portfolio-filter ${isMenuOpen ? 'show' : ''}`}>
-                            <a onClick={() => { setSelectedCategory('all'); toggleMenu(); }}>All</a>
-                            <a onClick={() => { setSelectedCategory('mobile'); toggleMenu(); }}>Mobile Apps</a>
-                            <a onClick={() => { setSelectedCategory('cloud'); toggleMenu(); }}>Cloud</a>
-                            <a onClick={() => { setSelectedCategory('data'); toggleMenu(); }}>Data Analysis</a>
-                            <a onClick={() => { setSelectedCategory('hosting'); toggleMenu(); }}>Hosting</a>
-                            <a onClick={() => { setSelectedCategory('web'); toggleMenu(); }}>Web</a>
+                        <div className="portfolio-filter">
+                            <a onClick={() => handleCategoryChange('all')}>All</a>
+                            <a onClick={() => handleCategoryChange('mobile')}>Mobile Apps</a>
+                            <a onClick={() => handleCategoryChange('cloud')}>Cloud</a>
+                            <a onClick={() => handleCategoryChange('data')}>Data Analysis</a>
+                            <a onClick={() => handleCategoryChange('hosting')}>Hosting</a>
+                            <a onClick={() => handleCategoryChange('web')}>Web</a>
                         </div>
                     </div>
                 </header>
                 <div className="portfolio-grid">
-                    {filteredPortfolioData.map((item, index) => (
+                    {displayedItems.map((item, index) => (
                         <div key={index} className="portfolio-item">
                             <img src={item.image} alt={`Portfolio ${index + 1}`} />
                             <h3>{item.title}</h3>

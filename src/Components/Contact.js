@@ -15,7 +15,9 @@ const Contact = () => {
                 <header className="contact-header">
                     <div className="header-content">
                         <h1>Contact Us</h1>
-                        <p>Home / Contact</p>
+                        <p>
+                            <i className="fas fa-home"></i> Home / Contact
+                        </p>
                     </div>
                     <div className="globe-container">
                         <ThreeDGlobe />
@@ -26,10 +28,23 @@ const Contact = () => {
                 <div className="contact-info">
                     <h1>Get in Touch</h1>
                     <p>We'd love to hear from you! Whether you have a question about our services, pricing, need a demo, or anything else, our team is ready to answer all your questions.</p>
-                    <p>Email: contact@consultingfirm.com</p>
-                    <p>Phone: (123) 456-7890</p>
-                    <p>Address: 123 Main Street, City, Country</p>
-                    <button className="contact-button" onClick={toggleForm}>Send Email</button>
+                    <div className="contact-card">
+                        <div className="contact-detail">
+                            <i className="fas fa-envelope"></i>
+                            <div>
+                                <strong>Email:</strong>
+                                <p>contact@consultingfirm.com</p>
+                            </div>
+                        </div>
+                        <div className="contact-detail">
+                            <i className="fas fa-phone"></i>
+                            <div>
+                                <strong>Phone:</strong>
+                                <p>(123) 456-7890</p>
+                            </div>
+                        </div>
+                        <button className="contact-button" onClick={toggleForm}>Send Email</button>
+                    </div>
                 </div>
                 {showForm && (
                     <div className="contact-form-overlay">

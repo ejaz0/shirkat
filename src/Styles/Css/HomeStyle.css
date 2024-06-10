@@ -76,12 +76,15 @@
 .hero-button {
     padding: 1rem 2rem;
     font-size: 1rem;
-    color: #ffffff;
-    background: #00aaff;
-    border: none;
-    border-radius: 25px; /* Rounded corners */
+    color: #00aaff; /* Blue color for the text */
+    background: transparent; /* Transparent background */
+    border: 2px solid #00aaff; /* Blue border */
+    border-top-left-radius: 0;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 0;
     cursor: pointer;
-    transition: background 0.3s ease, box-shadow 0.3s ease;
+    transition: background 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
     box-shadow: 0 4px 10px rgba(0, 170, 255, 0.5);
     display: inline-flex;
     align-items: center;
@@ -89,7 +92,8 @@
 }
 
 .hero-button:hover {
-    background: #0077cc;
+    background: #00aaff;
+    color: #ffffff;
     box-shadow: 0 6px 15px rgba(0, 119, 204, 0.6);
 }
 
@@ -126,11 +130,9 @@
     margin-bottom: 1rem;
     color: #ffffff;
     position: relative;
-   
 }
 
 .services h2::before {
-
     position: absolute;
     left: 0;
     top: 0;
@@ -161,11 +163,6 @@
     color: #ffffff;
 }
 
-.service-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 0 15px rgba(0, 170, 255, 0.8); /* Glowy blue border */
-}
-
 .service-card::before {
     content: '';
     position: absolute;
@@ -182,6 +179,13 @@
 
 .service-card:hover::before {
     transform: scaleX(1);
+    transform-origin: left;
+    animation: expandLeftToRight 0.3s forwards;
+}
+
+.service-card::before {
+    transform-origin: right;
+    animation: collapseRightToLeft 0.3s forwards;
 }
 
 .service-card h3,
@@ -221,7 +225,8 @@
     font-size: 1rem;
     color: #ffffff;
     background: #00aaff;
-    border: none;
+    border: 1px solid  #00aaff;
+    
     border-radius: 5px;
     cursor: pointer;
     margin-top: 2rem;
@@ -229,7 +234,36 @@
 }
 
 .services-button:hover {
-    background: #0077cc;
+    background: #0e1129; /* Match the service card hover background color */
+}
+
+/* Keyframe Animations */
+@keyframes expandLeftToRight {
+    0% {
+        transform: scaleX(0);
+        transform-origin: left;
+    }
+    100% {
+        transform: scaleX(1);
+        transform-origin: left;
+    }
+}
+
+@keyframes collapseRightToLeft {
+    0% {
+        transform: scaleX(1);
+        transform-origin: right;
+    }
+    100% {
+        transform: scaleX(0);
+        transform-origin: right;
+    }
+}
+
+.service-icon {
+    font-size: 2rem; /* Adjust icon size as needed */
+    color: #00aaff; /* Icon color */
+    margin-bottom: 1rem;
 }
 
 /* Responsive CSS */

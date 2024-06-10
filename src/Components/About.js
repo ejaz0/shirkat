@@ -12,7 +12,9 @@ const About = () => {
                 <header className="about-header">
                     <div className="about-text">
                         <h1>About Us</h1>
-                        <p>Home / About</p>
+                        <p>
+                            <i className="fas fa-home"></i> Home / About
+                        </p>
                     </div>
                     <div className="three-d-logo-container">
                         <ThreeDLogo />
@@ -20,7 +22,9 @@ const About = () => {
                 </header>
             </div>
             <div className="about-section">
-                <h1 className="about-title">Our Team</h1>
+                <h1 className="about-title">
+                    Our Team <i className="fas fa-users"></i>
+                </h1>
                 <p className="about-description">
                     We are a team of three dedicated software engineers, each with our own area of expertise. Together, we provide comprehensive IT solutions and services, ensuring that every aspect of your project is handled with the utmost care and professionalism.
                 </p>
@@ -33,7 +37,7 @@ const About = () => {
                             Elvis is a creative leader with a knack for innovative solutions and exceptional client service. As the Technical Manager, he oversees all technical aspects of our projects, ensuring that we deliver high-quality, efficient, and scalable solutions.
                         </p>
                         <div className="team-socials">
-                            <a href="https://www.linkedin.com/in/elvishasanaj/"rel="noreferrer" target="_blank"><i className="fab fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/elvishasanaj/" rel="noreferrer" target="_blank"><i className="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                     <div className="team-member">
@@ -55,7 +59,7 @@ const About = () => {
                             Arya is a talented Sales Manager with a deep understanding of market trends and client needs. He is adept at creating modern, responsive solutions that not only meet but exceed client expectations, driving sales growth and client satisfaction.
                         </p>
                         <div className="team-socials">
-                            <a href="https://www.linkedin.com/in/arya-eisa-292710191/" rel="noreferrer"target="_blank"><i className="fab fa-linkedin"></i></a>
+                            <a href="https://www.linkedin.com/in/arya-eisa-292710191/" rel="noreferrer" target="_blank"><i className="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>
