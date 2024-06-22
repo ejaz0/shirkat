@@ -12,10 +12,20 @@ const portfolioData = [
     {
         image: PortfolioImage1,
         title: 'Connectwork.se',
-        description:`A dynamic platform connecting job seekers with employers. We created their logo and built an engaging website.`,
+        description: `A dynamic platform connecting job seekers with employers. We created their logo and built an engaging website.`,
         category: 'web',
     },
-   
+    // Add more portfolio items as needed
+];
+
+const testimonials = [
+    {
+        id: 1,
+        name: 'Hassan owner of ConnectWork',
+        text: 'Working with threesoft was a great experience. They delivered our project on time and exceeded our expectations.',
+    },
+    
+    // Add more testimonials as needed
 ];
 
 const Portfolio = () => {
@@ -54,7 +64,7 @@ const Portfolio = () => {
                 <header className="portfolio-header">
                     <h1>Our Portfolio</h1>
                     <div className="portfolio-filter-container">
-               
+                        {/* Filter controls can be added here */}
                     </div>
                 </header>
                 <div className="portfolio-grid">
@@ -67,6 +77,19 @@ const Portfolio = () => {
                     ))}
                 </div>
                 <a className="see-more-button" href="#">See More</a>
+            </div>
+            <div className="testimonial-section">
+                <header className="portfolio-header">
+                    <h1>Testimonials</h1>
+                </header>
+                <div className="testimonial-grid">
+                    {testimonials.map((testimonial) => (
+                        <div key={testimonial.id} className="testimonial-item">
+                            <p className="testimonial-text">"{testimonial.text}"</p>
+                            <p className="testimonial-name">- {testimonial.name}</p>
+                        </div>
+                    ))}
+                </div>
             </div>
         </div>
     );
