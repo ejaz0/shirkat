@@ -1,4 +1,3 @@
-/* Existing Contact CSS */
 .contact-container {
     color: #ffffff;
     min-height: 100vh;
@@ -51,6 +50,9 @@
     flex: 1;
     text-align: center;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .contact-info {
@@ -69,57 +71,6 @@
     color: #cccccc;
 }
 
-.contact-card {
-    background: #0e1129;
-    padding: 2rem;
-    border: 1px solid rgba(0, 106, 255, 0.9); /* Light blue border */
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 170, 255, 0.5);
-    display: inline-block;
-    text-align: left;
-}
-
-.contact-detail {
-    display: flex;
-    align-items: center;
-    margin-bottom: 1rem;
-}
-
-.contact-detail i {
-    font-size: 1.5rem;
-    color: #00aaff;
-    margin-right: 1rem;
-}
-
-.contact-button {
-    padding: 1rem 2rem;
-    font-size: 1rem;
-    color: #ffffff;
-    background: transparent;
-    border: 2px solid #00aaff;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background 0.3s ease, color 0.3s ease;
-}
-
-.contact-button:hover {
-    background: #00aaff;
-    color: #ffffff;
-}
-
-.contact-form-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-}
-
 .contact-form {
     background: #0e1129;
     padding: 2rem;
@@ -127,13 +78,20 @@
     width: 90%;
     max-width: 31.25rem;
     text-align: left;
-    position: relative;
     box-shadow: 0 0.25rem 0.625rem rgba(0, 170, 255, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form content */
 }
 
 .contact-form h2 {
     margin-bottom: 1rem;
     color: #00aaff;
+    text-align: center; /* Center the heading */
+}
+
+.contact-form p {
+    text-align: center; /* Center the paragraph */
 }
 
 .contact-form input,
@@ -175,20 +133,6 @@
 
 .send-button:hover {
     background: #0077cc;
-}
-
-.close-button {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #00aaff;
-    transition: color 0.3s ease;
-}
-
-.close-button:hover {
-    color: #0077cc;
 }
 
 .globe-container {
