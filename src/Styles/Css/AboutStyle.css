@@ -23,6 +23,8 @@
     grid-template-columns: 1fr auto; /* Align text and logo in columns */
     align-items: center;
     gap: 1rem;
+    margin-top: 2rem; /* Add margin bottom to create space */
+
 }
 
 .about-text {
@@ -72,7 +74,7 @@
 
 .team-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 2rem;
 }
 
@@ -119,6 +121,10 @@
     color: #cccccc;
 }
 
+.team-socials {
+    margin-top: 1rem;
+}
+
 .team-socials a {
     color: #ffffff;
     margin: 0 0.5rem;
@@ -127,4 +133,100 @@
 
 .team-socials a:hover {
     color: #00aaff;
+}
+
+/* Media Queries for Tablet Responsiveness */
+@media (max-width: 768px) {
+    .about-header-container {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .about-header h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-header p {
+        font-size: 1rem;
+    }
+
+    .about-section {
+        padding: 1rem;
+    }
+
+    .about-section h1 {
+        font-size: 2rem;
+    }
+
+    .about-description {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    .team-member {
+        min-height: auto;
+        padding: 1.5rem;
+    }
+
+    .team-photo {
+        width: 80px;
+        height: 80px;
+    }
+
+    .team-name {
+        font-size: 1.2rem;
+    }
+
+    .team-role {
+        font-size: 0.9rem;
+    }
+
+    .team-bio {
+        font-size: 0.9rem;
+    }
+}
+
+/* Media Queries for Mobile Responsiveness */
+@media (max-width: 480px) {
+    .about-header h1 {
+        font-size: 2rem;
+    }
+
+    .about-header p {
+        font-size: 0.9rem;
+    }
+
+    .about-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .about-description {
+        font-size: 0.9rem;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .team-member {
+        padding: 1rem;
+    }
+
+    .team-photo {
+        width: 60px;
+        height: 60px;
+    }
+
+    .team-name {
+        font-size: 1.1rem;
+    }
+
+    .team-role {
+        font-size: 0.8rem;
+    }
+
+    .team-bio {
+        font-size: 0.8rem;
+    }
 }

@@ -260,12 +260,15 @@
     .hero {
         flex-direction: column;
         padding: 2rem 1rem;
+        
     }
 
     .hero-content {
         max-width: 100%;
         text-align: center;
-        margin-bottom: 2rem;
+        margin-top: 5rem; /* Add margin bottom to create space */
+
+
     }
 
     .hero-content h1 {
@@ -281,14 +284,13 @@
     }
 
     .hero-graphic {
-        max-width: 100%;
-        height: auto;
-        justify-content: center;
+        display: block; /* Change from flex to block for full-width image */
+        text-align: center; /* Center align the image */
     }
 
     .hero-graphic img {
-        height: auto;
-        width: 100%;
+        max-width: 50%; /* Ensure the image takes full width of the container */
+        height: auto; /* Maintain aspect ratio */
     }
 
     .services-grid {
@@ -312,6 +314,7 @@
 @media (max-width: 480px) {
     .hero-content h1 {
         font-size: 1.5rem;
+        
     }
 
     .hero-content p {

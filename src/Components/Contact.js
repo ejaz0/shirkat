@@ -39,9 +39,8 @@ const ContactForm = () => {
                 <header className="contact-header">
                     <div className="header-content">
                         <h1>Contact Us</h1>
-                        <p>
-                            <i className="fas fa-home"></i> Home / Contact
-                        </p>
+                        <p>We'd love to hear from you! Whether you have a question about our services, pricing, need a demo, or anything else, our team is ready to answer all your questions.</p>
+
                     </div>
                     <div className="globe-container">
                         <ThreeDGlobe />
@@ -51,7 +50,6 @@ const ContactForm = () => {
             <div className="contact-section">
                 <div className="contact-info">
                     <h1>Get in Touch</h1>
-                    <p>We'd love to hear from you! Whether you have a question about our services, pricing, need a demo, or anything else, our team is ready to answer all your questions.</p>
                 </div>
                 <div className="contact-form">
                     <h2>Send Us a Message</h2>

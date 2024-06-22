@@ -13,7 +13,8 @@ const About = () => {
                     <div className="about-text">
                         <h1>About Us</h1>
                         <p>
-                            <i className="fas fa-home"></i> Home / About
+                        We are a team of three dedicated software engineers, each with our own area of expertise, committed to providing top-notch IT solutions. We specialize in creating custom websites that cater to your specific needs, from initial concept and design to full development and deployment. Our services include logo design, UX/UI design, and complete website creation, ensuring a seamless and professional online presence. Beyond development, we offer ongoing maintenance and updates to keep your website running smoothly and effectively, allowing you to focus on your business while we handle the technical details.
+
                         </p>
                     </div>
                     <div className="three-d-logo-container">
@@ -26,27 +27,34 @@ const About = () => {
                     Our Team <i className="fas fa-users"></i>
                 </h1>
                 <p className="about-description">
-                    We are a team of three dedicated software engineers, each with our own area of expertise. Together, we provide comprehensive IT solutions and services, ensuring that every aspect of your project is handled with the utmost care and professionalism.
-                </p>
+
+</p>
                 <div className="team-grid">
                     <div className="team-member">
                         <img src={elvisH} alt="Elvis Hasanaj" className="team-photo" />
                         <h2 className="team-name">Elvis Hasanaj</h2>
 
                         <p className="team-bio">
-                            Elvis is a creative leader with a knack for innovative solutions and exceptional client service. As the Technical Manager, he oversees all technical aspects of our projects, ensuring that we deliver high-quality, efficient, and scalable solutions.
-                        </p>
+                        Elvis is a dedicated programmer with a strong foundation in software engineering, driven by a passion for technology and innovation. His expertise lies in designing and implementing advanced solutions that exceed expectations. With a keen focus on detail and a knack for solving complex technical challenges, Elvis ensures every project is crafted with precision and scalability in mind.
+
+
+
+
+
+
+</p>
                         <div className="team-socials">
                             <a href="https://www.linkedin.com/in/elvishasanaj/" rel="noreferrer" target="_blank"><i className="fab fa-linkedin"></i></a>
                         </div>
                     </div>
                     <div className="team-member">
                         <img src={rashedRafa} alt="Rashed Rafa" className="team-photo" />
-                        <h2 className="team-name">Rashed Rafa</h2>
+                        <h2 className="team-name">Rashad Rafa</h2>
                       
                         <p className="team-bio">
-                            Rashed is our dynamic Project Manager who excels at building strong client relationships and driving project success. His expertise in project management ensures that our projects are delivered on time, within scope, and meet the highest standards of quality.
-                        </p>
+                        Rashad has a rich background in UX/UI design, having honed his skills from a young age. His passion for design is complemented by his software engineering expertise and experience in project management. Rashad excels at building strong client relationships and driving project success. His multifaceted skill set ensures that projects are delivered on time, within scope, and meet the highest standards of quality.
+
+</p>
                         <div className="team-socials">
                             <a href="https://www.linkedin.com/in/rashad-rafa-a7b665203/" rel="noreferrer" target="_blank"><i className="fab fa-linkedin"></i></a>
                         </div>
@@ -56,8 +64,9 @@ const About = () => {
                         <h2 className="team-name">Arya Eisa</h2>
                      
                         <p className="team-bio">
-                            Arya is a talented Sales Manager with a deep understanding of market trends and client needs. He is adept at creating modern, responsive solutions that not only meet but exceed client expectations, driving sales growth and client satisfaction.
-                        </p>
+                        Arya is a seasoned professional with a robust background in both business management and software engineering. Having successfully run companies, he brings a wealth of experience in understanding market trends and client needs. Arya excels in creating modern, responsive solutions that not only meet but exceed client expectations. His unique blend of business acumen and technical expertise drives sales growth and ensures exceptional client satisfaction.
+
+</p>
                         <div className="team-socials">
                             <a href="https://www.linkedin.com/in/arya-eisa-292710191/" rel="noreferrer" target="_blank"><i className="fab fa-linkedin"></i></a>
                         </div>
