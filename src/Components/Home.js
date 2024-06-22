@@ -11,7 +11,8 @@ const Home = () => {
                         <h1>ThreeSoft</h1>
                         <h1>Providing The Best Services & IT Solutions</h1>
                         <p>Learn more about our expert, consumer-advising skills. Get solutions delivered by experts with adaptive strategies.</p>
-                        <button className="hero-button">Learn More</button>
+                        
+                        <button className="hero-button">Contact Us</button>
                     </div>
                     <div className="hero-graphic">
                         <img src={HeroImage} alt="Hero Graphic" />
