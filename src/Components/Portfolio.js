@@ -52,12 +52,10 @@ const Portfolio = () => {
             <div className="portfolio-header-container">
                 <header className="portfolio-header">
                     <div className="header-content">
-                        <h1>Portfolio</h1>
-                        <p><i className="fas fa-home"></i> Home / Portfolio</p>
+                        <h1>Welcome to Our Portfolio</h1>
+                        <p>Discover our latest projects showcasing our expertise in web development, design, and more. Each project reflects our commitment to quality and innovation.</p>
                     </div>
-                    <div className="logo-container">
-                        <ThreeDLogo />
-                    </div>
+                   
                 </header>
             </div>
             <div className="portfolio-section">
