@@ -23,30 +23,30 @@ nav.scrolled {
     backdrop-filter: blur(10px);
 }
 
-.logo-container {
+nav .logo-container {
     display: flex;
     align-items: center;
 }
 
-.logo {
+nav .logo {
     height: 4rem;
     width: auto; /* Maintain aspect ratio */
     max-width: 100%;
 }
 
-ul {
+nav ul {
     display: flex;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-li {
+nav li {
     margin: 0 1rem;
 }
 
-a {
-    color: #d73232;
+nav a {
+    color: #ffffff;
     text-decoration: none;
     font-size: 1.2rem;
     position: relative;
@@ -55,7 +55,7 @@ a {
     -moz-osx-font-smoothing: grayscale;
 }
 
-a:after {
+nav a:after {
     content: '';
     position: absolute;
     width: 0;
@@ -67,25 +67,25 @@ a:after {
     transition: width 0.4s ease;
 }
 
-a:hover {
+nav a:hover {
     color: #f06;
 }
 
-a:hover:after {
+nav a:hover:after {
     width: 100%;
     left: 0;
     background: #f06;
 }
 
 /* Additions for Mobile Responsiveness */
-.hamburger {
+nav .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
     margin-right: 1rem;
 }
 
-.hamburger div {
+nav .hamburger div {
     width: 25px;
     height: 3px;
     background-color: white;
@@ -100,11 +100,11 @@ a:hover:after {
         margin-bottom: 70px; /* Add bottom margin equal to the navbar height */
     }
 
-    .logo {
+    nav .logo {
         height: 3rem; /* Adjust logo size for tablets */
     }
 
-    ul {
+    nav ul {
         display: none;
         flex-direction: column;
         position: absolute;
@@ -117,43 +117,43 @@ a:hover:after {
         z-index: 9;
     }
 
-    ul.show {
+    nav ul.show {
         display: flex;
     }
 
-    li {
+    nav li {
         margin: 1rem 0;
         text-align: center;
     }
 
-    .hamburger {
+    nav .hamburger {
         display: flex;
     }
 
-    .hamburger.active div:nth-child(1) {
+    nav .hamburger.active div:nth-child(1) {
         transform: rotate(-45deg) translate(-5px, 6px);
     }
 
-    .hamburger.active div:nth-child(2) {
+    nav .hamburger.active div:nth-child(2) {
         opacity: 0;
     }
 
-    .hamburger.active div:nth-child(3) {
+    nav .hamburger.active div:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -6px);
     }
 }
 
 /* Optional additional styles */
 @media (max-width: 480px) {
-    a {
+    nav a {
         font-size: 1rem;
     }
 
-    .logo {
+    nav .logo {
         height: 2.5rem; /* Adjust logo size for smaller screens */
     }
 
-    .hamburger {
+    nav .hamburger {
         margin-right: 0.5rem;
     }
 
@@ -163,7 +163,7 @@ a:hover:after {
         margin-bottom: 70px; /* Add bottom margin equal to the navbar height */
     }
 
-    ul {
+    nav ul {
         top: 70px;
         width: 100%;
         padding: 1rem;

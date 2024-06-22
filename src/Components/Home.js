@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import '../Styles/Css/HomeStyle.css';
 import HeroImage from '../Styles/Css/images/Remove-bg.ai_1717774002262.png';
 
@@ -12,7 +13,8 @@ const Home = () => {
                         <h1>Providing The Best Services & IT Solutions</h1>
                         <p>Learn more about our expert, consumer-advising skills. Get solutions delivered by experts with adaptive strategies.</p>
                         
-                        <button className="hero-button">Contact Us</button>
+                        <Link to="/contact" className="hero-button">Contact Us</Link>
+
                     </div>
                     <div className="hero-graphic">
                         <img src={HeroImage} alt="Hero Graphic" />
@@ -41,7 +43,7 @@ const Home = () => {
                         <i className="fas fa-wrench service-icon"></i> {/* Changed icon */}
                         <h3>Web Maintenance</h3>
                         <p>Ensure your website runs smoothly and efficiently with our comprehensive web maintenance services.</p>
-                        <a href="#">Read More &rarr;</a>
+                        
                     </div>
                     <div className="service-card">
                         <i className="fas fa-paint-brush service-icon"></i> {/* Changed icon */}
