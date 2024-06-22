@@ -117,8 +117,8 @@
 .portfolio-item img {
     width: 100%;
     height: auto;
-    max-width: 200px; /* Reduced max width */
-    max-height: 200px; /* Reduced max height */
+    max-width: 300px; /* Increase max width for larger images */
+    max-height: 300px; /* Increase max height for larger images */
     border-radius: 10px;
     transition: box-shadow 0.3s ease;
     margin: 0 auto; /* Center align */
@@ -177,8 +177,8 @@
     }
 
     .portfolio-item img {
-        max-width: 150px; /* Further reduce max width */
-        max-height: 150px; /* Further reduce max height */
+        max-width: 200px; /* Further reduce max width for smaller screens */
+        max-height: 200px; /* Further reduce max height for smaller screens */
     }
 }
 
@@ -196,7 +196,7 @@
     }
 
     .portfolio-item img {
-        max-width: 150px; /* Further reduce max width */
-        max-height: 150px; /* Further reduce max height */
+        max-width: 150px; /* Further reduce max width for mobile */
+        max-height: 150px; /* Further reduce max height for mobile */
     }
 }
