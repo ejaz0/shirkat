@@ -114,8 +114,10 @@
 }
 
 .contact-form textarea {
-    resize: vertical;
-    height: 9.375rem;
+    resize: none; /* Disable resizing */
+    height: 9.375rem; /* Fixed height */
+    min-height: 9.375rem; /* Ensure min-height is the same */
+    max-height: 9.375rem; /* Ensure max-height is the same */
 }
 
 .send-button {
