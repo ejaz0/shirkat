@@ -32,7 +32,7 @@ const About = () => {
                     <div className="team-member">
                         <img src={elvisH} alt="Elvis Hasanaj" className="team-photo" />
                         <h2 className="team-name">Elvis Hasanaj</h2>
-                        <p className="team-role">Technical Manager</p>
+
                         <p className="team-bio">
                             Elvis is a creative leader with a knack for innovative solutions and exceptional client service. As the Technical Manager, he oversees all technical aspects of our projects, ensuring that we deliver high-quality, efficient, and scalable solutions.
                         </p>
@@ -43,7 +43,7 @@ const About = () => {
                     <div className="team-member">
                         <img src={rashedRafa} alt="Rashed Rafa" className="team-photo" />
                         <h2 className="team-name">Rashed Rafa</h2>
-                        <p className="team-role">Project Manager</p>
+                      
                         <p className="team-bio">
                             Rashed is our dynamic Project Manager who excels at building strong client relationships and driving project success. His expertise in project management ensures that our projects are delivered on time, within scope, and meet the highest standards of quality.
                         </p>
@@ -54,7 +54,7 @@ const About = () => {
                     <div className="team-member">
                         <img src={aryaEisa} alt="Arya Eisa" className="team-photo" />
                         <h2 className="team-name">Arya Eisa</h2>
-                        <p className="team-role">Sales Manager</p>
+                     
                         <p className="team-bio">
                             Arya is a talented Sales Manager with a deep understanding of market trends and client needs. He is adept at creating modern, responsive solutions that not only meet but exceed client expectations, driving sales growth and client satisfaction.
                         </p>

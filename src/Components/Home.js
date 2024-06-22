@@ -37,9 +37,15 @@ const Home = () => {
                         <a href="#">Read More &rarr;</a>
                     </div>
                     <div className="service-card">
-                        <i className="fas fa-chart-bar service-icon"></i>
-                        <h3>Web Maintance</h3>
+                        <i className="fas fa-wrench service-icon"></i> {/* Changed icon */}
+                        <h3>Web Maintenance</h3>
                         <p>Ensure your website runs smoothly and efficiently with our comprehensive web maintenance services.</p>
+                        <a href="#">Read More &rarr;</a>
+                    </div>
+                    <div className="service-card">
+                        <i className="fas fa-paint-brush service-icon"></i> {/* Changed icon */}
+                        <h3>UX/UI Design</h3>
+                        <p>Create intuitive and engaging user experiences with our expert UX/UI design services.</p>
                         <a href="#">Read More &rarr;</a>
                     </div>
                 </div>
