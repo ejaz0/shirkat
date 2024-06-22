@@ -31,8 +31,9 @@ const NavBar = () => {
     return (
         <nav>
             <div className="logo-container">
-                <img src={ThreeSoftLogo} alt="ThreeSoft Logo" className="logo" />
-            </div>
+            <Link to="/">
+                    <img src={ThreeSoftLogo} alt="ThreeSoft Logo" className="logo" />
+                </Link>            </div>
             <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
                 <div></div>
                 <div></div>
