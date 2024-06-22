@@ -98,8 +98,7 @@
 }
 
 .hero-button::after {
-    content: '\f144'; /* Unicode for play icon */
-    font-family: 'Font Awesome 5 Free'; /* Ensure you have Font Awesome included */
+ 
     font-weight: 900;
     margin-left: 0.5rem;
 }
