@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import '../Styles/Css/PortfolioDetails.css'; // Ensure the path is correct
+
+// Import images
 import CWImage1 from '../Styles/Css/images/portfolio/ConnectWork/Homepage.png';
 import CWImage2 from '../Styles/Css/images/portfolio/ConnectWork/employeers.png';
 import CWImage3 from '../Styles/Css/images/portfolio/ConnectWork/Jobboard.png';
@@ -14,7 +16,7 @@ const PortfolioDetail = () => {
         1: {
             title: "Connectwork.se",
             description: "A dynamic platform connecting job seekers with employers. We created their logo and built an engaging website.",
-            details: "Detailed information about Connectwork.se project...",
+            details: "At Threesoft, we take pride in bringing ideas to life. We conceived ConnectWork from inception, starting with a simple Figma prototype and crafting its unique identity, including logo design and comprehensive web development. Our journey culminated in delivering ConnectWork—a dynamic platform where job seekers and employers seamlessly connect. ",
             images: [CWImage1, CWImage2, CWImage3, CWImage4]
         },
         // Add more portfolio items as needed
@@ -37,12 +39,10 @@ const PortfolioDetail = () => {
         );
     };
 
-    // Prepare main image and slideshow images
-    let mainImage;
+    // Prepare slideshow images
     let subImages;
 
     if (id === '1' && portfolio.images) {
-        mainImage = <img src={CWImage1} alt="Connectwork.se Homepage" className="portfolio-image" />;
         subImages = (
             <div className="portfolio-subcontent">
                 {portfolio.images.map((image, index) => (
@@ -61,15 +61,10 @@ const PortfolioDetail = () => {
             </div>
         );
     } else {
-        mainImage = <img src="https://via.placeholder.com/800x400" alt="Service" className="portfolio-image" />;
+        // Default placeholder or error handling if id doesn't match
         subImages = (
             <div className="portfolio-subcontent">
-                <div className="portfolio-subimage-wrapper">
-                    <img src="https://via.placeholder.com/400x200" alt="Subcontent 1" className="portfolio-subimage" />
-                </div>
-                <div className="portfolio-subimage-wrapper">
-                    <img src="https://via.placeholder.com/400x200" alt="Subcontent 2" className="portfolio-subimage" />
-                </div>
+                <p>No images found for this project.</p>
             </div>
         );
     }
@@ -86,7 +81,9 @@ const PortfolioDetail = () => {
             </div>
             <div className="portfolio-content">
                 <div className="portfolio-main">
-                    {mainImage}
+                    <h2>Project Details</h2>
+                    <p>{portfolio.details}</p>
+                    {subImages}
                     <div className="portfolio-controls">
                         <button onClick={handlePrev} className="control-btn prev-btn">
                             Prev
@@ -95,9 +92,6 @@ const PortfolioDetail = () => {
                             Next
                         </button>
                     </div>
-                    <h2>Project Details</h2>
-                    <p>{portfolio.details}</p>
-                    {subImages}
                 </div>
                 <aside className="portfolio-sidebar">
                     <div className="portfolio-list">
@@ -113,9 +107,9 @@ const PortfolioDetail = () => {
                     <div className="portfolio-follow">
                         <h3>Follow Us</h3>
                         <div className="social-icons">
-                        <a href="https://www.linkedin.com/company/threesoft/" target="_blank" rel="noopener noreferrer">
-                             <i className="fab fa-linkedin"></i>
-                        </a>
+                            <a href="https://www.linkedin.com/company/threesoft/" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-linkedin"></i>
+                            </a>
                         </div>
                     </div>
                 </aside>
