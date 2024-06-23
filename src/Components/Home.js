@@ -29,7 +29,7 @@ const Home = () => {
                         <i className="fas fa-code service-icon"></i>
                         <h3>Web Development</h3>
                         <p>High-quality web development services using modern technologies.</p>
-                        <a href="#">Read More &rarr;</a>
+                        <Link to="/service/1">Read More &rarr;</Link>
                     </div>
                   
                   
@@ -37,19 +37,19 @@ const Home = () => {
                         <i className="fas fa-search service-icon"></i>
                         <h3>SEO Services</h3>
                         <p>Effective SEO strategies to improve your website's search engine rankings.</p>
-                        <a href="#">Read More &rarr;</a>
+                        <Link to="/service/2">Read More &rarr;</Link>
                     </div>
                     <div className="service-card">
                         <i className="fas fa-wrench service-icon"></i> {/* Changed icon */}
                         <h3>Web Maintenance</h3>
                         <p>Ensure your website runs smoothly and efficiently with our comprehensive web maintenance services.</p>
-                        <a href="#">Read More &rarr;</a>
+                        <Link to="/service/3">Read More &rarr;</Link>
                     </div>
                     <div className="service-card">
                         <i className="fas fa-paint-brush service-icon"></i> {/* Changed icon */}
                         <h3>UX/UI Design</h3>
                         <p>Create intuitive and engaging user experiences with our expert UX/UI design services.</p>
-                        <a href="#">Read More &rarr;</a>
+                        <Link to="/service/4">Read More &rarr;</Link>
                     </div>
                 </div>
                 <button className="services-button">See All Services</button>
