@@ -13,8 +13,9 @@
 
 .hero {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
+ 
     padding: 4rem 2rem;
     background: linear-gradient(135deg, #0e1d34, #1e3c72, #301860); /* Gradient color */
     color: #ffffff;
@@ -36,8 +37,8 @@
 .hero-content h1 {
     font-size: 3rem;
     margin-bottom: 1rem;
-    color: #00aaff;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow effect */
+    color: #ffffff;
+ 
 }
 
 .hero-content p {
