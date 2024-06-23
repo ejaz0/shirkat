@@ -52,7 +52,7 @@ const Home = () => {
                         <Link to="/service/4">Read More &rarr;</Link>
                     </div>
                 </div>
-                <button className="services-button">See All Services</button>
+          
             </section>
         </div>
     );
