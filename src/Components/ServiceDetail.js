@@ -97,7 +97,9 @@ const ServiceDetail = () => {
                     <div className="service-follow">
                         <h3>Follow Us</h3>
                         <div className="social-icons">
-                            <i className="fab fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/company/threesoft" target="_blank" rel="noopener noreferrer">
+                                <i className="fab fa-linkedin"></i>
+                            </a>
                         </div>
                     </div>
                 </aside>
