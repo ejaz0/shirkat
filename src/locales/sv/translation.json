@@ -103,7 +103,37 @@
           "serviceNotFound": "Tjänsten kunde inte hittas",
           "listOfServices": "Lista över tjänster",
           "followUs": "Följ oss"
-        }
+        },
+        
+          "portfolio": {
+    "welcomeHeader": {
+      "title": "Välkommen till vår portfölj",
+      "description": "Upptäck våra senaste projekt som visar vår expertis inom webbutveckling, design och mer. Varje projekt speglar vår förpliktelse till kvalitet och innovation."
+    },
+    "portfolioHeader": {
+      "title": "Vår portfölj"
+    },
+    "seeMoreButton": "Se mer",
+    "testimonialsHeader": {
+      "title": "Referenser"
+    },
+    "items": [
+      {
+        "id": 1,
+        "title": "Connectwork.se",
+        "description": "En dynamisk plattform som kopplar samman arbetssökande med arbetsgivare. Vi skapade deras logotyp och byggde en engagerande webbplats.",
+        "category": "web"
       }
+    ],
+    "testimonials": [
+      {
+        "id": 1,
+        "name": "Hassan, ägare av ConnectWork",
+        "text": "Att arbeta med Threesoft var en fantastisk upplevelse. De levererade vårt projekt i tid och överträffade våra förväntningar."
+      }
+    ]
+  }
+}
+          
       
   

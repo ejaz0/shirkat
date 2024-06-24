@@ -101,7 +101,36 @@
           "serviceNotFound": "Service not found",
           "listOfServices": "List Of Services",
           "followUs": "Follow Us"
-        }
-      }
+        },
+            "portfolio": {
+              "welcomeHeader": {
+                "title": "Welcome to Our Portfolio",
+                "description": "Discover our latest projects showcasing our expertise in web development, design, and more. Each project reflects our commitment to quality and innovation."
+              },
+              "portfolioHeader": {
+                "title": "Our Portfolio"
+              },
+              "seeMoreButton": "See More",
+              "testimonialsHeader": {
+                "title": "Testimonials"
+              },
+              "items": [
+                {
+                  "id": 1,
+                  "title": "Connectwork.se",
+                  "description": "A dynamic platform connecting job seekers with employers. We created their logo and built an engaging website.",
+                  "category": "web"
+                }
+              ],
+              "testimonials": [
+                {
+                  "id": 1,
+                  "name": "Hassan owner of ConnectWork",
+                  "text": "Working with threesoft was a great experience. They delivered our project on time and exceeded our expectations."
+                }
+              ]
+            }
+          }
+          
       
   

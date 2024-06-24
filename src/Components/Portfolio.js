@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import '../Styles/Css/PortfolioStyle.css';
 import PortfolioImage1 from '../Styles/Css/images/portfolio/Connectwork.png';
 import PortfolioImage2 from '../Styles/Css/images/portfolio/Screenshot 2024-06-08 001130.png';
@@ -8,40 +9,28 @@ import PortfolioImage4 from '../Styles/Css/images/portfolio/Screenshot 2024-06-0
 import PortfolioImage5 from '../Styles/Css/images/portfolio/Screenshot 2024-06-08 001142.png';
 import PortfolioImage6 from '../Styles/Css/images/portfolio/Screenshot 2024-06-08 001146.png';
 
-const portfolioData = [
-    {
-        id: 1,
-        image: PortfolioImage1,
-        title: 'Connectwork.se',
-        description: `A dynamic platform connecting job seekers with employers. We created their logo and built an engaging website.`,
-        category: 'web',
-    },
-    // Add more portfolio items as needed
-];
-
-const testimonials = [
-    {
-        id: 1,
-        name: 'Hassan owner of ConnectWork',
-        text: 'Working with threesoft was a great experience. They delivered our project on time and exceeded our expectations.',
-    },
-    // Add more testimonials as needed
-];
-
 const Portfolio = () => {
+    const { t } = useTranslation();
+
+    // Define portfolio items with translations
+    const portfolioData = [
+        {
+            id: 1,
+            image: PortfolioImage1,
+            title: t('portfolio.items.0.title'),
+            description: t('portfolio.items.0.description'),
+            category: 'web',
+        },
+        // Add more portfolio items as needed
+    ];
+
     const [selectedCategory, setSelectedCategory] = useState('all');
-    const [displayedItems, setDisplayedItems] = useState(portfolioData);
+    const [displayedItems, setDisplayedItems] = useState([]);
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            const filteredData = selectedCategory === 'all'
-                ? portfolioData
-                : portfolioData.filter(item => item.category === selectedCategory);
-            setDisplayedItems(filteredData);
-        }, 300); // Wait for the fade-out animation to complete
-
-        return () => clearTimeout(timer);
-    }, [selectedCategory]);
+        // Simulated API call or data loading
+        setDisplayedItems(portfolioData);
+    }, []);
 
     const handleCategoryChange = (category) => {
         setSelectedCategory(category);
@@ -52,14 +41,14 @@ const Portfolio = () => {
             <div className="portfolio-header-container">
                 <header className="portfolio-header">
                     <div className="header-content">
-                        <h1>Welcome to Our Portfolio</h1>
-                        <p>Discover our latest projects showcasing our expertise in web development, design, and more. Each project reflects our commitment to quality and innovation.</p>
+                        <h1>{t('portfolio.welcomeHeader.title')}</h1>
+                        <p>{t('portfolio.welcomeHeader.description')}</p>
                     </div>
                 </header>
             </div>
             <div className="portfolio-section">
                 <header className="portfolio-header">
-                    <h1>Our Portfolio</h1>
+                    <h1>{t('portfolio.portfolioHeader.title')}</h1>
                     <div className="portfolio-filter-container">
                         {/* Filter controls can be added here */}
                     </div>
@@ -75,14 +64,16 @@ const Portfolio = () => {
                         </div>
                     ))}
                 </div>
-                <a className="see-more-button" href="#">See More</a>
+                <a className="see-more-button" href="#">
+                    {t('portfolio.seeMoreButton')}
+                </a>
             </div>
             <div className="testimonial-section">
                 <header className="portfolio-header">
-                    <h1>Testimonials</h1>
+                    <h1>{t('portfolio.testimonialsHeader.title')}</h1>
                 </header>
                 <div className="testimonial-grid">
-                    {testimonials.map((testimonial) => (
+                    {t('portfolio.testimonials', { returnObjects: true }).map((testimonial) => (
                         <div key={testimonial.id} className="testimonial-item">
                             <p className="testimonial-text">"{testimonial.text}"</p>
                             <p className="testimonial-name">- {testimonial.name}</p>
