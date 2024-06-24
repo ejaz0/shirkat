@@ -1,29 +1,48 @@
 {
     "about": {
       "title": "Om oss",
-      "description": "Vi är ett team av tre dedikerade mjukvaruingenjörer, var och en med sitt eget expertområde, som är engagerade i att leverera förstklassiga IT-lösningar. Vi specialiserar oss på att skapa anpassade webbplatser som tillgodoser dina specifika behov, från initial koncept och design till full utveckling och driftsättning. Våra tjänster inkluderar logotypdesign, UX/UI-design och komplett webbplatsskapande, vilket säkerställer en sömlös och professionell online-närvaro. Utöver utveckling erbjuder vi kontinuerligt underhåll och uppdateringar för att hålla din webbplats igång smidigt och effektivt, så att du kan fokusera på ditt företag medan vi hanterar de tekniska detaljerna.",
+      "description": "Vi är ett team av tre dedikerade mjukvaruingenjörer, var och en med sitt eget expertområde, som är engagerade i att leverera förstklassiga IT-lösningar...",
       "team_title": "Vårt team",
       "team_members": {
         "elvis": {
-          "bio": "Elvis är en dedikerad programmerare med en stark grund i mjukvaruteknik, driven av en passion för teknik och innovation. Hans expertis ligger i att designa och implementera avancerade lösningar som överträffar förväntningarna. Med en skarp fokus på detaljer och en förmåga att lösa komplexa tekniska utmaningar säkerställer Elvis att varje projekt utformas med precision och skalbarhet i åtanke."
+          "bio": "Elvis är en dedikerad programmerare med en stark grund i mjukvaruteknik, driven av en passion för teknik och innovation..."
         },
         "rashad": {
-          "bio": "Rashad har en rik bakgrund inom UX/UI-design och har finslipat sina färdigheter från unga år. Hans passion för design kompletteras av hans expertis inom mjukvaruteknik och erfarenhet av projektledning. Rashad utmärker sig i att bygga starka kundrelationer och driva projekt till framgång. Hans mångsidiga färdigheter säkerställer att projekten levereras i tid, inom ramen och uppfyller de högsta kvalitetsstandarderna."
+          "bio": "Rashad har en rik bakgrund inom UX/UI-design och har finslipat sina färdigheter från unga år..."
         },
         "arya": {
-          "bio": "Arya är en erfaren professionell med en gedigen bakgrund inom både företagsledning och mjukvaruteknik. Efter att framgångsrikt ha drivit företag har han en stor erfarenhet av att förstå marknadstrender och kundbehov. Arya utmärker sig i att skapa moderna, responsiva lösningar som inte bara uppfyller utan överträffar kundernas förväntningar. Hans unika blandning av affärskunskap och teknisk expertis driver försäljningstillväxt och säkerställer enastående kundnöjdhet."
+          "bio": "Arya är en erfaren professionell med en gedigen bakgrund inom både företagsledning och mjukvaruteknik..."
         }
       }
     },
-  "contact": {
-    "title": "Kontakta oss",
-    "description": "Vi skulle gärna höra från dig! Oavsett om du har en fråga om våra tjänster, prissättning, behöver en demo eller något annat, är vårt team redo att svara på alla dina frågor.",
-    "get_in_touch": "Kom i kontakt",
-    "send_message": "Skicka oss ett meddelande",
-    "message_prompt": "Vi är alltid här för att hjälpa dig med dina frågor och ge de bästa lösningarna för ditt företags behov. Fyll i formuläret nedan, så återkommer vi till dig så snart som möjligt.",
-    "name_placeholder": "Namn",
-    "email_placeholder": "E-post",
-    "message_placeholder": "Meddelande",
-    "send_button": "Skicka"
+    "contact": {
+      "title": "Kontakta oss",
+      "description": "Vi skulle gärna höra från dig! Oavsett om du har en fråga om våra tjänster, prissättning, behöver en demo eller något annat...",
+      "get_in_touch": "Kom i kontakt",
+      "send_message": "Skicka oss ett meddelande",
+      "message_prompt": "Vi är alltid här för att hjälpa dig med dina frågor och ge de bästa lösningarna för ditt företags behov...",
+      "name_placeholder": "Namn",
+      "email_placeholder": "E-post",
+      "message_placeholder": "Meddelande",
+      "send_button": "Skicka"
+    },
+    "home": {
+      "hero_title": "ThreeSoft",
+      "hero_subtitle": "Tillhandahåller de bästa tjänsterna och IT-lösningarna",
+      "hero_description": "Lär dig mer om våra expertkunskaper inom konsumentrådgivning. Få lösningar levererade av experter med anpassningsbara strategier.",
+      "hero_button": "Kontakta oss",
+      "hero_alt": "Hjälte Grafisk",
+      "services_title": "Tjänster vi erbjuder",
+      "services_description": "Lär dig mer om våra expertkunskaper inom konsumentrådgivning. Få lösningar levererade av experter med anpassningsbara strategier.",
+      "service1_title": "Webbutveckling",
+      "service1_description": "Högkvalitativa webbutvecklingstjänster med hjälp av moderna teknologier.",
+      "service2_title": "SEO-tjänster",
+      "service2_description": "Effektiva SEO-strategier för att förbättra din webbplats sökmotorrankning.",
+      "service3_title": "Webbunderhåll",
+      "service3_description": "Se till att din webbplats fungerar smidigt och effektivt med våra omfattande webbunderhållstjänster.",
+      "service4_title": "UX/UI-design",
+      "service4_description": "Skapa intuitiva och engagerande användarupplevelser med våra expert UX/UI-designtjänster.",
+      "service_read_more": "Läs mer"
+    }
   }
-}
+  
