@@ -1,8 +1,8 @@
+
 /* Existing Navbar CSS */
 nav {
     font-weight: bold;
     color: white;
-    position: fixed;
     width: 100%;
     top: 0;
     left: 0;
@@ -12,14 +12,15 @@ nav {
     align-items: center;
     transition: background 0.3s ease;
     padding: 1rem 2rem;
-    margin: 0;
+    margin: 0 auto;
     height: 70px;
+    background: linear-gradient(135deg, #0e1d34, #1e3c72, #301860); /* Gradient color */
     box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    margin-bottom: 70px; /* Add bottom margin equal to the navbar height */
+    position: fixed; /* Ensure the navbar follows as you scroll */
 }
 
 nav.scrolled {
-    background: rgba(0, 0, 0, 0.2);
+    background: linear-gradient(135deg, #0e1d34, #1e3c72, #301860); /* Gradient color */
     backdrop-filter: blur(10px);
 }
 
@@ -83,6 +84,7 @@ nav .hamburger {
     flex-direction: column;
     cursor: pointer;
     margin-right: 1rem;
+    z-index: 11; /* Ensure the hamburger icon is on top */
 }
 
 nav .hamburger div {
@@ -96,8 +98,8 @@ nav .hamburger div {
 /* Media Queries */
 @media (max-width: 768px) {
     nav {
-        padding: 1rem;
-        margin-bottom: 70px; /* Add bottom margin equal to the navbar height */
+        padding: 0.5rem 1rem; /* Reduce padding for smaller screens */
+        height: 50px; /* Reduce height for smaller screens */
     }
 
     nav .logo {
@@ -108,7 +110,7 @@ nav .hamburger div {
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 70px;
+        top: 50px; /* Start below the navbar */
         right: 0;
         width: 100%;
         background: rgba(0, 0, 0, 0.9);
@@ -141,6 +143,17 @@ nav .hamburger div {
     nav .hamburger.active div:nth-child(3) {
         transform: rotate(45deg) translate(-5px, -6px);
     }
+
+    nav ul.show .hamburger {
+        position: absolute;
+        top: 10px; /* Adjust to position the "X" icon at the top right corner */
+        right: 10px;
+        flex-direction: row;
+    }
+
+    nav ul.show .hamburger div {
+        margin: 0 5px; /* Adjust spacing between "X" icon bars */
+    }
 }
 
 /* Optional additional styles */
@@ -158,13 +171,12 @@ nav .hamburger div {
     }
 
     nav {
-        height: auto; /* Ensure the navbar adapts to content height */
-        padding: 1rem;
-        margin-bottom: 70px; /* Add bottom margin equal to the navbar height */
+        height: 50px; /* Reduce navbar height for smaller screens */
+        padding: 0.5rem 1rem; /* Reduce padding for smaller screens */
     }
 
     nav ul {
-        top: 70px;
+        top: 50px; /* Start below the reduced navbar height */
         width: 100%;
         padding: 1rem;
         margin: 0;

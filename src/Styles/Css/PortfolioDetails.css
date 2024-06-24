@@ -27,7 +27,7 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin-bottom: 1rem;
+    margin-bottom: 0.5rem; /* Adjusted margin-bottom */
 }
 
 .control-btn {
@@ -52,6 +52,7 @@
     transform: translateY(1px);
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
+
 
 .portfolio-text {
     text-align: center;
@@ -100,10 +101,12 @@
 
 .portfolio-subcontent {
     display: flex;
+    align-items: center; /* Center align items including buttons */
     gap: 1rem;
     overflow-x: hidden; /* Hide overflow to clip subimages outside the main image container */
     scroll-snap-type: x mandatory; /* Enable snap scrolling */
     transition: transform 0.5s ease-in-out; /* Smooth transition for slide change */
+    margin-bottom: 1rem; /* Adjusted margin-bottom */
 }
 
 .portfolio-subimage-wrapper {
@@ -111,6 +114,8 @@
     scroll-snap-align: center; /* Center align items */
     transition: transform 0.5s ease-in-out; /* Smooth transition for slide change */
     width: 100%; /* Ensure all images are the same size */
+    display: flex;
+    justify-content: center; /* Center the images */
 }
 
 .portfolio-subimage {
@@ -119,6 +124,7 @@
     border-radius: 10px;
     cursor: pointer;
 }
+
 
 .portfolio-sidebar {
     flex: 1;

@@ -9,7 +9,7 @@ const NavBar = () => {
     useEffect(() => {
         const handleScroll = () => {
             const nav = document.querySelector('nav');
-            if (window.scrollY > 100) {
+            if (window.scrollY > 1) {
                 nav.classList.add('scrolled');
             } else {
                 nav.classList.remove('scrolled');
