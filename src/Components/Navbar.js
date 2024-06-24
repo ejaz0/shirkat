@@ -1,9 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import '../Styles/Css/NavBarStyle.css';
-import ThreeSoftLogo from '../Styles/Css/images/threesoftlogoneww.png'; // Import the logo
+import { useTranslation } from 'react-i18next';
+import '../Styles/Css/NavBarStyle.css'; // Ensure this imports your original CSS for NavBar styling
+import ThreeSoftLogo from '../Styles/Css/images/threesoftlogoneww.png';
 
 const NavBar = () => {
+    const { t } = useTranslation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
 
     useEffect(() => {
@@ -18,7 +20,6 @@ const NavBar = () => {
 
         window.addEventListener('scroll', handleScroll);
 
-        // Clean up the event listener on component unmount
         return () => {
             window.removeEventListener('scroll', handleScroll);
         };
@@ -31,19 +32,20 @@ const NavBar = () => {
     return (
         <nav>
             <div className="logo-container">
-            <Link to="/">
-                    <img src={ThreeSoftLogo} alt="ThreeSoft Logo" className="logo" />
-                </Link>            </div>
+                <Link to="/">
+                    <img src={ThreeSoftLogo} alt={t('navbar.logo_alt')} className="logo" />
+                </Link>
+            </div>
             <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
             <ul className={isMenuOpen ? 'show' : ''}>
-                <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
-                <li><Link to="/about" onClick={toggleMenu}>About</Link></li>
-                <li><Link to="/portfolio" onClick={toggleMenu}>Portfolio</Link></li>
-                <li><Link to="/contact" onClick={toggleMenu}>Contact</Link></li>
+                <li><Link to="/" onClick={toggleMenu}>{t('navbar.home')}</Link></li>
+                <li><Link to="/about" onClick={toggleMenu}>{t('navbar.about')}</Link></li>
+                <li><Link to="/portfolio" onClick={toggleMenu}>{t('navbar.portfolio')}</Link></li>
+                <li><Link to="/contact" onClick={toggleMenu}>{t('navbar.contact')}</Link></li>
             </ul>
         </nav>
     );

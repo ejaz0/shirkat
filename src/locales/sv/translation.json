@@ -48,6 +48,13 @@
     "thanks_title": "Tack för ditt meddelande!",
     "thanks_message": "Vi kommer att kontakta dig snart.",
     "close_button": "Stäng"
+  },
+  "navbar": {
+    "logo_alt": "ThreeSoft Logotyp",
+    "home": "Hem",
+    "about": "Om oss",
+    "portfolio": "Portfölj",
+    "contact": "Kontakta oss"
   }
 }
   
