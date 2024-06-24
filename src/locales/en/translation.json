@@ -1,26 +1,26 @@
 {
     "about": {
       "title": "About Us",
-      "description": "We are a team of three dedicated software engineers, each with our own area of expertise, committed to providing top-notch IT solutions...",
+      "description": "We are a team of three dedicated software engineers, each with our own area of expertise, committed to providing top-notch IT solutions. We specialize in creating custom websites that cater to your specific needs, from initial concept and design to full development and deployment. Our services include logo design, UX/UI design, and complete website creation, ensuring a seamless and professional online presence. Beyond development, we offer ongoing maintenance and updates to keep your website running smoothly and effectively, allowing you to focus on your business while we handle the technical details.",
       "team_title": "Our Team",
       "team_members": {
         "elvis": {
-          "bio": "Elvis is a dedicated programmer with a strong foundation in software engineering, driven by a passion for technology and innovation..."
+          "bio": "Elvis is a dedicated programmer with a strong foundation in software engineering, driven by a passion for technology and innovation. His expertise lies in designing and implementing advanced solutions that exceed expectations. With a keen focus on detail and a knack for solving complex technical challenges, Elvis ensures every project is crafted with precision and scalability in mind."
         },
         "rashad": {
-          "bio": "Rashad has a rich background in UX/UI design, having honed his skills from a young age..."
+          "bio": "Rashad has a rich background in UX/UI design, having honed his skills from a young age. His passion for design is complemented by his software engineering expertise and experience in project management. Rashad excels at building strong client relationships and driving project success. His multifaceted skill set ensures that projects are delivered on time, within scope, and meet the highest standards of quality."
         },
         "arya": {
-          "bio": "Arya is a seasoned professional with a robust background in both business management and software engineering..."
+          "bio": "Arya is a seasoned professional with a robust background in both business management and software engineering. Having successfully run companies, he brings a wealth of experience in understanding market trends and client needs. Arya excels in creating modern, responsive solutions that not only meet but exceed client expectations. His unique blend of business acumen and technical expertise drives sales growth and ensures exceptional client satisfaction."
         }
       }
     },
     "contact": {
       "title": "Contact Us",
-      "description": "We'd love to hear from you! Whether you have a question about our services, pricing, need a demo, or anything else...",
+      "description": "We'd love to hear from you! Whether you have a question about our services, pricing, need a demo, or anything else, our team is ready to answer all your questions.",
       "get_in_touch": "Get in Touch",
       "send_message": "Send Us a Message",
-      "message_prompt": "We are always here to help you with your inquiries and provide the best solutions for your business needs...",
+      "message_prompt": "We are always here to help you with your inquiries and provide the best solutions for your business needs. Fill out the form below, and we will get back to you as soon as possible.",
       "name_placeholder": "Name",
       "email_placeholder": "Email",
       "message_placeholder": "Message",

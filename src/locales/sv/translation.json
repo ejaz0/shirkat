@@ -1,26 +1,26 @@
 {
     "about": {
       "title": "Om oss",
-      "description": "Vi är ett team av tre dedikerade mjukvaruingenjörer, var och en med sitt eget expertområde, som är engagerade i att leverera förstklassiga IT-lösningar...",
+      "description": "Vi är ett team av tre dedikerade mjukvaruingenjörer, var och en med sin egen expertis, som är engagerade i att leverera högkvalitativa IT-lösningar. Vi är specialiserade på att skapa skräddarsydda webbplatser som möter dina specifika behov, från initial koncept och design till fullständig utveckling och lansering. Våra tjänster inkluderar logodesign, UX/UI-design och komplett webbplatsskapande, vilket säkerställer en smidig och professionell närvaro online. Utöver utveckling erbjuder vi kontinuerlig underhåll och uppdateringar för att hålla din webbplats igång smidigt och effektivt, vilket låter dig fokusera på din verksamhet medan vi tar hand om de tekniska detaljerna.",
       "team_title": "Vårt team",
       "team_members": {
         "elvis": {
-          "bio": "Elvis är en dedikerad programmerare med en stark grund i mjukvaruteknik, driven av en passion för teknik och innovation..."
+          "bio": "Elvis är en engagerad programmerare med en gedigen grund inom mjukvaruutveckling, driven av en passion för teknik och innovation. Hans expertis ligger i att designa och implementera avancerade lösningar som överträffar förväntningarna. Med fokus på detaljer och en förmåga att lösa komplexa tekniska utmaningar säkerställer Elvis att varje projekt utformas med precision och skalbarhet i åtanke."
         },
         "rashad": {
-          "bio": "Rashad har en rik bakgrund inom UX/UI-design och har finslipat sina färdigheter från unga år..."
+          "bio": "Rashad har en gedigen bakgrund inom UX/UI-design och har slipat sina färdigheter från ung ålder. Hans passion för design kompletteras av hans expertis inom mjukvaruutveckling och erfarenhet av projektledning. Rashad är skicklig på att bygga starka kundrelationer och driva projekt till framgång. Hans mångsidiga kompetens säkerställer att projekt levereras i tid, inom ramen och uppfyller högsta kvalitetsstandard."
         },
         "arya": {
-          "bio": "Arya är en erfaren professionell med en gedigen bakgrund inom både företagsledning och mjukvaruteknik..."
+          "bio": "Arya har en gedigen bakgrund både inom företagsledning och mjukvaruutveckling. Efter framgångsrikt ledarskap inom företag har han en rik erfarenhet av att förstå marknadstrender och kundbehov. Arya är expert på att skapa moderna, responsiva lösningar som inte bara möter utan överträffar kundens förväntningar. Hans unika blandning av affärssinne och teknisk expertis driver försäljningstillväxt och säkerställer enastående kundnöjdhet."
         }
       }
     },
     "contact": {
       "title": "Kontakta oss",
-      "description": "Vi skulle gärna höra från dig! Oavsett om du har en fråga om våra tjänster, prissättning, behöver en demo eller något annat...",
+      "description": "Vi skulle älska att höra från dig! Oavsett om du har frågor om våra tjänster, prissättning, behöver en demo eller något annat, så är vårt team redo att besvara alla dina frågor.",
       "get_in_touch": "Kom i kontakt",
       "send_message": "Skicka oss ett meddelande",
-      "message_prompt": "Vi är alltid här för att hjälpa dig med dina frågor och ge de bästa lösningarna för ditt företags behov...",
+      "message_prompt": "Vi är alltid här för att hjälpa dig med dina förfrågningar och erbjuda de bästa lösningarna för ditt företags behov. Fyll i formuläret nedan så återkommer vi till dig så snart som möjligt.",
       "name_placeholder": "Namn",
       "email_placeholder": "E-post",
       "message_placeholder": "Meddelande",
