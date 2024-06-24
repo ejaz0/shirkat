@@ -43,20 +43,33 @@
       "service4_title": "UX/UI Design",
       "service4_description": "Create intuitive and engaging user experiences with our expert UX/UI design services.",
       "service_read_more": "Read More"
+    },
+    "modal": {
+      "thanks_title": "Thanks for your message!",
+      "thanks_message": "We will contact you soon.",
+      "close_button": "Close"
+    },
+    "navbar": {
+      "logo_alt": "ThreeSoft Logo",
+      "home": "Home",
+      "about": "About",
+      "portfolio": "Portfolio",
+      "contact": "Contact"
+    },
+    "portfolioItems": {
+      "1": {
+        "title": "Connectwork.se",
+        "description": "A dynamic platform connecting job seekers with employers. We created their logo and built an engaging website.",
+        "category": "web"
+      }
+    },
+    "portfolioDetails": {
+      "projectDetails": "Project Details",
+      "prev": "Prev",
+      "next": "Next",
+      "noImages": "No images found for this project.",
+      "otherProjects": "Other Projects",
+      "followUs": "Follow Us"
     }
-  ,
-  "modal": {
-    "thanks_title": "Thanks for your message!",
-    "thanks_message": "We will contact you soon.",
-    "close_button": "Close"
-  },
-  "navbar": {
-    "logo_alt": "ThreeSoft Logo",
-    "home": "Home",
-    "about": "About",
-    "portfolio": "Portfolio",
-    "contact": "Contact"
   }
-}
-
   

@@ -8,19 +8,18 @@ import CWImage2 from '../Styles/Css/images/portfolio/ConnectWork/employeers.png'
 import CWImage3 from '../Styles/Css/images/portfolio/ConnectWork/Jobboard.png';
 import CWImage4 from '../Styles/Css/images/portfolio/ConnectWork/Jobseekers.png';
 
+const portfolioData = {
+    1: {
+        title: "Connectwork.se",
+        description: "En dynamisk plattform som förbinder jobbsökande med arbetsgivare. Vi skapade deras logotyp och byggde en engagerande webbplats.",
+        details: `Hos Threesoft tar vi stolthet i att förverkliga idéer. Vi skapade ConnectWork från början, med start från en enkel Figma-prototyp och utformade dess unika identitet, inklusive logodesign och omfattande webbutveckling. Vår resa kulminerade i leveransen av ConnectWork – en dynamisk plattform där jobbsökande och arbetsgivare sömlöst kan ansluta.`,
+        images: [CWImage1, CWImage2, CWImage3, CWImage4]
+    },
+    // Add more portfolio items as needed
+};
+
 const PortfolioDetail = () => {
     const { id } = useParams(); // Using useParams hook from react-router-dom
-
-    // Define portfolio data with correct IDs and image imports
-    const portfolioData = {
-        1: {
-            title: "Connectwork.se",
-            description: "A dynamic platform connecting job seekers with employers. We created their logo and built an engaging website.",
-            details: "At Threesoft, we take pride in bringing ideas to life. We conceived ConnectWork from inception, starting with a simple Figma prototype and crafting its unique identity, including logo design and comprehensive web development. Our journey culminated in delivering ConnectWork—a dynamic platform where job seekers and employers seamlessly connect. ",
-            images: [CWImage1, CWImage2, CWImage3, CWImage4]
-        },
-        // Add more portfolio items as needed
-    };
 
     const portfolio = portfolioData[id];
 
@@ -81,21 +80,21 @@ const PortfolioDetail = () => {
             </div>
             <div className="portfolio-content">
                 <div className="portfolio-main">
-                    <h2>Project Details</h2>
+                    <h2>Projektdetaljer</h2>
                     <p>{portfolio.details}</p>
                     {subImages}
                     <div className="portfolio-controls">
                         <button onClick={handlePrev} className="control-btn prev-btn">
-                            Prev
+                            Föregående
                         </button>
                         <button onClick={handleNext} className="control-btn next-btn">
-                            Next
+                            Nästa
                         </button>
                     </div>
                 </div>
                 <aside className="portfolio-sidebar">
                     <div className="portfolio-list">
-                        <h3>Other Projects</h3>
+                        <h3>Andra Projekt</h3>
                         <ul>
                             {Object.entries(portfolioData).map(([key, { title }]) => (
                                 <li key={key} className={id === key ? 'active' : ''}>
@@ -105,7 +104,7 @@ const PortfolioDetail = () => {
                         </ul>
                     </div>
                     <div className="portfolio-follow">
-                        <h3>Follow Us</h3>
+                        <h3>Följ oss</h3>
                         <div className="social-icons">
                             <a href="https://www.linkedin.com/company/threesoft/" target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-linkedin"></i>

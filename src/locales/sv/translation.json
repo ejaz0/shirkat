@@ -26,35 +26,53 @@
       "message_placeholder": "Meddelande",
       "send_button": "Skicka"
     },
-    "home": {
-      "hero_title": "ThreeSoft",
-      "hero_subtitle": "Tillhandahåller de bästa tjänsterna och IT-lösningarna",
-      "hero_description": "Lär dig mer om våra expertkunskaper inom konsumentrådgivning. Få lösningar levererade av experter med anpassningsbara strategier.",
-      "hero_button": "Kontakta oss",
-      "hero_alt": "Hjälte Grafisk",
-      "services_title": "Tjänster vi erbjuder",
-      "services_description": "Lär dig mer om våra expertkunskaper inom konsumentrådgivning. Få lösningar levererade av experter med anpassningsbara strategier.",
-      "service1_title": "Webbutveckling",
-      "service1_description": "Högkvalitativa webbutvecklingstjänster med hjälp av moderna teknologier.",
-      "service2_title": "SEO-tjänster",
-      "service2_description": "Effektiva SEO-strategier för att förbättra din webbplats sökmotorrankning.",
-      "service3_title": "Webbunderhåll",
-      "service3_description": "Se till att din webbplats fungerar smidigt och effektivt med våra omfattande webbunderhållstjänster.",
-      "service4_title": "UX/UI-design",
-      "service4_description": "Skapa intuitiva och engagerande användarupplevelser med våra expert UX/UI-designtjänster.",
-      "service_read_more": "Läs mer"
-    },
+ "home": {
+  "hero_title": "ThreeSoft",
+  "hero_subtitle": "Tillhandahåller de bästa tjänsterna och IT-lösningarna",
+  "hero_description": "Lär dig mer om våra expertkunskaper inom konsumentrådgivning. Få lösningar levererade av experter med anpassningsbara strategier.",
+  "hero_button": "Kontakta oss",
+  "hero_alt": "Hero Graphic",
+  "services_title": "Tjänster vi erbjuder",
+  "services_description": "Lär dig mer om våra expertkunskaper inom konsumentrådgivning. Få lösningar levererade av experter med anpassningsbara strategier.",
+  "service1_title": "Webbutveckling",
+  "service1_description": "Högkvalitativa webbutvecklingstjänster med hjälp av moderna teknologier.",
+  "service2_title": "SEO-tjänster",
+  "service2_description": "Effektiva SEO-strategier för att förbättra din webbplats sökmotorrankning.",
+  "service3_title": "Webbunderhåll",
+  "service3_description": "Se till att din webbplats fungerar smidigt och effektivt med våra omfattande webbunderhållstjänster.",
+  "service4_title": "UX/UI-design",
+  "service4_description": "Skapa intuitiva och engagerande användarupplevelser med våra expert UX/UI-designtjänster.",
+  "service_read_more": "Läs mer"
+},
+
     "modal": {
-    "thanks_title": "Tack för ditt meddelande!",
-    "thanks_message": "Vi kommer att kontakta dig snart.",
-    "close_button": "Stäng"
-  },
-  "navbar": {
-    "logo_alt": "ThreeSoft Logotyp",
-    "home": "Hem",
-    "about": "Om oss",
-    "portfolio": "Portfölj",
-    "contact": "Kontakta oss"
+      "thanks_title": "Tack för ditt meddelande!",
+      "thanks_message": "Vi kommer att kontakta dig snart.",
+      "close_button": "Stäng"
+    },
+    "navbar": {
+      "logo_alt": "ThreeSoft Logotyp",
+      "home": "Hem",
+      "about": "Om oss",
+      "portfolio": "Portfölj",
+      "contact": "Kontakta oss"
+    },
+    "portfolioItems": [
+      {
+        "id": 1,
+        "title": "Connectwork.se",
+        "description": "En dynamisk plattform som förbinder jobbsökande med arbetsgivare. Vi skapade deras logotyp och byggde en engagerande webbplats.",
+        "category": "web",
+        "details": "Hos Threesoft tar vi stolthet i att förverkliga idéer. Vi skapade ConnectWork från början, med start från en enkel Figma-prototyp och utformade dess unika identitet, inklusive logodesign och omfattande webbutveckling. Vår resa kulminerade i leveransen av ConnectWork – en dynamisk plattform där jobbsökande och arbetsgivare sömlöst kan ansluta."
+      }
+    ],
+    "portfolioDetails": {
+      "projectDetails": "Projektdetaljer",
+      "prev": "Föregående",
+      "next": "Nästa",
+      "noImages": "Inga bilder hittades för detta projekt.",
+      "otherProjects": "Andra projekt",
+      "followUs": "Följ oss"
+    }
   }
-}
   
