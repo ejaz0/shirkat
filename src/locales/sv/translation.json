@@ -73,6 +73,32 @@
       "noImages": "Inga bilder hittades för detta projekt.",
       "otherProjects": "Andra projekt",
       "followUs": "Följ oss"
-    }
-  }
+    },
+        "serviceDetail": {
+          "webDevelopment": {
+            "title": "Webbutveckling",
+            "description": "Högkvalitativa webbutvecklingstjänster med moderna teknologier. Vi specialiserar oss på att skapa responsiva och skalbara webbapplikationer skräddarsydda för dina affärsbehov.",
+            "details": "Dyk djupt in i våra omfattande webbutvecklingslösningar där vi skapar dynamiska, responsiva webbplatser optimerade för prestanda och användarupplevelse. Från e-handelsplattformar till företagsportaler bygger vi lösningar som driver din närvaro online framåt."
+          },
+          "seoServices": {
+            "title": "SEO-tjänster",
+            "description": "Effektiva SEO-strategier för att förbättra din webbplats sökmotorrankningar. Vi optimerar ditt innehåll, nyckelord och metataggar för att öka synligheten och locka mer organisk trafik.",
+            "details": "Utforska våra SEO-tjänster som inkluderar nyckelordsanalys, on-page och off-page optimering samt SEO-revisioner. Vi fokuserar på att öka din webbplats auktoritet, förbättra användarinteraktionen och maximera konverteringar genom strategiska SEO-praktiker."
+          },
+          "webMaintenance": {
+            "title": "Webbunderhåll",
+            "description": "Se till att din webbplats körs smidigt och effektivt med våra omfattande webbunderhållstjänster. Vi erbjuder regelbundna uppdateringar, säkerhetspatchar och prestandaoptimeringar.",
+            "details": "Läs mer om vår proaktiva underhållsansats, inklusive säkerhetspatchar, prestandaoptimeringar och innehållsuppdateringar. Vi ger dig trygghet genom att hålla din webbplats säker, uppdaterad och effektiv."
+          },
+          "uxUiDesign": {
+            "title": "UX/UI-design",
+            "description": "Skapa intuitiva och engagerande användarupplevelser med våra experttjänster för UX/UI-design. Vi fokuserar på användbarhet, tillgänglighet och visuell tilltalande för att förbättra användarnöjdheten och konverteringsfrekvenserna.",
+            "details": "Upptäck vår designprocess, från användarundersökningar och wireframing till prototypning och testning. Vi fokuserar på att förbättra användarnöjdheten genom att förbättra användbarhet och tillgänglighet, vilket i slutändan driver högre engagemang och behållningsfrekvenser."
+          },
+          "serviceNotFound": "Tjänsten kunde inte hittas",
+          "listOfServices": "Lista över tjänster",
+          "followUs": "Följ oss"
+        }
+      }
+      
   
