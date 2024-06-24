@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import '../Styles/Css/PortfolioDetails.css'; // Ensure the path is correct
 
 // Import images
@@ -9,14 +10,15 @@ import CWImage3 from '../Styles/Css/images/portfolio/ConnectWork/Jobboard.png';
 import CWImage4 from '../Styles/Css/images/portfolio/ConnectWork/Jobseekers.png';
 
 const PortfolioDetail = () => {
-    const { id } = useParams(); // Using useParams hook from react-router-dom
+    const { t } = useTranslation();
+    const { id } = useParams();
 
     // Define portfolio data with correct IDs and image imports
     const portfolioData = {
         1: {
-            title: "Connectwork.se",
-            description: "A dynamic platform connecting job seekers with employers. We created their logo and built an engaging website.",
-            details: "At Threesoft, we take pride in bringing ideas to life. We conceived ConnectWork from inception, starting with a simple Figma prototype and crafting its unique identity, including logo design and comprehensive web development. Our journey culminated in delivering ConnectWork—a dynamic platform where job seekers and employers seamlessly connect. ",
+            title: t('portfolioDetail.connectWork.title'),
+            description: t('portfolioDetail.connectWork.description'),
+            details: t('portfolioDetail.connectWork.details'),
             images: [CWImage1, CWImage2, CWImage3, CWImage4]
         },
         // Add more portfolio items as needed
@@ -64,7 +66,7 @@ const PortfolioDetail = () => {
         // Default placeholder or error handling if id doesn't match
         subImages = (
             <div className="portfolio-subcontent">
-                <p>No images found for this project.</p>
+                <p>{t('portfolioDetail.noImagesFound')}</p>
             </div>
         );
     }
@@ -81,21 +83,21 @@ const PortfolioDetail = () => {
             </div>
             <div className="portfolio-content">
                 <div className="portfolio-main">
-                    <h2>Project Details</h2>
+                    <h2>{t('portfolioDetail.projectDetails')}</h2>
                     <p>{portfolio.details}</p>
                     {subImages}
                     <div className="portfolio-controls">
                         <button onClick={handlePrev} className="control-btn prev-btn">
-                            Prev
+                            {t('portfolioDetail.prevButton')}
                         </button>
                         <button onClick={handleNext} className="control-btn next-btn">
-                            Next
+                            {t('portfolioDetail.nextButton')}
                         </button>
                     </div>
                 </div>
                 <aside className="portfolio-sidebar">
                     <div className="portfolio-list">
-                        <h3>Other Projects</h3>
+                        <h3>{t('portfolioDetail.otherProjects')}</h3>
                         <ul>
                             {Object.entries(portfolioData).map(([key, { title }]) => (
                                 <li key={key} className={id === key ? 'active' : ''}>
@@ -105,7 +107,7 @@ const PortfolioDetail = () => {
                         </ul>
                     </div>
                     <div className="portfolio-follow">
-                        <h3>Follow Us</h3>
+                        <h3>{t('portfolioDetail.followUs')}</h3>
                         <div className="social-icons">
                             <a href="https://www.linkedin.com/company/threesoft/" target="_blank" rel="noopener noreferrer">
                                 <i className="fab fa-linkedin"></i>

@@ -63,14 +63,19 @@
         "category": "web"
       }
     },
-    "portfolioDetails": {
-      "projectDetails": "Project Details",
-      "prev": "Prev",
-      "next": "Next",
-      "noImages": "No images found for this project.",
-      "otherProjects": "Other Projects",
-      "followUs": "Follow Us"
-    },
+    "portfolioDetail": {
+        "connectWork": {
+          "title": "Connectwork.se",
+          "description": "A dynamic platform connecting job seekers with employers. We created their logo and built an engaging website.",
+          "details": "At Threesoft, we take pride in bringing ideas to life. We conceived ConnectWork from inception, starting with a simple Figma prototype and crafting its unique identity, including logo design and comprehensive web development. Our journey culminated in delivering ConnectWork—a dynamic platform where job seekers and employers seamlessly connect."
+        },
+        "projectDetails": "Project Details",
+        "noImagesFound": "No images found for this project.",
+        "otherProjects": "Other Projects",
+        "followUs": "Follow Us",
+         "prevButton": "Prev",
+         "nextButton": "Next"
+      },
     
         "serviceDetail": {
           "webDevelopment": {
