@@ -43,6 +43,11 @@
       "service4_title": "UX/UI-design",
       "service4_description": "Skapa intuitiva och engagerande användarupplevelser med våra expert UX/UI-designtjänster.",
       "service_read_more": "Läs mer"
-    }
+    },
+    "modal": {
+    "thanks_title": "Tack för ditt meddelande!",
+    "thanks_message": "Vi kommer att kontakta dig snart.",
+    "close_button": "Stäng"
   }
+}
   

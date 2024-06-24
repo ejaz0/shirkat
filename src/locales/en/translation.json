@@ -44,5 +44,11 @@
       "service4_description": "Create intuitive and engaging user experiences with our expert UX/UI design services.",
       "service_read_more": "Read More"
     }
+  ,
+  "modal": {
+    "thanks_title": "Thanks for your message!",
+    "thanks_message": "We will contact you soon.",
+    "close_button": "Close"
   }
+}
   
