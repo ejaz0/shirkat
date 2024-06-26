@@ -27,7 +27,7 @@
       "send_button": "Skicka"
     },
  "home": {
-  "hero_title": "ThreeSoft",
+  "hero_title": "threeSoft",
   "hero_subtitle": "Tillhandahåller de bästa tjänsterna och IT-lösningarna",
   "hero_description": "Lär dig mer om våra expertkunskaper inom konsumentrådgivning. Få lösningar levererade av experter med anpassningsbara strategier.",
   "hero_button": "Kontakta oss",
@@ -63,14 +63,14 @@
         "title": "Connectwork.se",
         "description": "En dynamisk plattform som förbinder jobbsökande med arbetsgivare. Vi skapade deras logotyp och byggde en engagerande webbplats.",
         "category": "web",
-        "details": "Hos Threesoft tar vi stolthet i att förverkliga idéer. Vi skapade ConnectWork från början, med start från en enkel Figma-prototyp och utformade dess unika identitet, inklusive logodesign och omfattande webbutveckling. Vår resa kulminerade i leveransen av ConnectWork – en dynamisk plattform där jobbsökande och arbetsgivare sömlöst kan ansluta."
+        "details": "Hos threesoft tar vi stolthet i att förverkliga idéer. Vi skapade ConnectWork från början, med start från en enkel Figma-prototyp och utformade dess unika identitet, inklusive logodesign och omfattande webbutveckling. Vår resa kulminerade i leveransen av ConnectWork – en dynamisk plattform där jobbsökande och arbetsgivare sömlöst kan ansluta."
       }
     ],
     "portfolioDetail": {
         "connectWork": {
           "title": "Connectwork.se",
           "description": "En dynamisk plattform som förbinder arbetssökande med arbetsgivare. Vi skapade deras logotyp och byggde en engagerande webbplats.",
-          "details": "På Threesoft tar vi stolthet i att förverkliga idéer. Vi konceptualiserade ConnectWork från början, började med en enkel Figma-prototyp och formade dess unika identitet, inklusive logodesign och omfattande webbutveckling. Vår resa kulminerade i leveransen av ConnectWork - en dynamisk plattform där jobbsökande och arbetsgivare sömlöst kan ansluta."
+          "details": "På threesoft tar vi stolthet i att förverkliga idéer. Vi konceptualiserade ConnectWork från början, började med en enkel Figma-prototyp och formade dess unika identitet, inklusive logodesign och omfattande webbutveckling. Vår resa kulminerade i leveransen av ConnectWork - en dynamisk plattform där jobbsökande och arbetsgivare sömlöst kan ansluta."
         },
         "projectDetails": "Projektdetaljer",
         "noImagesFound": "Inga bilder hittades för detta projekt.",
@@ -129,7 +129,7 @@
       {
         "id": 1,
         "name": "Hassan, ägare av ConnectWork",
-        "text": "Att arbeta med Threesoft var en fantastisk upplevelse. De levererade vårt projekt i tid och överträffade våra förväntningar."
+        "text": "Att arbeta med threesoft var en fantastisk upplevelse. De levererade vårt projekt i tid och överträffade våra förväntningar."
       }
     ]
   }
