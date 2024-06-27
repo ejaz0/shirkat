@@ -69,8 +69,8 @@
             },
             {
               "id": 2,
-              "title": "Mideast.se",
-              "description": "Mideast.se är en e-handelswebbplats där du kan köpa olika varor från Persien till Asien.",
+              "title": "Mideast.my",
+              "description": "Mideast.my är en e-handelswebbplats där du kan köpa olika varor från Persien till Asien.",
               "category": "web"
             }
           ]
@@ -84,8 +84,8 @@
         "details": "På threesoft tar vi stolthet i att förverkliga idéer. Vi konceptualiserade ConnectWork från början, började med en enkel Figma-prototyp och formade dess unika identitet, inklusive logodesign och omfattande webbutveckling. Vår resa kulminerade i leveransen av ConnectWork - en dynamisk plattform där jobbsökande och arbetsgivare sömlöst kan ansluta."
       },
       "mideast": {
-        "title": "Mideast.se",
-        "description": "Mideast.se är en e-handelswebbplats där du kan köpa olika varor från Persien till Asien.",
+        "title": "Mideast.my",
+        "description": "Mideast.my är en e-handelswebbplats där du kan köpa olika varor från Persien till Asien.",
         "details": "På threesoft är vi stolta över att ha skapat Mideast från grunden. Vi började med att designa en detaljerad prototyp och utvecklade sedan en robust e-handelsplattform som erbjuder en smidig shoppingupplevelse. Vårt team hanterade hela utvecklingsprocessen, inklusive UX/UI-design, backend-utveckling och integration av betalningslösningar, vilket resulterade i en modern och pålitlig plattform."
       },
         "projectDetails": "Projektdetaljer",
@@ -142,7 +142,7 @@
       },
       {
         "id": 2,
-        "title": "Mideast.se",
+        "title": "Mideast.my",
         "description": "En dynamisk plattform som kopplar samman arbetssökande med arbetsgivare. Vi skapade deras logotyp och byggde en engagerande webbplats.",
         "category": "web"
       }
