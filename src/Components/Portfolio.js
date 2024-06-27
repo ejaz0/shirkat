@@ -2,17 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import '../Styles/Css/PortfolioStyle.css';
-import PortfolioImage1 from '../Styles/Css/images/portfolio/Connectwork.png';
-import PortfolioImage2 from '../Styles/Css/images/portfolio/Screenshot 2024-06-08 001130.png';
-import PortfolioImage3 from '../Styles/Css/images/portfolio/Screenshot 2024-06-08 001134.png';
-import PortfolioImage4 from '../Styles/Css/images/portfolio/Screenshot 2024-06-08 001139.png';
-import PortfolioImage5 from '../Styles/Css/images/portfolio/Screenshot 2024-06-08 001142.png';
-import PortfolioImage6 from '../Styles/Css/images/portfolio/Screenshot 2024-06-08 001146.png';
+import PortfolioImage1 from '../Styles/Css/images/portfolio/ConnectWork/Homepage.png';
+import PortfolioImage2 from '../Styles/Css/images/portfolio/mideast/Screenshot 2024-06-26 at 17.01.27.png';
 
 const Portfolio = () => {
     const { t } = useTranslation();
 
-    // Define portfolio items with translations
     const portfolioData = [
         {
             id: 1,
@@ -21,14 +16,19 @@ const Portfolio = () => {
             description: t('portfolio.items.0.description'),
             category: 'web',
         },
-        // Add more portfolio items as needed
+        {
+            id: 2,
+            image: PortfolioImage2,
+            title: t('portfolio.items.1.title'),
+            description: t('portfolio.items.1.description'),
+            category: 'web',
+        }
     ];
 
     const [selectedCategory, setSelectedCategory] = useState('all');
     const [displayedItems, setDisplayedItems] = useState([]);
 
     useEffect(() => {
-        // Simulated API call or data loading
         setDisplayedItems(portfolioData);
     }, []);
 
@@ -58,8 +58,9 @@ const Portfolio = () => {
                         <div key={item.id} className="portfolio-item">
                             <Link to={`/portfolio/${item.id}`}>
                                 <img src={item.image} alt={item.title} />
-                                <h3>{item.title}</h3>
-                                <p>{item.description}</p>
+                                <div className="portfolio-overlay">
+                                    <h3>{item.title}</h3>
+                                </div>
                             </Link>
                         </div>
                     ))}

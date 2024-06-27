@@ -8,6 +8,9 @@ import CWImage1 from '../Styles/Css/images/portfolio/ConnectWork/Homepage.png';
 import CWImage2 from '../Styles/Css/images/portfolio/ConnectWork/employeers.png';
 import CWImage3 from '../Styles/Css/images/portfolio/ConnectWork/Jobboard.png';
 import CWImage4 from '../Styles/Css/images/portfolio/ConnectWork/Jobseekers.png';
+import MideastImage1 from '../Styles/Css/images/portfolio/mideast/Screenshot 2024-06-26 at 17.01.27.png';
+import MideastImage2 from '../Styles/Css/images/portfolio/mideast/Screenshot 2024-06-26 at 17.01.49.png';
+import MideastImage3 from '../Styles/Css/images/portfolio/mideast/Screenshot 2024-06-26 at 17.02.29.png';
 
 const PortfolioDetail = () => {
     const { t } = useTranslation();
@@ -20,6 +23,12 @@ const PortfolioDetail = () => {
             description: t('portfolioDetail.connectWork.description'),
             details: t('portfolioDetail.connectWork.details'),
             images: [CWImage1, CWImage2, CWImage3, CWImage4]
+        },
+        2: {
+            title: t('portfolioDetail.mideast.title'),
+            description: t('portfolioDetail.mideast.description'),
+            details: t('portfolioDetail.mideast.details'),
+            images: [MideastImage1, MideastImage2, MideastImage3]
         },
         // Add more portfolio items as needed
     };
@@ -41,34 +50,8 @@ const PortfolioDetail = () => {
         );
     };
 
-    // Prepare slideshow images
-    let subImages;
-
-    if (id === '1' && portfolio.images) {
-        subImages = (
-            <div className="portfolio-subcontent">
-                {portfolio.images.map((image, index) => (
-                    <div
-                        key={index}
-                        className={`portfolio-subimage-wrapper ${index === activeIndex ? 'active' : ''}`}
-                        style={{ transform: `translateX(${-activeIndex * 100}%)` }} // Slide transition
-                    >
-                        <img
-                            src={image}
-                            alt={`Slide ${index + 1}`}
-                            className="portfolio-subimage"
-                        />
-                    </div>
-                ))}
-            </div>
-        );
-    } else {
-        // Default placeholder or error handling if id doesn't match
-        subImages = (
-            <div className="portfolio-subcontent">
-                <p>{t('portfolioDetail.noImagesFound')}</p>
-            </div>
-        );
+    if (!portfolio) {
+        return <div>{t('portfolioDetail.noImagesFound')}</div>;
     }
 
     return (
@@ -85,7 +68,21 @@ const PortfolioDetail = () => {
                 <div className="portfolio-main">
                     <h2>{t('portfolioDetail.projectDetails')}</h2>
                     <p>{portfolio.details}</p>
-                    {subImages}
+                    <div className="portfolio-subcontent">
+                        {portfolio.images.map((image, index) => (
+                            <div
+                                key={index}
+                                className={`portfolio-subimage-wrapper ${index === activeIndex ? 'active' : ''}`}
+                                style={{ transform: `translateX(${-activeIndex * 100}%)` }} // Slide transition
+                            >
+                                <img
+                                    src={image}
+                                    alt={`Slide ${index + 1}`}
+                                    className="portfolio-subimage"
+                                />
+                            </div>
+                        ))}
+                    </div>
                     <div className="portfolio-controls">
                         <button onClick={handlePrev} className="control-btn prev-btn">
                             {t('portfolioDetail.prevButton')}

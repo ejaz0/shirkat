@@ -61,6 +61,11 @@
         "title": "Connectwork.se",
         "description": "A dynamic platform connecting job seekers with employers. We created their logo and built an engaging website.",
         "category": "web"
+      },
+      "2": {
+        "title": "Mideast.se",
+        "description": "A dynamic platform connecting job seekers with employers. We created their logo and built an engaging website.",
+        "category": "web"
       }
     },
     "portfolioDetail": {
@@ -118,6 +123,12 @@
                 {
                   "id": 1,
                   "title": "Connectwork.se",
+                  "description": "A dynamic platform connecting job seekers with employers. We created their logo and built an engaging website.",
+                  "category": "web"
+                },
+                {
+                  "id": 2,
+                  "title": "Mideast.se",
                   "description": "A dynamic platform connecting job seekers with employers. We created their logo and built an engaging website.",
                   "category": "web"
                 }

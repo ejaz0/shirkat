@@ -4,9 +4,8 @@
     text-align: center;
 }
 
-/* Header section */
 .portfolio-header-container {
-    background: linear-gradient(135deg, #0e1d34, #1e3c72, #301860); /* Gradient color */
+    background: linear-gradient(135deg, #0e1d34, #1e3c72, #301860);
     height: 50vh;
     display: flex;
     justify-content: center;
@@ -19,7 +18,7 @@
     margin: 0;
     display: flex;
     align-items: center;
-    justify-content: center; /* Center the header content and logo */
+    justify-content: center;
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -27,7 +26,7 @@
 
 .header-content {
     text-align: left;
-    margin-right: 1rem; /* Space between header content and logo */
+    margin-right: 1rem;
 }
 
 .portfolio-header h1 {
@@ -42,10 +41,9 @@
     margin-top: 0.5rem;
 }
 
-/* Portfolio section */
 .portfolio-section {
     padding: 2rem;
-    background: #0e1129; /* Different background color */
+    background: #0e1129;
     min-height: 50vh;
     text-align: center;
 }
@@ -84,23 +82,25 @@
 
 .portfolio-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Auto responsive columns */
-    gap: 1rem; /* Adjusted gap */
-    justify-content: center; /* Center the grid items */
-    max-width: 800px; /* Set a maximum width for the grid */
-    margin: 0 auto; /* Center the grid container */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
     opacity: 1;
     transition: opacity 0.5s ease-in-out;
 }
 
 .portfolio-item {
-    background: transparent; /* Make background transparent */
+    border: 1px solid rgba(0, 106, 255, 0.9); /* Light blue border */
+    background: transparent;
     padding: 0;
     border-radius: 10px;
-    box-shadow: none; /* Remove box shadow */
+    box-shadow: none;
     transition: transform 0.3s ease, opacity 0.3s ease;
     opacity: 0;
     animation: fadeIn 0.5s ease-in-out forwards;
+    position: relative;
 }
 
 @keyframes fadeIn {
@@ -115,18 +115,41 @@
 }
 
 .portfolio-item img {
-    width: 100%;
+    width: 90%;
     height: auto;
-    max-width: 300px; /* Increase max width for larger images */
-    max-height: 300px; /* Increase max height for larger images */
-    border-radius: 10px;
     transition: box-shadow 0.3s ease;
-    margin: 0 auto; /* Center align */
+    margin: 0 auto;
 }
 
-.portfolio-item:hover img {
-    transform: translateY(-10px);
-    box-shadow: 0 6px 15px rgba(0, 170, 255, 0.8);
+/* Remove the hover effect for the image */
+.portfolio-item img {
+    transition: none;
+}
+
+.portfolio-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.portfolio-item:hover .portfolio-overlay {
+    opacity: 1;
+}
+
+.portfolio-arrow {
+    font-size: 1.5rem;
+    margin-right: 10px;
 }
 
 .see-more-button {
@@ -149,16 +172,55 @@
     box-shadow: 0 6px 15px rgba(0, 119, 204, 0.6);
 }
 
-/* Additional styling for the Three.js logo */
-.logo-container {
-    width: 100px; /* Adjust the size as needed */
-    height: 100px; /* Adjust the size as needed */
-    display: flex;
-    align-items: center;
-    margin-left: 1rem; /* Space between logo and header content */
+.testimonial-section {
+    background: #0e1129;
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
 }
 
-/* Additions for Mobile Responsiveness */
+.testimonial-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ffffff;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.testimonial-item {
+    background: #1e2b4d;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 170, 255, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.testimonial-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 170, 255, 0.4);
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.testimonial-name {
+    font-size: 1rem;
+    font-style: italic;
+    color: #cccccc;
+    text-align: right;
+}
+
 @media (max-width: 768px) {
     .portfolio-header h1 {
         font-size: 2rem;
@@ -173,12 +235,13 @@
     }
 
     .portfolio-grid {
-        gap: 0.5rem; /* Adjusted gap */
+        grid-template-columns: repeat(2, 1fr);
+        gap: 0.5rem;
     }
 
     .portfolio-item img {
-        max-width: 200px; /* Further reduce max width for smaller screens */
-        max-height: 200px; /* Further reduce max height for smaller screens */
+        max-width: 200px;
+        max-height: 200px;
     }
 }
 
@@ -195,57 +258,12 @@
         font-size: 1.5rem;
     }
 
-    .portfolio-item img {
-        max-width: 150px; /* Further reduce max width for mobile */
-        max-height: 150px; /* Further reduce max height for mobile */
+    .portfolio-grid {
+        grid-template-columns: 1fr;
     }
-}
-/* Testimonials section */
-.testimonial-section {
-    background: #0e1129; /* Same background color as portfolio section */
-    color: #ffffff;
-    padding: 2rem;
-    text-align: center;
-}
 
-.testimonial-section h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-    color: #ffffff;
-}
-
-.testimonial-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-    gap: 1rem; /* Adjusted gap */
-    justify-content: center; /* Center align items */
-    max-width: 800px; /* Set maximum width */
-    margin: 0 auto; /* Center the grid container */
-}
-
-.testimonial-item {
-    background: #1e2b4d; /* Darker background */
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 170, 255, 0.2); /* Soft box shadow */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    text-align: left; /* Left align text */
-}
-
-.testimonial-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0, 170, 255, 0.4); /* Hover shadow effect */
-}
-
-.testimonial-text {
-    font-size: 1.1rem;
-    line-height: 1.6;
-    margin-bottom: 1rem;
-}
-
-.testimonial-name {
-    font-size: 1rem;
-    font-style: italic;
-    color: #cccccc;
-    text-align: right;
+    .portfolio-item img {
+        max-width: 150px;
+        max-height: 150px;
+    }
 }
