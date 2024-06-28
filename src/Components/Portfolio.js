@@ -57,9 +57,10 @@ const Portfolio = () => {
                     {displayedItems.map((item) => (
                         <div key={item.id} className="portfolio-item">
                             <Link to={`/portfolio/${item.id}`}>
-                                <img src={item.image} alt={item.title} />
-                                <div className="portfolio-overlay">
-                                    <h3>{item.title}</h3>
+                                <img src={item.image} alt={item.title} className="portfolio-image" />
+                                <div className="portfolio-card-content">
+                                    <h3 className="portfolio-title">{item.title}</h3>
+                                    <p className="portfolio-description">{item.description}</p>
                                 </div>
                             </Link>
                         </div>
