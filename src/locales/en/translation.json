@@ -149,8 +149,13 @@
       "testimonials": [
         {
           "id": 1,
-          "name": "Hassan, owner of ConnectWork",
+          "name": "ConnectWork",
           "text": "Working with threesoft was a great experience. They delivered our project on time and exceeded our expectations."
+        },
+        {
+          "id": 2,
+          "name": "Mideast",
+          "text": "Working with Threesoft was amazing, they created a perfect website for our business. We loved their service."
         }
       ]
     }

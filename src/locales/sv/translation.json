@@ -150,8 +150,13 @@
     "testimonials": [
       {
         "id": 1,
-        "name": "Hassan, ägare av ConnectWork",
+        "name": "ConnectWork",
         "text": "Att arbeta med threesoft var en fantastisk upplevelse. De levererade vårt projekt i tid och överträffade våra förväntningar."
+      },
+      {
+        "id": 2,
+        "name": "Mideast",
+        "text": "Att arbeta med threesoft var fantastiskt, de skapade en perfekt webbplats för vårt företag. Vi älskade deras service."
       }
     ]
   }
