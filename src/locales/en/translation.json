@@ -30,11 +30,11 @@
     "home": {
       "hero_title": "Threesoft",
       "hero_subtitle": "Providing The Best Services & IT Solutions",
-      "hero_description": "Learn more about our expert, consumer-advising skills. Get solutions delivered by experts with adaptive strategies.",
+      "hero_description": "Learn more about our expert, web devlopment services. Get solutions delivered by experts with adaptive strategies.",
       "hero_button": "Contact Us",
       "hero_alt": "Hero Graphic",
       "services_title": "Services We Offer",
-      "services_description": "Learn more about our expert, consumer-advising skills. Get solutions delivered by experts with adaptive strategies.",
+      "services_description": "Learn more about our expert, web development services. Get solutions delivered by experts with adaptive strategies.",
       "service1_title": "Web Development",
       "service1_description": "High-quality web development services using modern technologies.",
       "service2_title": "SEO Services",
@@ -155,7 +155,7 @@
         {
           "id": 2,
           "name": "Mideast",
-          "text": "Working with Threesoft was amazing, they created a perfect website for our business. We loved their service."
+          "text": "Working with threesoft was amazing, they created a perfect website for our business. We loved their service."
         }
       ]
     }
