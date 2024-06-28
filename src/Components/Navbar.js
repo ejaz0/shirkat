@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import '../Styles/Css/NavBarStyle.css'; // Ensure this imports your original CSS for NavBar styling
@@ -7,6 +7,7 @@ import ThreeSoftLogo from '../Styles/Css/images/threesoftlogoneww.png';
 const NavBar = () => {
     const { t } = useTranslation();
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const navRef = useRef(null);
 
     useEffect(() => {
         const handleScroll = () => {
@@ -18,10 +19,18 @@ const NavBar = () => {
             }
         };
 
+        const handleClickOutside = (event) => {
+            if (navRef.current && !navRef.current.contains(event.target)) {
+                setIsMenuOpen(false);
+            }
+        };
+
         window.addEventListener('scroll', handleScroll);
+        document.addEventListener('mousedown', handleClickOutside);
 
         return () => {
             window.removeEventListener('scroll', handleScroll);
+            document.removeEventListener('mousedown', handleClickOutside);
         };
     }, []);
 
@@ -30,7 +39,7 @@ const NavBar = () => {
     };
 
     return (
-        <nav>
+        <nav ref={navRef}>
             <div className="logo-container">
                 <Link to="/">
                     <img src={ThreeSoftLogo} alt={t('navbar.logo_alt')} className="logo" />
