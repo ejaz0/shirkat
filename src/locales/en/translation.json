@@ -1,4 +1,5 @@
-{
+
+  {
     "about": {
       "title": "About Us",
       "description": "We are a team of three dedicated software engineers, each with our own area of expertise, committed to providing top-notch IT solutions. We specialize in creating custom websites that cater to your specific needs, from initial concept and design to full development and deployment. Our services include logo design, UX/UI design, and complete website creation, ensuring a seamless and professional online presence. Beyond development, we offer ongoing maintenance and updates to keep your website running smoothly and effectively, allowing you to focus on your business while we handle the technical details.",
@@ -56,92 +57,102 @@
       "portfolio": "Portfolio",
       "contact": "Contact"
     },
-    "portfolioItems": {
-      "1": {
+    "portfolioItems": [
+      {
+        "portfolio": {
+          "items": [
+            {
+              "id": 1,
+              "title": "Connectwork.se",
+              "description": "A dynamic platform connecting job seekers with employers. We created their logo and built an engaging website.",
+              "category": "web"
+            },
+            {
+              "id": 2,
+              "title": "Mideast.my",
+              "description": "Mideast.my is an e-commerce website where you can purchase a variety of goods from Persia to Asia.",
+              "category": "web"
+            }
+          ]
+        }
+      }
+    ],
+    "portfolioDetail": {
+      "connectWork": {
         "title": "Connectwork.se",
         "description": "A dynamic platform connecting job seekers with employers. We created their logo and built an engaging website.",
-        "category": "web"
+        "details": "At threesoft, we take pride in bringing ideas to life. We conceived ConnectWork from inception, starting with a simple Figma prototype and crafting its unique identity, including logo design and comprehensive web development. Our journey culminated in delivering ConnectWork—a dynamic platform where job seekers and employers seamlessly connect."
       },
-      "2": {
+      "mideast": {
         "title": "Mideast.my",
-        "description": "A dynamic platform connecting job seekers with employers. We created their logo and built an engaging website.",
-        "category": "web"
-      }
+        "description": "Mideast.my is an e-commerce website where you can purchase a variety of goods from Persia to Asia.",
+        "details": "At threesoft, we are proud to have created Mideast from the ground up. We started with designing a detailed prototype and then developed a robust e-commerce platform that offers a seamless shopping experience. Our team handled the entire development process, including UX/UI design, backend development, and payment solution integration, resulting in a modern and reliable platform."
+      },
+      "projectDetails": "Project Details",
+      "noImagesFound": "No images found for this project.",
+      "otherProjects": "Other Projects",
+      "followUs": "Follow Us",
+      "prevButton": "Prev",
+      "nextButton": "Next"
     },
-    "portfolioDetail": {
-        "connectWork": {
+    "serviceDetail": {
+      "webDevelopment": {
+        "title": "Web Development",
+        "description": "High-quality web development services using modern technologies. We specialize in creating responsive and scalable web applications tailored to your business needs.",
+        "details": "Dive deep into our comprehensive web development solutions where we create dynamic, responsive websites optimized for performance and user experience. From e-commerce platforms to corporate portals, we build solutions that drive your online presence forward."
+      },
+      "seoServices": {
+        "title": "SEO Services",
+        "description": "Effective SEO strategies to improve your website's search engine rankings. We optimize your content, keywords, and meta tags to enhance visibility and attract more organic traffic.",
+        "details": "Explore our SEO services that include keyword research, on-page and off-page optimization, and SEO audits. We focus on increasing your site's authority, enhancing user engagement, and maximizing conversions through strategic SEO practices."
+      },
+      "webMaintenance": {
+        "title": "Web Maintenance",
+        "description": "Ensure your website runs smoothly and efficiently with our comprehensive web maintenance services. We provide regular updates, security patches, and performance optimizations.",
+        "details": "Learn more about our proactive maintenance approach, including security patches, performance optimization, and content updates. We provide peace of mind by keeping your website secure, up-to-date, and running efficiently."
+      },
+      "uxUiDesign": {
+        "title": "UX/UI Design",
+        "description": "Create intuitive and engaging user experiences with our expert UX/UI design services. We focus on usability, accessibility, and visual appeal to enhance user satisfaction and conversion rates.",
+        "details": "Discover our design process, from user research and wireframing to prototyping and testing. We focus on enhancing user satisfaction by improving usability and accessibility, ultimately driving higher engagement and retention rates."
+      },
+      "serviceNotFound": "Service not found",
+      "listOfServices": "List Of Services",
+      "followUs": "Follow Us"
+    },
+    "portfolio": {
+      "welcomeHeader": {
+        "title": "Welcome to Our Portfolio",
+        "description": "Discover our latest projects showcasing our expertise in web development, design, and more. Each project reflects our commitment to quality and innovation."
+      },
+      "portfolioHeader": {
+        "title": "Our Portfolio"
+      },
+      "seeMoreButton": "See More",
+      "testimonialsHeader": {
+        "title": "Testimonials"
+      },
+      "items": [
+        {
+          "id": 1,
           "title": "Connectwork.se",
           "description": "A dynamic platform connecting job seekers with employers. We created their logo and built an engaging website.",
-          "details": "At threesoft, we take pride in bringing ideas to life. We conceived ConnectWork from inception, starting with a simple Figma prototype and crafting its unique identity, including logo design and comprehensive web development. Our journey culminated in delivering ConnectWork—a dynamic platform where job seekers and employers seamlessly connect."
+          "category": "web"
         },
-        "projectDetails": "Project Details",
-        "noImagesFound": "No images found for this project.",
-        "otherProjects": "Other Projects",
-        "followUs": "Follow Us",
-         "prevButton": "Prev",
-         "nextButton": "Next"
-      },
-    
-        "serviceDetail": {
-          "webDevelopment": {
-            "title": "Web Development",
-            "description": "High-quality web development services using modern technologies. We specialize in creating responsive and scalable web applications tailored to your business needs.",
-            "details": "Dive deep into our comprehensive web development solutions where we create dynamic, responsive websites optimized for performance and user experience. From e-commerce platforms to corporate portals, we build solutions that drive your online presence forward."
-          },
-          "seoServices": {
-            "title": "SEO Services",
-            "description": "Effective SEO strategies to improve your website's search engine rankings. We optimize your content, keywords, and meta tags to enhance visibility and attract more organic traffic.",
-            "details": "Explore our SEO services that include keyword research, on-page and off-page optimization, and SEO audits. We focus on increasing your site's authority, enhancing user engagement, and maximizing conversions through strategic SEO practices."
-          },
-          "webMaintenance": {
-            "title": "Web Maintenance",
-            "description": "Ensure your website runs smoothly and efficiently with our comprehensive web maintenance services. We provide regular updates, security patches, and performance optimizations.",
-            "details": "Learn more about our proactive maintenance approach, including security patches, performance optimization, and content updates. We provide peace of mind by keeping your website secure, up-to-date, and running efficiently."
-          },
-          "uxUiDesign": {
-            "title": "UX/UI Design",
-            "description": "Create intuitive and engaging user experiences with our expert UX/UI design services. We focus on usability, accessibility, and visual appeal to enhance user satisfaction and conversion rates.",
-            "details": "Discover our design process, from user research and wireframing to prototyping and testing. We focus on enhancing user satisfaction by improving usability and accessibility, ultimately driving higher engagement and retention rates."
-          },
-          "serviceNotFound": "Service not found",
-          "listOfServices": "List Of Services",
-          "followUs": "Follow Us"
-        },
-            "portfolio": {
-              "welcomeHeader": {
-                "title": "Welcome to Our Portfolio",
-                "description": "Discover our latest projects showcasing our expertise in web development, design, and more. Each project reflects our commitment to quality and innovation."
-              },
-              "portfolioHeader": {
-                "title": "Our Portfolio"
-              },
-              "seeMoreButton": "See More",
-              "testimonialsHeader": {
-                "title": "Testimonials"
-              },
-              "items": [
-                {
-                  "id": 1,
-                  "title": "Connectwork.se",
-                  "description": "A dynamic platform connecting job seekers with employers. We created their logo and built an engaging website.",
-                  "category": "web"
-                },
-                {
-                  "id": 2,
-                  "title": "Mideast.my",
-                  "description": "A dynamic platform connecting job seekers with employers. We created their logo and built an engaging website.",
-                  "category": "web"
-                }
-              ],
-              "testimonials": [
-                {
-                  "id": 1,
-                  "name": "Hassan owner of ConnectWork",
-                  "text": "Working with threesoft was a great experience. They delivered our project on time and exceeded our expectations."
-                }
-              ]
-            }
-          }
-          
-      
-  
+        {
+          "id": 2,
+          "title": "Mideast.my",
+          "description": "Mideast.my is an e-commerce website where you can purchase a variety of goods from Persia to Asia.",
+          "category": "web"
+        }
+      ],
+      "testimonials": [
+        {
+          "id": 1,
+          "name": "Hassan, owner of ConnectWork",
+          "text": "Working with threesoft was a great experience. They delivered our project on time and exceeded our expectations."
+        }
+      ]
+    }
+  }
+
