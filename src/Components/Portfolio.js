@@ -50,9 +50,7 @@ const Portfolio = () => {
                         </div>
                     ))}
                 </div>
-                <Link to="/portfolio/more" className="see-more-button">
-                    {t('portfolio.seeMoreButton')}
-                </Link>
+               
             </section>
             <section className="testimonial-section">
                 <header className="portfolio-header">
