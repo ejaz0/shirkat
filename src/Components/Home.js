@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import '../Styles/Css/HomeStyle.css';
-import HeroImage from '../Styles/Css/images/Remove-bg.ai_1717774002262.png';
+import HeroImage from '../Styles/Css/images/971-removebg.png';
 
 const Home = () => {
     const { t } = useTranslation();
@@ -25,7 +25,7 @@ const Home = () => {
             <section className="services" id="services">
                 <h2>{t('home.services_title')}</h2>
                 <p>{t('home.services_description')}</p>
-                <div className="services-grid">
+                <div className="services-scroller">
                     <article className="service-card">
                         <i className="fas fa-code service-icon" aria-hidden="true"></i>
                         <h3>{t('home.service1_title')}</h3>

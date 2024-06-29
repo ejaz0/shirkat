@@ -3,7 +3,6 @@ import '../Styles/Css/AboutStyle.css';
 import elvisH from '../Styles/Css/images/prifle-removebg-preview.png';
 import rashadRafa from '../Styles/Css/images/1712175677779.jpg';
 import aryaEisa from '../Styles/Css/images/644_e43222bd86412c55c14fe34e9ea1e4ac-2023-11-09 23_27_42.jpg';
-import ThreeDLogo from './ThreeDObject'; // Import the ThreeDLogo component
 import { useTranslation } from 'react-i18next';
 
 const About = () => {
@@ -17,9 +16,7 @@ const About = () => {
                         <h1>{t('about.title')}</h1>
                         <p>{t('about.description')}</p>
                     </div>
-                    <div className="three-d-logo-container">
-                        <ThreeDLogo />
-                    </div>
+                  
                 </header>
             </div>
             <div className="about-section">

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../Styles/Css/ContactStyle.css';
-import ThreeDGlobe from './ThreeDGlobe'; // Assuming the ThreeDGlobe component is in the same directory
 import emailjs from 'emailjs-com';
 import Modal from './Modal'; // Import your Modal component
 import { useTranslation } from 'react-i18next';
@@ -42,9 +41,6 @@ const ContactForm = () => {
                     <div className="header-content">
                         <h1 id="contactUs">{t('contact.title')}</h1>
                         <p id="contactUsP">{t('contact.description')}</p>
-                    </div>
-                    <div className="globe-container" aria-hidden="true">
-                        <ThreeDGlobe />
                     </div>
                 </header>
             </div>

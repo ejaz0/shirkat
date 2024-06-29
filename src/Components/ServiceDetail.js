@@ -5,7 +5,7 @@ import '../Styles/Css/ServiceDetail.css';
 import SeoImage from '../Styles/Css/images/Services/Seoo.webp';
 import MaintenanceImage from '../Styles/Css/images/Services/Maintence.webp';
 import UXImage from '../Styles/Css/images/Services/ux.webp';
-import WebdevImage from '../Styles/Css/images/Services/Webdev.webp';
+import WebdevImage from '../Styles/Css/images/Services/707.png';
 
 const ServiceDetail = () => {
     const { t } = useTranslation();
