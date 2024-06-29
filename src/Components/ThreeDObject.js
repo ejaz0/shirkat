@@ -57,7 +57,16 @@ const ThreeDLogo = () => {
         };
     }, []);
 
-    return <div ref={mountRef} style={{ width: '100%', height: '100%' }} />;
+    return (
+        <div 
+            ref={mountRef} 
+            style={{ width: '100%', height: '100%' }} 
+            role="img" 
+            aria-label="3D rotating company logo"
+        >
+            <noscript>Your browser does not support JavaScript, which is needed to view this 3D logo.</noscript>
+        </div>
+    );
 };
 
 export default ThreeDLogo;

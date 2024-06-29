@@ -43,7 +43,7 @@ const ContactForm = () => {
                         <h1 id="contactUs">{t('contact.title')}</h1>
                         <p id="contactUsP">{t('contact.description')}</p>
                     </div>
-                    <div className="globe-container">
+                    <div className="globe-container" aria-hidden="true">
                         <ThreeDGlobe />
                     </div>
                 </header>
@@ -55,10 +55,16 @@ const ContactForm = () => {
                 <div className="contact-form">
                     <h2>{t('contact.send_message')}</h2>
                     <p>{t('contact.message_prompt')}</p>
-                    <form onSubmit={handleSubmit}>
-                        <input type="text" name="user_name" placeholder={t('contact.name_placeholder')} required />
-                        <input type="email" name="user_email" placeholder={t('contact.email_placeholder')} required />
-                        <textarea name="message" placeholder={t('contact.message_placeholder')} required></textarea>
+                    <form onSubmit={handleSubmit} aria-label="Contact Form">
+                        <label htmlFor="user_name">{t('contact.name_placeholder')}</label>
+                        <input type="text" id="user_name" name="user_name" placeholder={t('contact.name_placeholder')} required />
+                        
+                        <label htmlFor="user_email">{t('contact.email_placeholder')}</label>
+                        <input type="email" id="user_email" name="user_email" placeholder={t('contact.email_placeholder')} required />
+                        
+                        <label htmlFor="message">{t('contact.message_placeholder')}</label>
+                        <textarea id="message" name="message" placeholder={t('contact.message_placeholder')} required></textarea>
+                        
                         <button type="submit" className="send-button">{t('contact.send_button')}</button>
                     </form>
                 </div>

@@ -12,7 +12,7 @@ import { useTranslation } from 'react-i18next';
 import '../src/Styles/Css/AppStyle.css';
 
 const App = () => {
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -20,19 +20,23 @@ const App = () => {
 
   return (
     <Router>
-      <NavBar />
-      <div>
-        <button onClick={() => changeLanguage('sv')}>Svenska</button>
-        <button onClick={() => changeLanguage('en')}>English</button>
-      </div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/service/:id" element={<ServiceDetail />} />
-        <Route path="/portfolio/:id" element={<PortfolioDetail />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <header>
+        <NavBar />
+        <div>
+          <button onClick={() => changeLanguage('sv')} aria-label="Change language to Swedish">Svenska</button>
+          <button onClick={() => changeLanguage('en')} aria-label="Change language to English">English</button>
+        </div>
+      </header>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/service/:id" element={<ServiceDetail />} />
+          <Route path="/portfolio/:id" element={<PortfolioDetail />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </main>
     </Router>
   );
 };

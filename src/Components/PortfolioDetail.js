@@ -64,8 +64,8 @@ const PortfolioDetail = () => {
                     </div>
                 </header>
             </div>
-            <div className="portfolio-content">
-                <div className="portfolio-main">
+            <main className="portfolio-content">
+                <section className="portfolio-main">
                     <h2>{t('portfolioDetail.projectDetails')}</h2>
                     <p>{portfolio.details}</p>
                     <div className="portfolio-subcontent">
@@ -84,14 +84,14 @@ const PortfolioDetail = () => {
                         ))}
                     </div>
                     <div className="portfolio-controls">
-                        <button onClick={handlePrev} className="control-btn prev-btn">
+                        <button onClick={handlePrev} className="control-btn prev-btn" aria-label="Previous Slide">
                             {t('portfolioDetail.prevButton')}
                         </button>
-                        <button onClick={handleNext} className="control-btn next-btn">
+                        <button onClick={handleNext} className="control-btn next-btn" aria-label="Next Slide">
                             {t('portfolioDetail.nextButton')}
                         </button>
                     </div>
-                </div>
+                </section>
                 <aside className="portfolio-sidebar">
                     <div className="portfolio-list">
                         <h3>{t('portfolioDetail.otherProjects')}</h3>
@@ -106,13 +106,13 @@ const PortfolioDetail = () => {
                     <div className="portfolio-follow">
                         <h3>{t('portfolioDetail.followUs')}</h3>
                         <div className="social-icons">
-                            <a href="https://www.linkedin.com/company/threesoft/" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/company/threesoft/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                 <i className="fab fa-linkedin"></i>
                             </a>
                         </div>
                     </div>
                 </aside>
-            </div>
+            </main>
         </div>
     );
 };

@@ -10,6 +10,7 @@ import WebdevImage from '../Styles/Css/images/Services/Webdev.webp';
 const ServiceDetail = () => {
     const { t } = useTranslation();
     const { id } = useParams();
+    
     const serviceData = {
         1: {
             title: t('serviceDetail.webDevelopment.title'),
@@ -53,12 +54,12 @@ const ServiceDetail = () => {
                     </div>
                 </header>
             </div>
-            <div className="service-content">
-                <div className="service-main">
+            <main className="service-content">
+                <article className="service-main">
                     <h2>{service.title}</h2>
                     <p>{service.details}</p>
                     {service.mainImage && <img src={service.mainImage} alt={service.title} className="service-image" />}
-                </div>
+                </article>
                 <aside className="service-sidebar">
                     <div className="service-list">
                         <h3>{t('serviceDetail.listOfServices')}</h3>
@@ -73,13 +74,13 @@ const ServiceDetail = () => {
                     <div className="service-follow">
                         <h3>{t('serviceDetail.followUs')}</h3>
                         <div className="social-icons">
-                            <a href="https://www.linkedin.com/company/threesoft" target="_blank" rel="noopener noreferrer">
+                            <a href="https://www.linkedin.com/company/threesoft" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
                                 <i className="fab fa-linkedin"></i>
                             </a>
                         </div>
                     </div>
                 </aside>
-            </div>
+            </main>
         </div>
     );
 };

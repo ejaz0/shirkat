@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import '../Styles/Css/PortfolioStyle.css';
@@ -14,27 +14,14 @@ const Portfolio = () => {
             image: PortfolioImage1,
             title: t('portfolio.items.0.title'),
             description: t('portfolio.items.0.description'),
-            category: 'web',
         },
         {
             id: 2,
             image: PortfolioImage2,
             title: t('portfolio.items.1.title'),
             description: t('portfolio.items.1.description'),
-            category: 'web',
         }
     ];
-
-    const [selectedCategory, setSelectedCategory] = useState('all');
-    const [displayedItems, setDisplayedItems] = useState([]);
-
-    useEffect(() => {
-        setDisplayedItems(portfolioData);
-    }, []);
-
-    const handleCategoryChange = (category) => {
-        setSelectedCategory(category);
-    };
 
     return (
         <div className="portfolio-container">
@@ -46,15 +33,12 @@ const Portfolio = () => {
                     </div>
                 </header>
             </div>
-            <div className="portfolio-section">
+            <section className="portfolio-section">
                 <header className="portfolio-header">
                     <h1>{t('portfolio.portfolioHeader.title')}</h1>
-                    <div className="portfolio-filter-container">
-                        {/* Filter controls can be added here */}
-                    </div>
                 </header>
                 <div className="portfolio-grid">
-                    {displayedItems.map((item) => (
+                    {portfolioData.map((item) => (
                         <div key={item.id} className="portfolio-item">
                             <Link to={`/portfolio/${item.id}`}>
                                 <img src={item.image} alt={item.title} className="portfolio-image" />
@@ -66,11 +50,11 @@ const Portfolio = () => {
                         </div>
                     ))}
                 </div>
-                <a className="see-more-button" href="#">
+                <Link to="/portfolio/more" className="see-more-button">
                     {t('portfolio.seeMoreButton')}
-                </a>
-            </div>
-            <div className="testimonial-section">
+                </Link>
+            </section>
+            <section className="testimonial-section">
                 <header className="portfolio-header">
                     <h1>{t('portfolio.testimonialsHeader.title')}</h1>
                 </header>
@@ -82,7 +66,7 @@ const Portfolio = () => {
                         </div>
                     ))}
                 </div>
-            </div>
+            </section>
         </div>
     );
 };

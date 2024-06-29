@@ -37,7 +37,16 @@ const ThreeDGlobe = () => {
         };
     }, []);
 
-    return <div ref={mountRef} style={{ width: '250px', height: '250px' }} />; // Increased size of the container
+    return (
+        <div 
+            ref={mountRef} 
+            style={{ width: '250px', height: '250px' }} 
+            role="img" 
+            aria-label="3D rotating globe"
+        >
+            <noscript>Your browser does not support JavaScript, which is needed to view this 3D globe.</noscript>
+        </div>
+    );
 };
 
 export default ThreeDGlobe;

@@ -11,7 +11,7 @@ const NavBar = () => {
 
     useEffect(() => {
         const handleScroll = () => {
-            const nav = document.querySelector('nav');
+            const nav = navRef.current;
             if (window.scrollY > 1) {
                 nav.classList.add('scrolled');
             } else {
@@ -39,18 +39,24 @@ const NavBar = () => {
     };
 
     return (
-        <nav ref={navRef}>
+        <nav ref={navRef} role="navigation" aria-label={t('navbar.aria_label')}>
             <div className="logo-container">
                 <Link to="/">
                     <img src={ThreeSoftLogo} alt={t('navbar.logo_alt')} className="logo" />
                 </Link>
             </div>
-            <div className={`hamburger ${isMenuOpen ? 'active' : ''}`} onClick={toggleMenu}>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            <ul className={isMenuOpen ? 'show' : ''}>
+            <button
+                className={`hamburger ${isMenuOpen ? 'active' : ''}`}
+                onClick={toggleMenu}
+                aria-expanded={isMenuOpen}
+                aria-controls="nav-menu"
+                aria-label={isMenuOpen ? t('navbar.close_menu') : t('navbar.open_menu')}
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul id="nav-menu" className={isMenuOpen ? 'show' : ''}>
                 <li><Link to="/" onClick={toggleMenu}>{t('navbar.home')}</Link></li>
                 <li><Link to="/about" onClick={toggleMenu}>{t('navbar.about')}</Link></li>
                 <li><Link to="/portfolio" onClick={toggleMenu}>{t('navbar.portfolio')}</Link></li>
