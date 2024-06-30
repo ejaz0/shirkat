@@ -1,39 +1,43 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import '../Styles/Css/ContactStyle.css';
-import ThreeDGlobe from './ThreeDGlobe'; // Assuming the ThreeDGlobe component is in the same directory
-import emailjs from 'emailjs-com';
-import Modal from './Modal'; // Import your Modal component
+import Modal from './Modal';
 import { useTranslation } from 'react-i18next';
 
 const ContactForm = () => {
     const { t } = useTranslation();
     const [showModal, setShowModal] = useState(false);
 
-    const handleSubmit = (e) => {
+    const handleSubmit = useCallback((e) => {
         e.preventDefault();
 
-        emailjs.sendForm(
-            process.env.REACT_APP_EMAILJS_SERVICE_ID,
-            process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-            e.target,
-            process.env.REACT_APP_EMAILJS_USER_ID
-        )
-        .then((result) => {
-            console.log('Email successfully sent!', result.text);
-            setShowModal(true); // Show modal on successful submission
-        })
-        .catch((error) => {
-            console.error('Error sending email:', error.text);
+        // Using dynamic import to lazy load emailjs-com
+        import('emailjs-com').then((emailjs) => {
+            emailjs.sendForm(
+                process.env.REACT_APP_EMAILJS_SERVICE_ID,
+                process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+                e.target,
+                process.env.REACT_APP_EMAILJS_USER_ID
+            )
+            .then((result) => {
+                console.log('Email successfully sent!', result.text);
+                setShowModal(true); // Show modal on successful submission
+            })
+            .catch((error) => {
+                console.error('Error sending email:', error.text);
+                // Optionally: Show an error message to the user
+            })
+            .finally(() => {
+                e.target.reset(); // Reset the form
+            });
+        }).catch((error) => {
+            console.error('Failed to load emailjs-com', error);
             // Optionally: Show an error message to the user
-        })
-        .finally(() => {
-            e.target.reset(); // Reset the form
         });
-    };
+    }, []);
 
-    const closeModal = () => {
+    const closeModal = useCallback(() => {
         setShowModal(false);
-    };
+    }, []);
 
     return (
         <div className="contact-container">
@@ -43,17 +47,14 @@ const ContactForm = () => {
                         <h1 id="contactUs">{t('contact.title')}</h1>
                         <p id="contactUsP">{t('contact.description')}</p>
                     </div>
-                    <div className="globe-container" aria-hidden="true">
-                        <ThreeDGlobe />
-                    </div>
                 </header>
             </div>
             <div className="contact-section">
                 <div className="contact-info">
-                    <h1>{t('contact.get_in_touch')}</h1>
+                    <h2>{t('contact.get_in_touch')}</h2>
                 </div>
                 <div className="contact-form">
-                    <h2>{t('contact.send_message')}</h2>
+                    <h3>{t('contact.send_message')}</h3>
                     <p>{t('contact.message_prompt')}</p>
                     <form onSubmit={handleSubmit} aria-label="Contact Form">
                         <label htmlFor="user_name">{t('contact.name_placeholder')}</label>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import '../Styles/Css/ServiceDetail.css';
@@ -7,11 +7,17 @@ import MaintenanceImage from '../Styles/Css/images/Services/Maintence.webp';
 import UXImage from '../Styles/Css/images/Services/ux.webp';
 import WebdevImage from '../Styles/Css/images/Services/Webdev.webp';
 
-const ServiceDetail = () => {
+const LazyImage = React.memo(({ src, alt, className }) => (
+    <Suspense fallback={<div>Loading image...</div>}>
+        <img src={src} alt={alt} className={className} />
+    </Suspense>
+));
+
+const ServiceDetail = React.memo(() => {
     const { t } = useTranslation();
     const { id } = useParams();
-    
-    const serviceData = {
+
+    const serviceData = useMemo(() => ({
         1: {
             title: t('serviceDetail.webDevelopment.title'),
             description: t('serviceDetail.webDevelopment.description'),
@@ -36,7 +42,7 @@ const ServiceDetail = () => {
             details: t('serviceDetail.uxUiDesign.details'),
             mainImage: UXImage
         }
-    };
+    }), [t]);
 
     const service = serviceData[id];
 
@@ -58,7 +64,9 @@ const ServiceDetail = () => {
                 <article className="service-main">
                     <h2>{service.title}</h2>
                     <p>{service.details}</p>
-                    {service.mainImage && <img src={service.mainImage} alt={service.title} className="service-image" />}
+                    {service.mainImage && (
+                        <LazyImage src={service.mainImage} alt={service.title} className="service-image" />
+                    )}
                 </article>
                 <aside className="service-sidebar">
                     <div className="service-list">
@@ -83,6 +91,6 @@ const ServiceDetail = () => {
             </main>
         </div>
     );
-};
+});
 
 export default ServiceDetail;

@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import LazyLoad from 'react-lazyload';
 import '../Styles/Css/PortfolioDetails.css'; // Ensure the path is correct
 
 // Import images
@@ -17,7 +18,7 @@ const PortfolioDetail = () => {
     const { id } = useParams();
 
     // Define portfolio data with correct IDs and image imports
-    const portfolioData = {
+    const portfolioData = useMemo(() => ({
         1: {
             title: t('portfolioDetail.connectWork.title'),
             description: t('portfolioDetail.connectWork.description'),
@@ -31,7 +32,7 @@ const PortfolioDetail = () => {
             images: [MideastImage1, MideastImage2, MideastImage3]
         },
         // Add more portfolio items as needed
-    };
+    }), [t]);
 
     const portfolio = portfolioData[id];
 
@@ -75,11 +76,14 @@ const PortfolioDetail = () => {
                                 className={`portfolio-subimage-wrapper ${index === activeIndex ? 'active' : ''}`}
                                 style={{ transform: `translateX(${-activeIndex * 100}%)` }} // Slide transition
                             >
-                                <img
-                                    src={image}
-                                    alt={`Slide ${index + 1}`}
-                                    className="portfolio-subimage"
-                                />
+                                <LazyLoad height={200} offset={100} once>
+                                    <img
+                                        src={image}
+                                        alt={`Slide ${index + 1}`}
+                                        className="portfolio-subimage"
+                                        loading="lazy"
+                                    />
+                                </LazyLoad>
                             </div>
                         ))}
                     </div>
