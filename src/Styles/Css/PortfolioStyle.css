@@ -110,7 +110,6 @@
 .portfolio-image {
     width: 100%;
     border-bottom: 1px solid rgba(0, 106, 255, 0.9); /* Light blue border */
-    height: 13rem;
     border-radius: 10px 10px 0 0;
 }
 
