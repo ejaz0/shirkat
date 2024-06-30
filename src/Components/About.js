@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { useTranslation } from 'react-i18next';
 import '../Styles/Css/AboutStyle.css';
 import elvisH from '../Styles/Css/images/prifle-removebg-preview.png';
-import rashadRafa from '../Styles/Css/images/1712175677779.jpg';
+import rashadRafa from '../Styles/Css/images/Jag.jpg';
 import aryaEisa from '../Styles/Css/images/644_e43222bd86412c55c14fe34e9ea1e4ac-2023-11-09 23_27_42.jpg';
 
 const About = () => {
