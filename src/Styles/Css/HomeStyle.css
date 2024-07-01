@@ -76,7 +76,7 @@
     border-bottom-right-radius: 0;
     cursor: pointer;
     transition: background 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
-    box-shadow: 0 4px 10px rgba(0, 170, 255, 0.5);
+   
     display: inline-flex;
     align-items: center;
     text-decoration: none;
@@ -133,7 +133,7 @@
 .services p {
     font-size: 1.2rem;
     margin-bottom: 3rem;
-    color: #cccccc;
+    color: #ffffff;
 }
 
 .services-grid {
@@ -153,7 +153,15 @@
     color: #ffffff;
 }
 
-.service-card::before {
+.service-card:hover .service-icon {
+    color: #ffffff; /* Change icon color to white on hover */
+}
+
+.linkedin-icon{
+    font-size: 1.5rem;
+}
+
+.service-card::before{
     content: '';
     position: absolute;
     top: 0;
@@ -194,7 +202,7 @@
 .service-card p {
     font-size: 1rem;
     line-height: 1.5;
-    color: #cccccc;
+    color: #ffffff;
 }
 
 .service-card a {
@@ -228,6 +236,7 @@
 }
 
 /* Keyframe Animations */
+/* Keyframe Animations */
 @keyframes expandLeftToRight {
     0% {
         transform: scaleX(0);
@@ -250,11 +259,64 @@
     }
 }
 
+/* Keyframes for the wiggle animation with pauses */
+@keyframes wiggle {
+    0%, 20%, 100% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(10deg);
+    }
+    45% {
+        transform: rotate(10deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    70% {
+        transform: rotate(-10deg);
+    }
+    90% {
+        transform: rotate(-10deg);
+    }
+    95% {
+        transform: rotate(0deg);
+    }
+}
+
 .service-icon {
     font-size: 2rem; /* Adjust icon size as needed */
     color: #00aaff; /* Icon color */
     margin-bottom: 1rem;
+    animation: wiggle 10s ease-in-out infinite; /* Apply the wiggle animation with a longer duration */
 }
+
+/* Stagger the animation start times */
+.service-card:nth-child(1) .service-icon {
+    animation-delay: 0s;
+}
+
+.service-card:nth-child(2) .service-icon {
+    animation-delay: 2s;
+}
+
+.service-card:nth-child(3) .service-icon {
+    animation-delay: 4s;
+}
+
+.service-card:nth-child(4) .service-icon {
+    animation-delay: 6s;
+}
+
+.service-card:nth-child(5) .service-icon {
+    animation-delay: 8s;
+}
+
+.service-card:nth-child(6) .service-icon {
+    animation-delay: 10s;
+}
+
+  
 
 /* Responsive CSS */
 @media (max-width: 768px) {

@@ -33,6 +33,9 @@ const Home = () => {
             <div className="home-page">
                 <section className="hero" id="home">
                     <div className="hero-content">
+                        <a href="https://www.linkedin.com/company/threesoft/" target="_blank" rel="noopener noreferrer" className="linkedin-icon">
+                            <i className="fab fa-linkedin"></i>
+                        </a>
                         <h1>{translatedTexts.hero_title}</h1>
                         <h2>{translatedTexts.hero_subtitle}</h2>
                         <p>{translatedTexts.hero_description}</p>

@@ -29,6 +29,12 @@
 
 .about-text {
     text-align: left;
+    
+}
+
+.about-title{
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
 .about-header h1 {
@@ -39,7 +45,7 @@
 
 .about-header p {
     font-size: 1.2rem;
-    color: #cccccc;
+    color: #ffffff;
 }
 
 .three-d-logo-container {
@@ -50,6 +56,7 @@
 /* About section */
 .about-section {
     padding: 2rem;
+    
     background: #0e1129; /* Different background color */
     min-height: 50vh;
     text-align: center;
@@ -69,7 +76,7 @@
 .about-description {
     font-size: 1.2rem;
     margin-bottom: 3rem;
-    color: #cccccc;
+    color: #ffffff;
 }
 
 .team-grid {
@@ -79,20 +86,21 @@
 }
 
 .team-member {
+
     background: #0e1129;
     padding: 2rem;
     border: 1px solid rgba(0, 170, 255, 0.3);
     border-radius: 10px;
     min-height: 40rem; /* Set a minimum height */
-    box-shadow: 0 4px 6px rgba(0, 170, 255, 0.5);
+   
     transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     overflow: hidden;
 }
 
 .team-member:hover {
-    transform: translateY(-10px);
-    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-5px);
+    background: rgba(0, 168, 252, 0.9);
     box-shadow: 0 6px 15px rgba(0, 170, 255, 0.8);
 }
 
@@ -118,7 +126,7 @@
 .team-bio {
     font-size: 1rem;
     line-height: 1.5;
-    color: #cccccc;
+    color: #ffffff;
 }
 
 .team-socials {
@@ -126,6 +134,7 @@
 }
 
 .team-socials a {
+    font-size: 2rem;
     color: #ffffff;
     margin: 0 0.5rem;
     transition: color 0.3s ease;

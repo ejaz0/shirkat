@@ -35,7 +35,7 @@
 
 .service-header p {
     font-size: 1.2rem;
-    color: #cccccc;
+    color: #ffffff;
 }
 
 .service-content {
@@ -62,7 +62,7 @@
 
 .service-main p {
     font-size: 1rem;
-    color: #cccccc;
+    color: #ffffff;
     margin-bottom: 1.5rem;
 }
 
@@ -87,7 +87,8 @@
 
 .service-list,
 .service-follow {
-    background: rgba(0, 168, 252, 0.9); 
+    
+    background: rgba(0, 168, 252, 1);
     padding: 1rem;
     border-radius: 10px;
 }
@@ -115,17 +116,20 @@
     border-radius: 10px;
     transition: background 0.3s ease, color 0.3s ease;
     margin-bottom: 1rem; /* Spacing between items */
-    background: rgba(0, 36, 53, 0.7); /* Item background color */
+    background: rgba(0, 36, 53, 1); /* Item background color */
+    opacity: 0.75;
 }
 
 .service-list li.active {
     background: rgb(0, 33, 49); /* Active item background color */
+    opacity: 1;
     font-weight: bold;
     color: #ffffff;
 }
 
 .service-list li:hover {
-    background-color: #003766; /* Hover background color */
+    background: rgb(0, 33, 49);
+    opacity: 1;
 }
 
 .service-list li i {
