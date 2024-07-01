@@ -45,6 +45,13 @@ const ServiceDetail = React.memo(() => {
             details: t('serviceDetail.uxUiDesign.details'),
             mainImage: UXImage,
             icon: 'fas fa-paint-brush' // Font Awesome icon class
+        },
+        5: {
+            title: t('serviceDetail.apiIntegration.title'),
+            description: t('serviceDetail.apiIntegration.description'),
+            details: t('serviceDetail.apiIntegration.details'),
+            mainImage: UXImage,
+            icon: 'fas fa-code-branch' // Font Awesome icon class
         }
     }), [t]);
 

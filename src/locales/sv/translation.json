@@ -42,6 +42,8 @@
   "service3_description": "Se till att din webbplats fungerar smidigt och effektivt med våra omfattande webbunderhållstjänster.",
   "service4_title": "UX/UI-design",
   "service4_description": "Skapa intuitiva och engagerande användarupplevelser med våra expert UX/UI-designtjänster.",
+  "service5_title": "API-Integration",
+  "service5_description": "Vi erbjuder pålitliga och effektiva API-integrationstjänster för att förbättra funktionaliteten och prestandan på din webbplats.",
   "service_read_more": "Läs mer"
 },
 
@@ -115,6 +117,11 @@
             "title": "UX/UI-design",
             "description": "Skapa intuitiva och engagerande användarupplevelser med våra experttjänster för UX/UI-design. Vi fokuserar på användbarhet, tillgänglighet och visuell tilltalande för att förbättra användarnöjdheten och konverteringsfrekvenserna.",
             "details": "Upptäck vår designprocess, från användarundersökningar och wireframing till prototypning och testning. Vi fokuserar på att förbättra användarnöjdheten genom att förbättra användbarhet och tillgänglighet, vilket i slutändan driver högre engagemang och behållningsfrekvenser."
+          },
+          "apiIntegration": {
+            "title": "API-Integration",
+            "description": "Vi erbjuder pålitliga och effektiva API-integrationstjänster för att förbättra funktionaliteten och prestandan på din webbplats. Våra experter ser till att dina system kommunicerar sömlöst med varandra, vilket resulterar i en bättre användarupplevelse.",
+            "details": "Upptäck vår integrationsprocess, från behovsanalys och systemdesign till implementering och testning. Vi fokuserar på att skapa robusta och skalbara lösningar som förbättrar ditt företags effektivitet och användarnöjdhet."
           },
           "serviceNotFound": "Tjänsten kunde inte hittas",
           "listOfServices": "Lista över tjänster",

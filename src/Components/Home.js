@@ -24,6 +24,8 @@ const Home = () => {
         service3_description: t('home.service3_description'),
         service4_title: t('home.service4_title'),
         service4_description: t('home.service4_description'),
+        service5_title: t('home.service5_title'),
+        service5_description: t('home.service5_description'),
     }), [t]);
 
     return (
@@ -72,6 +74,13 @@ const Home = () => {
                         description={translatedTexts.service4_description}
                         linkText={`${translatedTexts.service_read_more} →`}
                         linkTo="/service/4"
+                    />
+                     <ServiceCard
+                        iconClass="fas fa-code-branch"
+                        title={translatedTexts.service5_title}
+                        description={translatedTexts.service5_description}
+                        linkText={`${translatedTexts.service_read_more} →`}
+                        linkTo="/service/5"
                     />
                 </div>
             </section>

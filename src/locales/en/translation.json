@@ -43,6 +43,8 @@
       "service3_description": "Ensure your website runs smoothly and efficiently with our comprehensive web maintenance services.",
       "service4_title": "UX/UI Design",
       "service4_description": "Create intuitive and engaging user experiences with our expert UX/UI design services.",
+      "service5_title": "API Integration",
+      "service5_description": "We offer reliable and efficient API integration services to enhance the functionality and performance of your website.",
       "service_read_more": "Read More"
     },
     "modal": {
@@ -115,6 +117,11 @@
         "title": "UX/UI Design",
         "description": "Create intuitive and engaging user experiences with our expert UX/UI design services. We focus on usability, accessibility, and visual appeal to enhance user satisfaction and conversion rates.",
         "details": "Discover our design process, from user research and wireframing to prototyping and testing. We focus on enhancing user satisfaction by improving usability and accessibility, ultimately driving higher engagement and retention rates."
+      },
+      "apiIntegration": {
+        "title": "API-Integration",
+        "description": "We offer reliable and efficient API integration services to enhance the functionality and performance of your website. Our experts ensure that your systems communicate seamlessly with each other, resulting in a better user experience.",
+        "details": "Discover our integration process, from needs analysis and system design to implementation and testing. We focus on creating robust and scalable solutions that enhance your business efficiency and user satisfaction."
       },
       "serviceNotFound": "Service not found",
       "listOfServices": "List Of Services",
