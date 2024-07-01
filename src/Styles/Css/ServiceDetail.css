@@ -86,15 +86,13 @@
 }
 
 .service-list,
-.service-assets,
 .service-follow {
-    background-color: #1e3c72;
+    background: rgba(0, 168, 252, 0.9); 
     padding: 1rem;
     border-radius: 10px;
 }
 
 .service-list h3,
-.service-assets h3,
 .service-follow h3 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
@@ -109,35 +107,30 @@
 
 .service-list li {
     font-size: 1rem;
-    padding: 0.5rem 0;
+    padding: 1rem;
     color: #ffffff;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    transition: background 0.3s ease, color 0.3s ease;
+    margin-bottom: 1rem; /* Spacing between items */
+    background: rgba(0, 36, 53, 0.7); /* Item background color */
 }
 
 .service-list li.active {
+    background: rgb(0, 33, 49); /* Active item background color */
     font-weight: bold;
-    color: #00aaff;
-}
-
-.service-assets p {
-    font-size: 0.9rem;
-    color: #cccccc;
-    margin-bottom: 1rem;
-}
-
-.service-assets button {
-    width: 100%;
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
-    background-color: #00aaff;
-    border: none;
     color: #ffffff;
-    cursor: pointer;
-    border-radius: 5px;
 }
 
-.service-assets button:hover {
-    background-color: #008ecc;
+.service-list li:hover {
+    background-color: #003766; /* Hover background color */
+}
+
+.service-list li i {
+    margin-right: 1rem;
+    font-size: 1.5rem;
 }
 
 .service-follow .social-icons {
@@ -190,5 +183,13 @@
 
     .service-main p {
         font-size: 0.9rem;
+    }
+
+    .service-list li {
+        padding: 0.75rem;
+    }
+
+    .service-list li i {
+        margin-right: 0.5rem;
     }
 }

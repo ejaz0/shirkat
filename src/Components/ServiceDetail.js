@@ -22,25 +22,29 @@ const ServiceDetail = React.memo(() => {
             title: t('serviceDetail.webDevelopment.title'),
             description: t('serviceDetail.webDevelopment.description'),
             details: t('serviceDetail.webDevelopment.details'),
-            mainImage: WebdevImage
+            mainImage: WebdevImage,
+            icon: 'fas fa-code' // Font Awesome icon class
         },
         2: {
             title: t('serviceDetail.seoServices.title'),
             description: t('serviceDetail.seoServices.description'),
             details: t('serviceDetail.seoServices.details'),
-            mainImage: SeoImage
+            mainImage: SeoImage,
+            icon: 'fas fa-search' // Font Awesome icon class
         },
         3: {
             title: t('serviceDetail.webMaintenance.title'),
             description: t('serviceDetail.webMaintenance.description'),
             details: t('serviceDetail.webMaintenance.details'),
-            mainImage: MaintenanceImage
+            mainImage: MaintenanceImage,
+            icon: 'fas fa-wrench' // Font Awesome icon class
         },
         4: {
             title: t('serviceDetail.uxUiDesign.title'),
             description: t('serviceDetail.uxUiDesign.description'),
             details: t('serviceDetail.uxUiDesign.details'),
-            mainImage: UXImage
+            mainImage: UXImage,
+            icon: 'fas fa-paint-brush' // Font Awesome icon class
         }
     }), [t]);
 
@@ -72,9 +76,12 @@ const ServiceDetail = React.memo(() => {
                     <div className="service-list">
                         <h3>{t('serviceDetail.listOfServices')}</h3>
                         <ul>
-                            {Object.entries(serviceData).map(([key, { title }]) => (
+                            {Object.entries(serviceData).map(([key, { title, icon }]) => (
                                 <li key={key} className={id === key ? 'active' : ''}>
-                                    <Link to={`/service/${key}`}>{title}</Link>
+                                    <Link to={`/service/${key}`}>
+                                        <i className={icon}></i>
+                                        {title}
+                                    </Link>
                                 </li>
                             ))}
                         </ul>
