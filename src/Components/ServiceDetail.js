@@ -6,6 +6,7 @@ import SeoImage from '../Styles/Css/images/Services/Seoo.webp';
 import MaintenanceImage from '../Styles/Css/images/Services/Maintence.webp';
 import UXImage from '../Styles/Css/images/Services/ux.webp';
 import WebdevImage from '../Styles/Css/images/Services/Webdev.webp';
+import ApiImage from '../Styles/Css/images/Services/api.svg';
 
 const LazyImage = React.memo(({ src, alt, className }) => (
     <Suspense fallback={<div>Loading image...</div>}>
@@ -50,7 +51,7 @@ const ServiceDetail = React.memo(() => {
             title: t('serviceDetail.apiIntegration.title'),
             description: t('serviceDetail.apiIntegration.description'),
             details: t('serviceDetail.apiIntegration.details'),
-            mainImage: UXImage,
+            mainImage: ApiImage,
             icon: 'fas fa-code-branch' // Font Awesome icon class
         }
     }), [t]);
