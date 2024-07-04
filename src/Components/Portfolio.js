@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import '../Styles/Css/PortfolioStyle.css';
 import PortfolioImage1 from '../Styles/Css/images/portfolio/ConnectWork/Homepage.png';
 import PortfolioImage2 from '../Styles/Css/images/portfolio/mideast/Screenshot 2024-06-26 at 17.01.27.png';
+import PortfolioImage3 from '../Styles/Css/images/portfolio/gmsakerhet/gmsakerhet.png'
 
 // LazyImage component
 const LazyImage = ({ src, alt, className }) => (
@@ -27,6 +28,12 @@ const Portfolio = () => {
             image: PortfolioImage2,
             title: t('portfolio.items.1.title'),
             description: t('portfolio.items.1.description'),
+        },
+        {
+            id: 3,
+            image: PortfolioImage3,
+            title: t('portfolio.items.2.title'),
+            description: t('portfolio.items.2.description'),
         }
     ], [t]);
 

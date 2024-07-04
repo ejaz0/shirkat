@@ -1,170 +1,185 @@
-
-  {
-    "about": {
-      "title": "About Us",
-      "description": "We are a team of three dedicated software engineers, each with our own area of expertise, committed to providing top-notch IT solutions. We specialize in creating custom websites that cater to your specific needs, from initial concept and design to full development and deployment. Our services include logo design, UX/UI design, and complete website creation, ensuring a seamless and professional online presence. Beyond development, we offer ongoing maintenance and updates to keep your website running smoothly and effectively, allowing you to focus on your business while we handle the technical details.",
-      "team_title": "Our Team",
-      "team_members": {
-        "elvis": {
-          "bio": "Elvis is a dedicated programmer with a strong foundation in software engineering, driven by a passion for technology and innovation. His expertise lies in designing and implementing advanced solutions that exceed expectations. With a keen focus on detail and a knack for solving complex technical challenges, Elvis ensures every project is crafted with precision and scalability in mind."
-        },
-        "rashad": {
-          "bio": "Rashad has a rich background in UX/UI design, having honed his skills from a young age. His passion for design is complemented by his software engineering expertise and experience in project management. Rashad excels at building strong client relationships and driving project success. His multifaceted skill set ensures that projects are delivered on time, within scope, and meet the highest standards of quality."
-        },
-        "arya": {
-          "bio": "Arya is a seasoned professional with a robust background in both business management and software engineering. Having successfully run companies, he brings a wealth of experience in understanding market trends and client needs. Arya excels in creating modern, responsive solutions that not only meet but exceed client expectations. His unique blend of business acumen and technical expertise drives sales growth and ensures exceptional client satisfaction."
-        }
+{
+  "about": {
+    "title": "About Us",
+    "description": "We are a team of three dedicated software engineers, each with our own area of expertise, committed to providing top-notch IT solutions. We specialize in creating custom websites that cater to your specific needs, from initial concept and design to full development and deployment. Our services include logo design, UX/UI design, and complete website creation, ensuring a seamless and professional online presence. Beyond development, we offer ongoing maintenance and updates to keep your website running smoothly and effectively, allowing you to focus on your business while we handle the technical details.",
+    "team_title": "Our Team",
+    "team_members": {
+      "elvis": {
+        "bio": "Elvis is a dedicated programmer with a strong foundation in software engineering, driven by a passion for technology and innovation. His expertise lies in designing and implementing advanced solutions that exceed expectations. With a keen focus on detail and a knack for solving complex technical challenges, Elvis ensures every project is crafted with precision and scalability in mind."
+      },
+      "rashad": {
+        "bio": "Rashad has a rich background in UX/UI design, having honed his skills from a young age. His passion for design is complemented by his software engineering expertise and experience in project management. Rashad excels at building strong client relationships and driving project success. His multifaceted skill set ensures that projects are delivered on time, within scope, and meet the highest standards of quality."
+      },
+      "arya": {
+        "bio": "Arya is a seasoned professional with a robust background in both business management and software engineering. Having successfully run companies, he brings a wealth of experience in understanding market trends and client needs. Arya excels in creating modern, responsive solutions that not only meet but exceed client expectations. His unique blend of business acumen and technical expertise drives sales growth and ensures exceptional client satisfaction."
       }
+    }
+  },
+  "contact": {
+    "title": "Contact Us",
+    "description": "We'd love to hear from you! Whether you have a question about our services, pricing, need a demo, or anything else, our team is ready to answer all your questions.",
+    "get_in_touch": "Get in Touch",
+    "send_message": "Send Us a Message",
+    "message_prompt": "We are always here to help you with your inquiries and provide the best solutions for your business needs. Fill out the form below, and we will get back to you as soon as possible.",
+    "name_placeholder": "Name",
+    "email_placeholder": "Email",
+    "message_placeholder": "Message",
+    "send_button": "Send"
+  },
+  "home": {
+    "hero_title": "Threesoft",
+    "hero_subtitle": "Providing The Best Services & IT Solutions",
+    "hero_description": "Learn more about our expert, web development services. Get solutions delivered by experts with adaptive strategies.",
+    "hero_button": "Contact Us",
+    "hero_alt": "Hero Graphic",
+    "services_title": "Services We Offer",
+    "services_description": "Learn more about our expert, web development services. Get solutions delivered by experts with adaptive strategies.",
+    "service1_title": "Web Development",
+    "service1_description": "High-quality web development services using modern technologies.",
+    "service2_title": "SEO Services",
+    "service2_description": "Effective SEO strategies to improve your website's search engine rankings.",
+    "service3_title": "Web Maintenance",
+    "service3_description": "Ensure your website runs smoothly and efficiently with our comprehensive web maintenance services.",
+    "service4_title": "UX/UI Design",
+    "service4_description": "Create intuitive and engaging user experiences with our expert UX/UI design services.",
+    "service5_title": "API Integration",
+    "service5_description": "We offer reliable and efficient API integration services to enhance the functionality and performance of your website.",
+    "service_read_more": "Read More"
+  },
+  "modal": {
+    "thanks_title": "Thanks for your message!",
+    "thanks_message": "We will contact you soon.",
+    "close_button": "Close"
+  },
+  "navbar": {
+    "logo_alt": "ThreeSoft Logo",
+    "home": "Home",
+    "about": "About",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "portfolioItems": [
+    {
+      "portfolio": {
+        "items": [
+          {
+            "id": 1,
+            "title": "Connectwork.se",
+            "description": "A dynamic platform connecting job seekers with employers. We created their logo and built an engaging website.",
+            "category": "web"
+          },
+          {
+            "id": 2,
+            "title": "Mideast.my",
+            "description": "Mideast.my is an e-commerce website where you can purchase a variety of goods from Persia to Asia.",
+            "category": "web"
+          },
+          {
+            "id": 3,
+            "title": "Gmsakerhet.com",
+            "description": "Gmsakerhet.com is a leading platform for security services in Sweden. We offer a range of highly qualified security services tailored to your needs, including surveillance, monitoring, risk analysis, and security consulting.",
+            "category": "web"
+          }
+        ]
+      }
+    }
+  ],
+  "portfolioDetail": {
+    "connectWork": {
+      "title": "Connectwork.se",
+      "description": "A dynamic platform connecting job seekers with employers. We created their logo and built an engaging website.",
+      "details": "At threesoft, we take pride in bringing ideas to life. We conceived ConnectWork from inception, starting with a simple Figma prototype and crafting its unique identity, including logo design and comprehensive web development. Our journey culminated in delivering ConnectWork—a dynamic platform where job seekers and employers seamlessly connect."
     },
-    "contact": {
-      "title": "Contact Us",
-      "description": "We'd love to hear from you! Whether you have a question about our services, pricing, need a demo, or anything else, our team is ready to answer all your questions.",
-      "get_in_touch": "Get in Touch",
-      "send_message": "Send Us a Message",
-      "message_prompt": "We are always here to help you with your inquiries and provide the best solutions for your business needs. Fill out the form below, and we will get back to you as soon as possible.",
-      "name_placeholder": "Name",
-      "email_placeholder": "Email",
-      "message_placeholder": "Message",
-      "send_button": "Send"
+    "mideast": {
+      "title": "Mideast.my",
+      "description": "Mideast.my is an e-commerce website where you can purchase a variety of goods from Persia to Asia.",
+      "details": "At threesoft, we are proud to have created Mideast from the ground up. We started with designing a detailed prototype and then developed a robust e-commerce platform that offers a seamless shopping experience. Our team handled the entire development process, including UX/UI design, backend development, and payment solution integration, resulting in a modern and reliable platform."
     },
-    "home": {
-      "hero_title": "Threesoft",
-      "hero_subtitle": "Providing The Best Services & IT Solutions",
-      "hero_description": "Learn more about our expert, web devlopment services. Get solutions delivered by experts with adaptive strategies.",
-      "hero_button": "Contact Us",
-      "hero_alt": "Hero Graphic",
-      "services_title": "Services We Offer",
-      "services_description": "Learn more about our expert, web development services. Get solutions delivered by experts with adaptive strategies.",
-      "service1_title": "Web Development",
-      "service1_description": "High-quality web development services using modern technologies.",
-      "service2_title": "SEO Services",
-      "service2_description": "Effective SEO strategies to improve your website's search engine rankings.",
-      "service3_title": "Web Maintenance",
-      "service3_description": "Ensure your website runs smoothly and efficiently with our comprehensive web maintenance services.",
-      "service4_title": "UX/UI Design",
-      "service4_description": "Create intuitive and engaging user experiences with our expert UX/UI design services.",
-      "service5_title": "API Integration",
-      "service5_description": "We offer reliable and efficient API integration services to enhance the functionality and performance of your website.",
-      "service_read_more": "Read More"
+    "gmsakerhet": {
+      "title": "Gmsakerhet.com",
+      "description": "Gmsakerhet.com is a leading platform for security services in Sweden. We offer a range of highly qualified security services tailored to your needs, including surveillance, monitoring, risk analysis, and security consulting. Visit us to learn more about how we can protect your assets and ensure your safety.",
+      "details": "At threesoft, we take pride in having developed Gmsäkerhet from the ground up. We started with a comprehensive prototype and then built a robust platform for security services. Our team handled the entire development process, including UX/UI design and integration of advanced security features, resulting in a modern and reliable solution. The platform offers a seamless user experience and delivers high-quality security services tailored to meet the client's specific needs."
     },
-    "modal": {
-      "thanks_title": "Thanks for your message!",
-      "thanks_message": "We will contact you soon.",
-      "close_button": "Close"
+    "projectDetails": "Project Details",
+    "noImagesFound": "No images found for this project.",
+    "otherProjects": "Other Projects",
+    "followUs": "Follow Us",
+    "prevButton": "Prev",
+    "nextButton": "Next"
+  },
+  "serviceDetail": {
+    "webDevelopment": {
+      "title": "Web Development",
+      "description": "High-quality web development services using modern technologies. We specialize in creating responsive and scalable web applications tailored to your business needs.",
+      "details": "Dive deep into our comprehensive web development solutions where we create dynamic, responsive websites optimized for performance and user experience. From e-commerce platforms to corporate portals, we build solutions that drive your online presence forward."
     },
-    "navbar": {
-      "logo_alt": "ThreeSoft Logo",
-      "home": "Home",
-      "about": "About",
-      "portfolio": "Portfolio",
-      "contact": "Contact"
+    "seoServices": {
+      "title": "SEO Services",
+      "description": "Effective SEO strategies to improve your website's search engine rankings. We optimize your content, keywords, and meta tags to enhance visibility and attract more organic traffic.",
+      "details": "Explore our SEO services that include keyword research, on-page and off-page optimization, and SEO audits. We focus on increasing your site's authority, enhancing user engagement, and maximizing conversions through strategic SEO practices."
     },
-    "portfolioItems": [
+    "webMaintenance": {
+      "title": "Web Maintenance",
+      "description": "Ensure your website runs smoothly and efficiently with our comprehensive web maintenance services. We provide regular updates, security patches, and performance optimizations.",
+      "details": "Learn more about our proactive maintenance approach, including security patches, performance optimization, and content updates. We provide peace of mind by keeping your website secure, up-to-date, and running efficiently."
+    },
+    "uxUiDesign": {
+      "title": "UX/UI Design",
+      "description": "Create intuitive and engaging user experiences with our expert UX/UI design services. We focus on usability, accessibility, and visual appeal to enhance user satisfaction and conversion rates.",
+      "details": "Discover our design process, from user research and wireframing to prototyping and testing. We focus on enhancing user satisfaction by improving usability and accessibility, ultimately driving higher engagement and retention rates."
+    },
+    "apiIntegration": {
+      "title": "API Integration",
+      "description": "We offer reliable and efficient API integration services to enhance the functionality and performance of your website. Our experts ensure that your systems communicate seamlessly with each other, resulting in a better user experience.",
+      "details": "Discover our integration process, from needs analysis and system design to implementation and testing. We focus on creating robust and scalable solutions that enhance your business efficiency and user satisfaction."
+    },
+    "serviceNotFound": "Service not found",
+    "listOfServices": "List Of Services",
+    "followUs": "Follow Us"
+  },
+  "portfolio": {
+    "welcomeHeader": {
+      "title": "Welcome to Our Portfolio",
+      "description": "Discover our latest projects showcasing our expertise in web development, design, and more. Each project reflects our commitment to quality and innovation."
+    },
+    "portfolioHeader": {
+      "title": "Our Portfolio"
+    },
+    "seeMoreButton": "See More",
+    "testimonialsHeader": {
+      "title": "Testimonials"
+    },
+    "items": [
       {
-        "portfolio": {
-          "items": [
-            {
-              "id": 1,
-              "title": "Connectwork.se",
-              "description": "A dynamic platform connecting job seekers with employers. We created their logo and built an engaging website.",
-              "category": "web"
-            },
-            {
-              "id": 2,
-              "title": "Mideast.my",
-              "description": "Mideast.my is an e-commerce website where you can purchase a variety of goods from Persia to Asia.",
-              "category": "web"
-            }
-          ]
-        }
-      }
-    ],
-    "portfolioDetail": {
-      "connectWork": {
+        "id": 1,
         "title": "Connectwork.se",
         "description": "A dynamic platform connecting job seekers with employers. We created their logo and built an engaging website.",
-        "details": "At threesoft, we take pride in bringing ideas to life. We conceived ConnectWork from inception, starting with a simple Figma prototype and crafting its unique identity, including logo design and comprehensive web development. Our journey culminated in delivering ConnectWork—a dynamic platform where job seekers and employers seamlessly connect."
+        "category": "web"
       },
-      "mideast": {
+      {
+        "id": 2,
         "title": "Mideast.my",
         "description": "Mideast.my is an e-commerce website where you can purchase a variety of goods from Persia to Asia.",
-        "details": "At threesoft, we are proud to have created Mideast from the ground up. We started with designing a detailed prototype and then developed a robust e-commerce platform that offers a seamless shopping experience. Our team handled the entire development process, including UX/UI design, backend development, and payment solution integration, resulting in a modern and reliable platform."
+        "category": "web"
       },
-      "projectDetails": "Project Details",
-      "noImagesFound": "No images found for this project.",
-      "otherProjects": "Other Projects",
-      "followUs": "Follow Us",
-      "prevButton": "Prev",
-      "nextButton": "Next"
-    },
-    "serviceDetail": {
-      "webDevelopment": {
-        "title": "Web Development",
-        "description": "High-quality web development services using modern technologies. We specialize in creating responsive and scalable web applications tailored to your business needs.",
-        "details": "Dive deep into our comprehensive web development solutions where we create dynamic, responsive websites optimized for performance and user experience. From e-commerce platforms to corporate portals, we build solutions that drive your online presence forward."
+      {
+        "id": 3,
+        "title": "Gmsakerhet.com",
+        "description": "Gmsakerhet.com is a leading platform for security services in Sweden. We offer a range of highly qualified security services tailored to your needs, including surveillance, monitoring, risk analysis, and security consulting.",
+        "category": "web"
+      }
+    ],
+    "testimonials": [
+      {
+        "id": 1,
+        "name": "ConnectWork",
+        "text": "Working with threesoft was a great experience. They delivered our project on time and exceeded our expectations."
       },
-      "seoServices": {
-        "title": "SEO Services",
-        "description": "Effective SEO strategies to improve your website's search engine rankings. We optimize your content, keywords, and meta tags to enhance visibility and attract more organic traffic.",
-        "details": "Explore our SEO services that include keyword research, on-page and off-page optimization, and SEO audits. We focus on increasing your site's authority, enhancing user engagement, and maximizing conversions through strategic SEO practices."
-      },
-      "webMaintenance": {
-        "title": "Web Maintenance",
-        "description": "Ensure your website runs smoothly and efficiently with our comprehensive web maintenance services. We provide regular updates, security patches, and performance optimizations.",
-        "details": "Learn more about our proactive maintenance approach, including security patches, performance optimization, and content updates. We provide peace of mind by keeping your website secure, up-to-date, and running efficiently."
-      },
-      "uxUiDesign": {
-        "title": "UX/UI Design",
-        "description": "Create intuitive and engaging user experiences with our expert UX/UI design services. We focus on usability, accessibility, and visual appeal to enhance user satisfaction and conversion rates.",
-        "details": "Discover our design process, from user research and wireframing to prototyping and testing. We focus on enhancing user satisfaction by improving usability and accessibility, ultimately driving higher engagement and retention rates."
-      },
-      "apiIntegration": {
-        "title": "API-Integration",
-        "description": "We offer reliable and efficient API integration services to enhance the functionality and performance of your website. Our experts ensure that your systems communicate seamlessly with each other, resulting in a better user experience.",
-        "details": "Discover our integration process, from needs analysis and system design to implementation and testing. We focus on creating robust and scalable solutions that enhance your business efficiency and user satisfaction."
-      },
-      "serviceNotFound": "Service not found",
-      "listOfServices": "List Of Services",
-      "followUs": "Follow Us"
-    },
-    "portfolio": {
-      "welcomeHeader": {
-        "title": "Welcome to Our Portfolio",
-        "description": "Discover our latest projects showcasing our expertise in web development, design, and more. Each project reflects our commitment to quality and innovation."
-      },
-      "portfolioHeader": {
-        "title": "Our Portfolio"
-      },
-      "seeMoreButton": "See More",
-      "testimonialsHeader": {
-        "title": "Testimonials"
-      },
-      "items": [
-        {
-          "id": 1,
-          "title": "Connectwork.se",
-          "description": "A dynamic platform connecting job seekers with employers. We created their logo and built an engaging website.",
-          "category": "web"
-        },
-        {
-          "id": 2,
-          "title": "Mideast.my",
-          "description": "Mideast.my is an e-commerce website where you can purchase a variety of goods from Persia to Asia.",
-          "category": "web"
-        }
-      ],
-      "testimonials": [
-        {
-          "id": 1,
-          "name": "ConnectWork",
-          "text": "Working with threesoft was a great experience. They delivered our project on time and exceeded our expectations."
-        },
-        {
-          "id": 2,
-          "name": "Mideast",
-          "text": "Working with threesoft was amazing, they created a perfect website for our business. We loved their service."
-        }
-      ]
-    }
+      {
+        "id": 2,
+        "name": "Mideast",
+        "text": "Working with threesoft was amazing, they created a perfect website for our business. We loved their service."
+      }
+    ]
   }
-
+}

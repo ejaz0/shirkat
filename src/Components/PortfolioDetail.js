@@ -12,6 +12,9 @@ import CWImage4 from '../Styles/Css/images/portfolio/ConnectWork/Jobseekers.png'
 import MideastImage1 from '../Styles/Css/images/portfolio/mideast/Screenshot 2024-06-26 at 17.01.27.png';
 import MideastImage2 from '../Styles/Css/images/portfolio/mideast/Screenshot 2024-06-26 at 17.01.49.png';
 import MideastImage3 from '../Styles/Css/images/portfolio/mideast/Screenshot 2024-06-26 at 17.02.29.png';
+import GmSakerhet from '../Styles/Css/images/portfolio/gmsakerhet/gmsakerhet.png';
+import GmSakerhet1 from '../Styles/Css/images/portfolio/gmsakerhet/gmsakerhet2.png';
+import GmSakerhet2 from '../Styles/Css/images/portfolio/gmsakerhet/gmsakerhet3.png';
 
 const PortfolioDetail = () => {
     const { t } = useTranslation();
@@ -30,6 +33,12 @@ const PortfolioDetail = () => {
             description: t('portfolioDetail.mideast.description'),
             details: t('portfolioDetail.mideast.details'),
             images: [MideastImage1, MideastImage2, MideastImage3]
+        },
+        3: {
+            title: t('portfolioDetail.gmsakerhet.title'),
+            description: t('portfolioDetail.gmsakerhet.description'),
+            details: t('portfolioDetail.gmsakerhet.details'),
+            images: [GmSakerhet, GmSakerhet1, GmSakerhet2]
         },
         // Add more portfolio items as needed
     }), [t]);

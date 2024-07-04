@@ -74,7 +74,14 @@
               "title": "Mideast.my",
               "description": "Mideast.my är en e-handelswebbplats där du kan köpa olika varor från Persien till Asien.",
               "category": "web"
+            },
+            {
+              "id": 3,
+              "title": "Gmsakerhet.com",
+              "description": "gmsakerhet.com är en ledande plattform för säkerhetstjänster i Sverige. Vi erbjuder en rad högkvalificerade säkerhetstjänster skräddarsydda efter dina behov, inklusive bevakning, övervakning, riskanalys och säkerhetsrådgivning.",
+              "category": "web"
             }
+
           ]
         }
       }
@@ -89,6 +96,11 @@
         "title": "Mideast.my",
         "description": "Mideast.my är en e-handelswebbplats där du kan köpa olika varor från Persien till Asien.",
         "details": "På threesoft är vi stolta över att ha skapat Mideast från grunden. Vi började med att designa en detaljerad prototyp och utvecklade sedan en robust e-handelsplattform som erbjuder en smidig shoppingupplevelse. Vårt team hanterade hela utvecklingsprocessen, inklusive UX/UI-design, backend-utveckling och integration av betalningslösningar, vilket resulterade i en modern och pålitlig plattform."
+      },
+      "gmsakerhet": {
+        "title": "Gmsakerhet.com",
+        "description": "Gmsakerhet.com är en ledande plattform för säkerhetstjänster i Sverige. Vi erbjuder en rad högkvalificerade säkerhetstjänster skräddarsydda efter dina behov, inklusive bevakning, övervakning, riskanalys och säkerhetsrådgivning. Besök oss för att lära dig mer om hur vi kan skydda dina tillgångar och säkerställa din trygghet.",
+        "details": "På threesoft är vi stolta över att ha utvecklat Gmsäkerhet från grunden. Vi började med att skapa en omfattande prototyp och fortsatte sedan med att bygga en robust plattform för säkerhetstjänster. Vårt team hanterade hela utvecklingsprocessen, inklusive UX/UI-design och integration av avancerade säkerhetsfunktioner, vilket resulterade i en modern och pålitlig lösning. Plattformen erbjuder en sömlös användarupplevelse och levererar högkvalitativa säkerhetstjänster skräddarsydda för att möta kundens specifika behov."
       },
         "projectDetails": "Projektdetaljer",
         "noImagesFound": "Inga bilder hittades för detta projekt.",
@@ -151,6 +163,12 @@
         "id": 2,
         "title": "Mideast.my",
         "description": "Mideast.my är en e-handelswebbplats där du kan köpa olika varor från Persien till Asien.",
+        "category": "web"
+      },
+      {
+        "id": 3,
+        "title": "Gmsakerhet.com",
+        "description": "Gmsakerhet.com är en ledande plattform för säkerhetstjänster i Sverige. Vi erbjuder en rad högkvalificerade säkerhetstjänster skräddarsydda efter dina behov, inklusive bevakning, övervakning, riskanalys och säkerhetsrådgivning.",
         "category": "web"
       }
     ],
