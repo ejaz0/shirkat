@@ -1,6 +1,8 @@
-import React, { useState, useMemo } from 'react';
+import React, { useMemo } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { Carousel } from 'react-responsive-carousel';
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import carousel styles
 import LazyLoad from 'react-lazyload';
 import '../Styles/Css/PortfolioDetails.css'; // Ensure the path is correct
 
@@ -45,21 +47,6 @@ const PortfolioDetail = () => {
 
     const portfolio = portfolioData[id];
 
-    // useState hook for managing activeIndex state
-    const [activeIndex, setActiveIndex] = useState(0);
-
-    // Function to handle next image in the slideshow
-    const handleNext = () => {
-        setActiveIndex((prevIndex) => (prevIndex + 1) % portfolio.images.length);
-    };
-
-    // Function to handle previous image in the slideshow
-    const handlePrev = () => {
-        setActiveIndex((prevIndex) =>
-            prevIndex === 0 ? portfolio.images.length - 1 : prevIndex - 1
-        );
-    };
-
     if (!portfolio) {
         return <div>{t('portfolioDetail.noImagesFound')}</div>;
     }
@@ -78,31 +65,28 @@ const PortfolioDetail = () => {
                 <section className="portfolio-main">
                     <h2>{t('portfolioDetail.projectDetails')}</h2>
                     <p>{portfolio.details}</p>
-                    <div className="portfolio-subcontent">
-                        {portfolio.images.map((image, index) => (
-                            <div
-                                key={index}
-                                className={`portfolio-subimage-wrapper ${index === activeIndex ? 'active' : ''}`}
-                                style={{ transform: `translateX(${-activeIndex * 100}%)` }} // Slide transition
-                            >
-                                <LazyLoad height={200} offset={100} once>
-                                    <img
-                                        src={image}
-                                        alt={`Slide ${index + 1}`}
-                                        className="portfolio-subimage"
-                                        loading="lazy"
-                                    />
-                                </LazyLoad>
-                            </div>
-                        ))}
-                    </div>
-                    <div className="portfolio-controls">
-                        <button onClick={handlePrev} className="control-btn prev-btn" aria-label="Previous Slide">
-                            {t('portfolioDetail.prevButton')}
-                        </button>
-                        <button onClick={handleNext} className="control-btn next-btn" aria-label="Next Slide">
-                            {t('portfolioDetail.nextButton')}
-                        </button>
+                    <div className="portfolio-carousel">
+                        <Carousel
+                            showArrows={true}
+                            infiniteLoop={true}
+                            showThumbs={false}
+                            showStatus={false}
+                            autoPlay={true}
+                            interval={5000}
+                        >
+                            {portfolio.images.map((image, index) => (
+                                <div key={index}>
+                                    <LazyLoad height={200} offset={100} once>
+                                        <img
+                                            src={image}
+                                            alt={`Slide ${index + 1}`}
+                                            className="portfolio-subimage"
+                                            loading="lazy"
+                                        />
+                                    </LazyLoad>
+                                </div>
+                            ))}
+                        </Carousel>
                     </div>
                 </section>
                 <aside className="portfolio-sidebar">
