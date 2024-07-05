@@ -245,3 +245,28 @@
         max-height: 150px;
     }
 }
+/* PortfolioStyle.css */
+
+
+.testimonial-section {
+    text-align: center;
+}
+
+.carousel-container {
+    max-width: 600px; /* Set your desired width */
+    margin: 0 auto; /* Center the carousel */
+}
+
+.testimonial-item {
+    padding: 20px;
+}
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial-name {
+    font-weight: bold;
+}
+

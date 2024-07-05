@@ -1,10 +1,12 @@
 import React, { Suspense, useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import carousel styles
 import '../Styles/Css/PortfolioStyle.css';
 import PortfolioImage1 from '../Styles/Css/images/portfolio/ConnectWork/Homepage.png';
 import PortfolioImage2 from '../Styles/Css/images/portfolio/mideast/Screenshot 2024-06-26 at 17.01.27.png';
-import PortfolioImage3 from '../Styles/Css/images/portfolio/gmsakerhet/gmsakerhet.png'
+import PortfolioImage3 from '../Styles/Css/images/portfolio/gmsakerhet/gmsakerhet.png';
 
 // LazyImage component
 const LazyImage = ({ src, alt, className }) => (
@@ -71,13 +73,22 @@ const Portfolio = () => {
                 <header className="portfolio-header">
                     <h1>{t('portfolio.testimonialsHeader.title')}</h1>
                 </header>
-                <div className="testimonial-grid">
-                    {testimonials.map((testimonial) => (
-                        <div key={testimonial.id} className="testimonial-item">
-                            <p className="testimonial-text">"{testimonial.text}"</p>
-                            <p className="testimonial-name">- {testimonial.name}</p>
-                        </div>
-                    ))}
+                <div className="carousel-container">
+                    <Carousel
+                        showArrows={true}
+                        infiniteLoop={true}
+                        showThumbs={false}
+                        showStatus={false}
+                        autoPlay={true}
+                        interval={5000}
+                    >
+                        {testimonials.map((testimonial) => (
+                            <div key={testimonial.id} className="testimonial-item">
+                                <p className="testimonial-text">"{testimonial.text}"</p>
+                                <p className="testimonial-name">- {testimonial.name}</p>
+                            </div>
+                        ))}
+                    </Carousel>
                 </div>
             </section>
         </div>
