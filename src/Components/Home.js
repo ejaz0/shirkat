@@ -36,6 +36,9 @@ const Home = () => {
                         <a href="https://www.linkedin.com/company/threesoft/" target="_blank" rel="noopener noreferrer" className="linkedin-icon">
                             <i className="fab fa-linkedin"></i>
                         </a>
+                        <a href="https://www.instagram.com/threesoft.se" target="_blank" rel="noopener noreferrer" className="instagram-icon">
+                            <i className="fab fa-instagram"></i>
+                        </a>
                         <h1>{translatedTexts.hero_title}</h1>
                         <h2>{translatedTexts.hero_subtitle}</h2>
                         <p>{translatedTexts.hero_description}</p>
