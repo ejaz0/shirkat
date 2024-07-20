@@ -39,6 +39,9 @@ const Home = () => {
                         <a href="https://www.instagram.com/threesoft.se" target="_blank" rel="noopener noreferrer" className="instagram-icon">
                             <i className="fab fa-instagram"></i>
                         </a>
+                        <a href="https://www.facebook.com/profile.php?id=61563068248650" target="_blank" rel="noopener noreferrer" className="instagram-icon">
+                            <i className="fab fa-facebook"></i>
+                        </a>
                         <h1>{translatedTexts.hero_title}</h1>
                         <h2>{translatedTexts.hero_subtitle}</h2>
                         <p>{translatedTexts.hero_description}</p>
