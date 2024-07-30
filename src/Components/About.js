@@ -4,6 +4,7 @@ import '../Styles/Css/AboutStyle.css';
 import elvisH from '../Styles/Css/images/prifle-removebg-preview.png';
 import rashadRafa from '../Styles/Css/images/resh.jpg';
 import aryaEisa from '../Styles/Css/images/644_e43222bd86412c55c14fe34e9ea1e4ac-2023-11-09 23_27_42.jpg';
+import asiaC from '../Styles/Css/images/asia.png';
 
 const About = () => {
     const { t } = useTranslation();
@@ -27,6 +28,11 @@ const About = () => {
             name: 'Arya Eisa',
             bio: t('about.team_members.arya.bio'),
             linkedin: 'https://www.linkedin.com/in/arya-eisa-292710191/'
+        },
+        asia: {
+            name: 'Asia Chaabi',
+            bio: t('about.team_members.asia.bio'),
+            linkedin: 'https://www.linkedin.com/in/asiachaabi/'
         }
     }), [t]);
 
@@ -60,6 +66,12 @@ const About = () => {
                         bio={translatedTexts.arya.bio}
                         linkedin={translatedTexts.arya.linkedin}
                         image={aryaEisa}
+                    />
+                      <TeamMember
+                        name={translatedTexts.asia.name}
+                        bio={translatedTexts.asia.bio}
+                        linkedin={translatedTexts.asia.linkedin}
+                        image={asiaC}
                     />
                 </div>
             </div>
